@@ -12,9 +12,10 @@ A reproducible study of bolted timber connection mechanics, with a worked timber
 | [Worked timber joint](20261018_v5_TimberJointCase.html) | Interactive reference case, component checks, movement and controlled comparisons |
 | [Technical report](20261018_v5_TimberJointCase.pdf) | Joint definition, source-linked calculations, sensitivity and proposed laboratory work |
 | [Façade component explorer](20261018_v3_Toolkit.html) | Original timber-to-steel fixing illustration, seismic demand, isolated-member fire section loss and conditional panel racking |
-| [Current release checks](20261018_v5_ReleaseVerification.json) | Actual check results, counts and outstanding browser review |
+| [Current release checks](20261018_v5_ReleaseVerification.json) | Numerical, browser and release evidence with their separate scopes |
+| [Browser review](20261018_v5_BrowserQA.json) | Selected desktop, narrow-screen, keyboard and interaction checks for the exact page assets |
 
-The v5 work is a **local review build**. The [existing live site](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/) and its v3 deployment record do not establish deployment of v5.
+The v5 work has passed local checks and selected real-browser review. The stable publication address is the [GitHub Pages toolkit](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/). Deployment is recorded separately from numerical and browser verification.
 
 ## The worked joint
 
@@ -50,7 +51,7 @@ node tests/joint_case_page.cjs
 python -m timberkit.check_release
 ```
 
-The release checker also replays the legacy parity fixtures, checks local page dependencies and writes the dated verification record. It reports real-browser review as outstanding. A passing numerical or DOM-stub check does not establish browser rendering.
+The release checker also replays the legacy parity fixtures, checks local page dependencies and writes the dated verification record. It reads separate browser and deployment evidence and checks that their page hashes match the current files. A passing numerical or DOM-stub check does not establish browser rendering.
 
 The current joint prefix is `20261018_v5_`. The exporter reads the matching saved input JSON when it exists, or uses canonical defaults if it is absent. To export a different allowed input case:
 
@@ -91,8 +92,8 @@ Read the case report and the original [connection source record](20261018_v3_Con
 - `timberkit/`: calculation modules, data exporter, builders and release checker.
 - `web/`: page templates, browser calculations and retained mathematical-typography assets.
 - `tests/`: independent reference, boundary, parity and page-wiring checks.
-- `20261018_v5_*`: current worked-joint inputs, results, report and local release evidence.
-- `20261018_v3_*` and `20261018_v4_*`: preserved earlier artifacts; follow the current links above for the review build.
+- `20261018_v5_*`: current worked-joint inputs, results, report and release evidence.
+- `20261018_v3_*` and `20261018_v4_*`: preserved earlier artifacts; follow the current links above for the current worked case.
 - `index.html`: portfolio landing page for static hosting.
 
 ## Provenance and rights

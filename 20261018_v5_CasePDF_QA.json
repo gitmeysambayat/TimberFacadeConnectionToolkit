@@ -1,6 +1,6 @@
 {
   "output": "20261018_v5_TimberJointCase.pdf",
-  "sha256": "03ab6dfc43e3bdddba7b85453bd81764e12fcd5e2a54fa6109dfed5581683f71",
+  "sha256": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589",
   "pages": 8,
   "source_results": "20261018_v5_JointCaseResults.json",
   "source_results_sha256": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c",
@@ -47,11 +47,11 @@
     "page-5.png": "40350b3fb3de18376619003fcad9e67b91577ea6ba10ada848afb0226968d9bd",
     "page-6.png": "09393caa983b13379ea4794a689f35279448cd00774d96eb418da8ab9978b47a",
     "page-7.png": "70576e0a6a3821d9fc52f8e2841ebc57776b000dac11ea323dbb7f06e55d90ea",
-    "page-8.png": "d002047c7bf9760bc9949edd603a137fe06a853e2c35dc817ff08078b2196e7a"
+    "page-8.png": "0f33719ee24c47a9d82b9723074bd48a2e3b2ab77f82710af10984a717012279"
   },
-  "final_correction_review": "Page 5 corrected to match the exported adapted-washer sensitivity series, re-rendered and visually inspected. Other seven page renders were byte-identical to the previously inspected revision; full-document font/link/bounds checks repeated.",
+  "final_correction_review": "Page 8 updated to distinguish 179 calculation/export regression tests from 16 release-evidence checks (195 total), re-rendered and visually inspected. Other seven page renders were byte-identical to the previously inspected revision; full-document font/link/bounds checks repeated. Browser review remains separately evidenced.",
   "page_renders_changed_by_final_correction": [
-    "page-5.png"
+    "page-8.png"
   ],
   "header_pixel_sha256": {
     "page-1": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
@@ -154,13 +154,16 @@
     ]
   },
   "implementation_snapshot": {
-    "python_tests": 179,
+    "python_tests": 195,
+    "calculation_export_regression_tests": 179,
+    "release_evidence_checks": 16,
     "joint_case_tests": 62,
     "parity_vectors": 42,
     "numeric_comparisons": 3960,
     "classification_comparisons": 1480,
     "expected_rejections": 12
   },
-  "publication": "LOCAL_REVIEW_ONLY_NOT_DEPLOYED",
+  "browser_review": "RECORDED_SEPARATELY_NOT_VERIFIED_BY_PDF_QA",
+  "publication": "NOT_ASSESSED_BY_PDF_QA_SEE_SEPARATE_DEPLOYMENT_RECORD",
   "scope": "Presentation and reproducibility checks for an educational component study; no physical validation or overall connection approval."
 }

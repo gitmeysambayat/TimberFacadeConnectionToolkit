@@ -1,8 +1,14 @@
 {
   "revision": "20261018_v5",
-  "checked_utc": "2026-10-18T12:19:47.434163+00:00",
-  "status": "LOCAL_CHECKS_PASSED_BROWSER_REVIEW_REQUIRED",
+  "checked_utc": "2026-10-18T12:48:46.618476+00:00",
+  "status": "LOCAL_AND_BROWSER_CHECKS_PASSED",
+  "local_checks": "PASS",
   "publication": "NOT_PERFORMED",
+  "deployment": {
+    "status": "NOT_PERFORMED",
+    "record": "20261018_v5_Deployment.json",
+    "reason": "No evidence record exists"
+  },
   "commands": [
     {
       "check": "Joint export from saved inputs",
@@ -13,7 +19,7 @@
       "check": "Python tests",
       "status": "PASS",
       "exit_code": 0,
-      "passed": 179
+      "passed": 195
     },
     {
       "check": "Joint calculation parity",
@@ -69,12 +75,12 @@
     "status": "PASS",
     "checks": 22,
     "method": "Node VM with DOM stub; excludes real-browser layout, focus, KaTeX rendering and console checks",
-    "browser_preview": "NOT_COMPLETED_LOCAL_FILE_URL_BLOCKED",
+    "browser_preview": "NOT_ASSESSED_BY_DOM_STUB",
     "page": "20261018_v5_TimberJointCase.html"
   },
   "pdf_review": {
     "output": "20261018_v5_TimberJointCase.pdf",
-    "sha256": "03ab6dfc43e3bdddba7b85453bd81764e12fcd5e2a54fa6109dfed5581683f71",
+    "sha256": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589",
     "pages": 8,
     "source_results": "20261018_v5_JointCaseResults.json",
     "source_results_sha256": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c",
@@ -121,11 +127,11 @@
       "page-5.png": "40350b3fb3de18376619003fcad9e67b91577ea6ba10ada848afb0226968d9bd",
       "page-6.png": "09393caa983b13379ea4794a689f35279448cd00774d96eb418da8ab9978b47a",
       "page-7.png": "70576e0a6a3821d9fc52f8e2841ebc57776b000dac11ea323dbb7f06e55d90ea",
-      "page-8.png": "d002047c7bf9760bc9949edd603a137fe06a853e2c35dc817ff08078b2196e7a"
+      "page-8.png": "0f33719ee24c47a9d82b9723074bd48a2e3b2ab77f82710af10984a717012279"
     },
-    "final_correction_review": "Page 5 corrected to match the exported adapted-washer sensitivity series, re-rendered and visually inspected. Other seven page renders were byte-identical to the previously inspected revision; full-document font/link/bounds checks repeated.",
+    "final_correction_review": "Page 8 updated to distinguish 179 calculation/export regression tests from 16 release-evidence checks (195 total), re-rendered and visually inspected. Other seven page renders were byte-identical to the previously inspected revision; full-document font/link/bounds checks repeated. Browser review remains separately evidenced.",
     "page_renders_changed_by_final_correction": [
-      "page-5.png"
+      "page-8.png"
     ],
     "header_pixel_sha256": {
       "page-1": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
@@ -228,14 +234,17 @@
       ]
     },
     "implementation_snapshot": {
-      "python_tests": 179,
+      "python_tests": 195,
+      "calculation_export_regression_tests": 179,
+      "release_evidence_checks": 16,
       "joint_case_tests": 62,
       "parity_vectors": 42,
       "numeric_comparisons": 3960,
       "classification_comparisons": 1480,
       "expected_rejections": 12
     },
-    "publication": "LOCAL_REVIEW_ONLY_NOT_DEPLOYED",
+    "browser_review": "RECORDED_SEPARATELY_NOT_VERIFIED_BY_PDF_QA",
+    "publication": "NOT_ASSESSED_BY_PDF_QA_SEE_SEPARATE_DEPLOYMENT_RECORD",
     "scope": "Presentation and reproducibility checks for an educational component study; no physical validation or overall connection approval."
   },
   "selected_colour_contrast": {
@@ -318,20 +327,103 @@
     }
   ],
   "browser_review": {
-    "status": "NOT_COMPLETED",
-    "reason": "Local file URL was rejected by browser security policy; no alternate browser route attempted",
-    "required": [
-      "Desktop and narrow-screen visual review",
-      "Keyboard/focus operation",
-      "Representative interactions and invalid-input recovery",
-      "KaTeX rendering and browser console"
-    ]
+    "status": "PASS",
+    "record": "20261018_v5_BrowserQA.json",
+    "page_sha256": {
+      "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+      "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+      "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+    },
+    "checks": [
+      {
+        "name": "Portfolio desktop and narrow-screen rendering",
+        "status": "PASS",
+        "observed": "1280 x 900 and 390 x 844 CSS-pixel viewports inspected. No document horizontal overflow. Navigation and worked-case links operated."
+      },
+      {
+        "name": "Worked-case desktop layout and mathematical typography",
+        "status": "PASS",
+        "observed": "Definition, reference calculation, editable scenario, charts, proposed programme and source sections inspected. Eight KaTeX expressions; zero KaTeX error elements."
+      },
+      {
+        "name": "Reference scenario",
+        "status": "PASS",
+        "observed": "Displayed design action 7.050 kN, Johansen resistance 10.026 kN, utilisation 0.703, instantaneous movement 0.557 mm and final movement 1.198 mm."
+      },
+      {
+        "name": "M14 washer detailing conflict",
+        "status": "PASS",
+        "observed": "Both 100 mm loaded ends met the selected 98 mm minimum. Fixed 40 x 4 mm washers failed the selected 42 x 4.2 mm minima. Conflict was visible beside the component result."
+      },
+      {
+        "name": "M16 preset and compatible geometry",
+        "status": "PASS",
+        "observed": "Fixed-detail preset reported both loaded-end and washer conflicts. Changing overlap to 240 mm, first end to 120 mm, washers to 48 x 4.8 mm cleared the selected geometry conflicts; no overall design pass was shown."
+      },
+      {
+        "name": "Permanent-only action envelope",
+        "status": "PASS",
+        "observed": "Gk 6 kN and Qk 0 displayed permanent-only action 8.100 kN, resistance 7.520 kN and utilisation 1.077, with a component-resistance exceedance."
+      },
+      {
+        "name": "Prescribed free play",
+        "status": "PASS",
+        "observed": "The 1.5 mm free-play preset displayed final movement 2.698 mm and an explicit exceedance of the chosen 2.000 mm study budget."
+      },
+      {
+        "name": "Invalid-input hiding and recovery",
+        "status": "PASS",
+        "observed": "Blank and negative bolt diameters hid the current results and disabled the result download. Restore reference recovered the baseline. Fixed reference calculations remained separately labelled."
+      },
+      {
+        "name": "Thinner-member preset and downloaded result",
+        "status": "PASS",
+        "observed": "35 mm outer members displayed utilisation 0.774. Actual browser JSON download independently matched Python evaluate(downloaded inputs): 132 numerical and 83 string values, 31 objects, 11 arrays, zero differences. Download SHA256 44a8fdee3a2c8d3c5770e00f1423a50c71be45dee608ebc0e7345a8f761f3fcd."
+      },
+      {
+        "name": "Keyboard access and visible focus",
+        "status": "PASS",
+        "observed": "Tab advanced between labelled numeric controls. Enter activated Restore reference. Focus outline was blue and approximately 2.7 CSS pixels at the observed scaling."
+      },
+      {
+        "name": "Narrow-screen chart containment after correction",
+        "status": "PASS",
+        "observed": "Initial 390 px viewport produced 459 px document overflow from sensitivity grid items. Added min-width:0/max-width:100% containment. Real-browser retest: 375 px document width within the 390 px viewport, 293 px chart cards, chart contents scroll within local regions. M16 conflict and keyboard reset also operated at narrow width."
+      },
+      {
+        "name": "Legacy facade baseline, recalculation and recovery",
+        "status": "PASS",
+        "observed": "Baseline 6.037 kN connection component, 0.5783 kN whole-panel seismic action and 45 x 90 mm last fire section. M16 recalculated to 7.15 kN. Zero diameter hid the result with an input error; reset restored the baseline. Desktop and narrow layout had no document horizontal overflow."
+      },
+      {
+        "name": "Legacy fire and racking applicability controls",
+        "status": "PASS",
+        "observed": "Three-face exposure changed the last section to Exhausted. Setting no-openings prerequisite to Not satisfied changed racking applicability to INAPPLICABLE and retained Not established resistance."
+      },
+      {
+        "name": "Legacy individual equation runner",
+        "status": "PASS",
+        "observed": "Selected and ran timber_modes fixture 27 through the actual UI. It displayed governing mode d and per-fastener total 7875.7351942646255 N."
+      },
+      {
+        "name": "Linked report download",
+        "status": "PASS",
+        "observed": "Downloaded the linked eight-page PDF through the browser. SHA256 a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589 exactly matches the released report. Separate PDF visual/source QA is retained."
+      },
+      {
+        "name": "Captured browser console and maths errors",
+        "status": "PASS",
+        "observed": "Captured warning/error logs were empty in the reviewed legacy page and fresh corrected case page. Zero KaTeX error elements in the reviewed pages."
+      }
+    ],
+    "scope": "Selected real-browser visual, keyboard and interaction checks. Separate from numerical source verification, physical validation, product qualification and complete design approval. This is not an exhaustive browser or accessibility certification.",
+    "checked_utc": "2026-10-18T12:47:03.498274+00:00"
   },
   "interpretation": "Numerical agreement, static checks and DOM-stub tests are distinct from physical validation and real-browser review.",
   "artifact_sha256": {
     "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
-    "20261018_v5_TimberJointCase.html": "13b15ee20ed9e561c2e3e197fceefe1cb5efd3cfd4dbc127aff9f02bde7c48d2",
-    "20261018_v5_TimberJointCase.pdf": "03ab6dfc43e3bdddba7b85453bd81764e12fcd5e2a54fa6109dfed5581683f71",
+    "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+    "20261018_v5_TimberJointCase.pdf": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589",
     "20261018_v5_JointCaseResults.json": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c"
   }
 }

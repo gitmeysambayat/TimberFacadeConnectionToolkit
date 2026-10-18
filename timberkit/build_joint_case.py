@@ -28,7 +28,7 @@ def build():
     page = page.replace('__CALC_JS__', assets).replace('__BASE_INPUTS__', json.dumps(case))
     page = page.replace('__BASE_RESULTS__', json.dumps(result)).replace('__KATEX_LICENCE__', licence)
     target = ROOT/(PREFIX+'TimberJointCase.html')
-    target.write_text(page, encoding='utf-8')
+    target.write_text(page, encoding='utf-8', newline='\r\n')
     print(target.name)
 
 

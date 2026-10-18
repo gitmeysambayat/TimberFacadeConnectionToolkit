@@ -1,0 +1,113 @@
+{
+  "revision": "20261018_v5",
+  "status": "PASS",
+  "checked_utc": "2026-10-18T12:47:03.498274+00:00",
+  "browser_surface": "Codex in-app browser",
+  "review_environment": "Owner-private HTTPS preview containing the same three page assets. Final publication destination is GitHub Pages.",
+  "page_sha256": {
+    "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+    "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+    "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+  },
+  "viewports_css_px": [
+    [
+      1280,
+      900
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checks": [
+    {
+      "name": "Portfolio desktop and narrow-screen rendering",
+      "status": "PASS",
+      "observed": "1280 x 900 and 390 x 844 CSS-pixel viewports inspected. No document horizontal overflow. Navigation and worked-case links operated."
+    },
+    {
+      "name": "Worked-case desktop layout and mathematical typography",
+      "status": "PASS",
+      "observed": "Definition, reference calculation, editable scenario, charts, proposed programme and source sections inspected. Eight KaTeX expressions; zero KaTeX error elements."
+    },
+    {
+      "name": "Reference scenario",
+      "status": "PASS",
+      "observed": "Displayed design action 7.050 kN, Johansen resistance 10.026 kN, utilisation 0.703, instantaneous movement 0.557 mm and final movement 1.198 mm."
+    },
+    {
+      "name": "M14 washer detailing conflict",
+      "status": "PASS",
+      "observed": "Both 100 mm loaded ends met the selected 98 mm minimum. Fixed 40 x 4 mm washers failed the selected 42 x 4.2 mm minima. Conflict was visible beside the component result."
+    },
+    {
+      "name": "M16 preset and compatible geometry",
+      "status": "PASS",
+      "observed": "Fixed-detail preset reported both loaded-end and washer conflicts. Changing overlap to 240 mm, first end to 120 mm, washers to 48 x 4.8 mm cleared the selected geometry conflicts; no overall design pass was shown."
+    },
+    {
+      "name": "Permanent-only action envelope",
+      "status": "PASS",
+      "observed": "Gk 6 kN and Qk 0 displayed permanent-only action 8.100 kN, resistance 7.520 kN and utilisation 1.077, with a component-resistance exceedance."
+    },
+    {
+      "name": "Prescribed free play",
+      "status": "PASS",
+      "observed": "The 1.5 mm free-play preset displayed final movement 2.698 mm and an explicit exceedance of the chosen 2.000 mm study budget."
+    },
+    {
+      "name": "Invalid-input hiding and recovery",
+      "status": "PASS",
+      "observed": "Blank and negative bolt diameters hid the current results and disabled the result download. Restore reference recovered the baseline. Fixed reference calculations remained separately labelled."
+    },
+    {
+      "name": "Thinner-member preset and downloaded result",
+      "status": "PASS",
+      "observed": "35 mm outer members displayed utilisation 0.774. Actual browser JSON download independently matched Python evaluate(downloaded inputs): 132 numerical and 83 string values, 31 objects, 11 arrays, zero differences. Download SHA256 44a8fdee3a2c8d3c5770e00f1423a50c71be45dee608ebc0e7345a8f761f3fcd."
+    },
+    {
+      "name": "Keyboard access and visible focus",
+      "status": "PASS",
+      "observed": "Tab advanced between labelled numeric controls. Enter activated Restore reference. Focus outline was blue and approximately 2.7 CSS pixels at the observed scaling."
+    },
+    {
+      "name": "Narrow-screen chart containment after correction",
+      "status": "PASS",
+      "observed": "Initial 390 px viewport produced 459 px document overflow from sensitivity grid items. Added min-width:0/max-width:100% containment. Real-browser retest: 375 px document width within the 390 px viewport, 293 px chart cards, chart contents scroll within local regions. M16 conflict and keyboard reset also operated at narrow width."
+    },
+    {
+      "name": "Legacy facade baseline, recalculation and recovery",
+      "status": "PASS",
+      "observed": "Baseline 6.037 kN connection component, 0.5783 kN whole-panel seismic action and 45 x 90 mm last fire section. M16 recalculated to 7.15 kN. Zero diameter hid the result with an input error; reset restored the baseline. Desktop and narrow layout had no document horizontal overflow."
+    },
+    {
+      "name": "Legacy fire and racking applicability controls",
+      "status": "PASS",
+      "observed": "Three-face exposure changed the last section to Exhausted. Setting no-openings prerequisite to Not satisfied changed racking applicability to INAPPLICABLE and retained Not established resistance."
+    },
+    {
+      "name": "Legacy individual equation runner",
+      "status": "PASS",
+      "observed": "Selected and ran timber_modes fixture 27 through the actual UI. It displayed governing mode d and per-fastener total 7875.7351942646255 N."
+    },
+    {
+      "name": "Linked report download",
+      "status": "PASS",
+      "observed": "Downloaded the linked eight-page PDF through the browser. SHA256 a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589 exactly matches the released report. Separate PDF visual/source QA is retained."
+    },
+    {
+      "name": "Captured browser console and maths errors",
+      "status": "PASS",
+      "observed": "Captured warning/error logs were empty in the reviewed legacy page and fresh corrected case page. Zero KaTeX error elements in the reviewed pages."
+    }
+  ],
+  "scope": "Selected real-browser visual, keyboard and interaction checks. Separate from numerical source verification, physical validation, product qualification and complete design approval. This is not an exhaustive browser or accessibility certification.",
+  "local_capture_files": [
+    "20261018_v6_HomeBrowserQA.png",
+    "20261018_v6_CaseBrowserQA.png",
+    "20261018_v6_MobileHomeQA.png",
+    "20261018_v6_MobileCaseQA.png",
+    "20261018_v6_MobileLegacyQA.png"
+  ],
+  "fixed_issue": "Sensitivity grid min-content width caused narrow-screen document overflow. The corrected page was redeployed privately and reviewed again before GitHub publication."
+}
