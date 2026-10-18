@@ -37,7 +37,7 @@
     "standard_basis": "Selected first-generation EN 1995-1-1; EN 338:2016 C24 reference properties. Full project and National Annex verification absent."
   },
   "browser_ui": "PASS",
-  "publication": "NOT_PERFORMED",
+  "publication": "PASS",
   "not_performed": [
     "Physical testing",
     "Prototype manufacture or assembly",
@@ -336,8 +336,14 @@
     "checked_utc": "2026-10-18T12:47:03.498274+00:00"
   },
   "deployment": {
-    "status": "NOT_PERFORMED",
+    "status": "PASS",
     "record": "20261018_v5_Deployment.json",
-    "reason": "No evidence record exists"
+    "page_sha256": {
+      "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+      "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+      "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+    },
+    "build_commit": "9e331f361df0d0015e3a1fe0f8dc804ffd5fa264",
+    "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/"
   }
 }

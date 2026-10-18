@@ -1,0 +1,184 @@
+{
+  "revision": "20261018_v5",
+  "status": "PASS",
+  "checked_utc": "2026-10-18T12:49:56.288175+00:00",
+  "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/",
+  "repository": "https://github.com/gitmeysambayat/TimberFacadeConnectionToolkit",
+  "build_commit": "9e331f361df0d0015e3a1fe0f8dc804ffd5fa264",
+  "source": {
+    "branch": "main",
+    "path": "/"
+  },
+  "https_enforced": true,
+  "page_sha256": {
+    "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+    "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+    "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+  },
+  "checks": [
+    {
+      "name": "GitHub Pages build identity",
+      "status": "PASS",
+      "observed": "9e331f361df0d0015e3a1fe0f8dc804ffd5fa264"
+    },
+    {
+      "name": "HTTPS enforcement",
+      "status": "PASS"
+    },
+    {
+      "name": "HTTP success and exact GitHub blob identity for linked public assets",
+      "status": "PASS",
+      "assets": [
+        {
+          "name": "20261018_v3_CaseStudyInputs.json",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_CaseStudyInputs.json",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 5563,
+          "sha256": "18284061a11f9def1f61f2166373690602239ce1d7145c3bff4e371324790b6f"
+        },
+        {
+          "name": "20261018_v3_LearningGuide.md",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_LearningGuide.md",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/markdown; charset=utf-8",
+          "bytes": 32218,
+          "sha256": "48ab4edaa0069bbe22d81e98e643133129decafb86fd695b732961b9caf983b0"
+        },
+        {
+          "name": "20261018_v3_TechnicalNote.html",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_TechnicalNote.html",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 816593,
+          "sha256": "ac637a1d7a9ffd5df5923a8066fcd86a34c83446e44a5c669c3fd6582f3b4205"
+        },
+        {
+          "name": "20261018_v3_TestAndAssemblyPlan.html",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_TestAndAssemblyPlan.html",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 13206,
+          "sha256": "e5f01f8f3973e6c1ed6115ae39e18a4be03d27564954f67b9c5c7cce957c36a8"
+        },
+        {
+          "name": "20261018_v3_Toolkit.html",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_Toolkit.html",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 826253,
+          "sha256": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+        },
+        {
+          "name": "20261018_v5_JointCaseInputs.json",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_JointCaseInputs.json",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 432,
+          "sha256": "3a5aee29a88d574e4b75401e7551547581732ba9c7c00c7224c4624907124874"
+        },
+        {
+          "name": "20261018_v5_JointCaseResults.json",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_JointCaseResults.json",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 10441,
+          "sha256": "2b2bed779c2f97a82cf0e8fd1acd6fcd8df9ad5c8535c8f87927c809f10b1d02"
+        },
+        {
+          "name": "20261018_v5_JointCaseVerification.json",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_JointCaseVerification.json",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 16674,
+          "sha256": "cb3c324cf2828afc5d41c8a186fc76e9d8d86f58b96cd3bd1ae8f61ca920b6b4"
+        },
+        {
+          "name": "20261018_v5_ReleaseVerification.json",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_ReleaseVerification.json",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 18437,
+          "sha256": "1d68f940d1f69d18b4a8d1c87e569d831b3b5677dac0e4d9f9ddd82478c2879e"
+        },
+        {
+          "name": "20261018_v5_TimberJointCase.html",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_TimberJointCase.html",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 742016,
+          "sha256": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3"
+        },
+        {
+          "name": "20261018_v5_TimberJointCase.pdf",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_TimberJointCase.pdf",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/pdf",
+          "bytes": 368386,
+          "sha256": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589"
+        },
+        {
+          "name": "README.md",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/README.md",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/markdown; charset=utf-8",
+          "bytes": 8326,
+          "sha256": "1d77dee58d2350df3a05516fc83c484c6aa2a9c6801f6cea32ec4200d90068f3"
+        },
+        {
+          "name": "index.html",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 17212,
+          "sha256": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3"
+        },
+        {
+          "name": "web/20261018_v1_KaTeX_LICENSE.txt",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/web/20261018_v1_KaTeX_LICENSE.txt",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "bytes": 1107,
+          "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+        }
+      ]
+    },
+    {
+      "name": "Live page identity matches the independently reviewed pages",
+      "status": "PASS"
+    },
+    {
+      "name": "Selected post-deployment real-browser interaction recheck",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Actual public GitHub Pages build and selected asset delivery. Numerical/browser checks and physical validation have distinct scopes. The observed build commit is dated evidence; later metadata-only commits need not change the reviewed page assets.",
+  "live_browser_recheck": {
+    "checked_utc": "2026-10-18T12:51:20.046981+00:00",
+    "status": "PASS",
+    "checks": [
+      "Fresh GitHub Pages homepage and worked-case navigation",
+      "Reference result 10.026 kN, utilisation 0.703, final movement 1.198 mm",
+      "M16 fixed-detail warning",
+      "Blank-input result hiding and disabled download",
+      "Reference reset",
+      "390 px viewport with document width 375 px and zero KaTeX errors",
+      "Captured warning/error logs empty"
+    ],
+    "scope": "Selected post-deployment interaction recheck; the separate 16-check browser record provides the fuller pre-publication review."
+  }
+}

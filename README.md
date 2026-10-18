@@ -15,7 +15,7 @@ A reproducible study of bolted timber connection mechanics, with a worked timber
 | [Current release checks](20261018_v5_ReleaseVerification.json) | Numerical, browser and release evidence with their separate scopes |
 | [Browser review](20261018_v5_BrowserQA.json) | Selected desktop, narrow-screen, keyboard and interaction checks for the exact page assets |
 
-The v5 work has passed local checks and selected real-browser review. The stable publication address is the [GitHub Pages toolkit](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/). Deployment is recorded separately from numerical and browser verification.
+The current v5 toolkit is published on [GitHub Pages](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/). The [deployment record](20261018_v5_Deployment.json) identifies the observed content build, HTTPS checks and exact public file comparisons. Numerical, browser and deployment evidence retain their separate scopes.
 
 ## The worked joint
 
