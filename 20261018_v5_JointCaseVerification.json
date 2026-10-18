@@ -57,7 +57,7 @@
   },
   "pdf_review": {
     "output": "20261018_v5_TimberJointCase.pdf",
-    "sha256": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589",
+    "sha256": "739c85a6ee8501d30ba8f880915f02437bb5194500c2658d21d971335e54acfa",
     "pages": 8,
     "source_results": "20261018_v5_JointCaseResults.json",
     "source_results_sha256": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c",
@@ -90,35 +90,28 @@
     ],
     "all_eight_pages_visually_reviewed": true,
     "render_method": "Poppler pdftoppm, 120 dpi; every final page inspected.",
-    "independent_visual_review_pages": [
-      2,
-      4,
-      5,
-      8
-    ],
+    "independent_visual_review_pages": [],
     "rendered_page_sha256": {
-      "page-1.png": "0a6c680d8b423e36be7eebdcdaa318962b6614be525a4f1408b07dd1a8450f13",
-      "page-2.png": "4e4ff3e106393874b422cdeb97bb9c714d7d3dd31988b75d6ccf042fe0d3b6ec",
-      "page-3.png": "5f2f5668e791849b4c82c7715438f5e57d1925d3aad26d5d421c6988a29e4362",
-      "page-4.png": "b23c8710c1e7271decc5a1fd055ce1856d598afa120b23f8d9aca90b19bdd214",
-      "page-5.png": "40350b3fb3de18376619003fcad9e67b91577ea6ba10ada848afb0226968d9bd",
-      "page-6.png": "09393caa983b13379ea4794a689f35279448cd00774d96eb418da8ab9978b47a",
-      "page-7.png": "70576e0a6a3821d9fc52f8e2841ebc57776b000dac11ea323dbb7f06e55d90ea",
-      "page-8.png": "0f33719ee24c47a9d82b9723074bd48a2e3b2ab77f82710af10984a717012279"
+      "page-1.png": "a5887ac59ba1dd0bdfc3bf314a082c47ddbd32badf7eb589da2cde82620ebae2",
+      "page-2.png": "570e0295c5b0d29cfb0e266ed35fc5deff3cba3516854cf73a14336758aaad13",
+      "page-3.png": "7dbed1f658e66ed9f23d49a0925a66073da51761b1ab81e265fd75f2f7874a6a",
+      "page-4.png": "7198628d7b1cff6b638574c2a6fdd30e9a48b495507394a84bc70a966ea1fbe5",
+      "page-5.png": "1884c03e64986a23bea6a1e829bacc9fb6fb2dd35c2b68c8209ab314444297ba",
+      "page-6.png": "bcf1c5a9aa0b40846e3596c3341c22f7b70019a2a2a36a524850ca022f55b0e5",
+      "page-7.png": "d80f895575b3e8f2ed217736fd11621cdc8192383bdd4b5ebd7a40fdf2cffdc7",
+      "page-8.png": "5933db099060af62b04fab8bfb8123ab273bbb8477a0a87c52bdc383210b29ab"
     },
-    "final_correction_review": "Page 8 updated to distinguish 179 calculation/export regression tests from 16 release-evidence checks (195 total), re-rendered and visually inspected. Other seven page renders were byte-identical to the previously inspected revision; full-document font/link/bounds checks repeated. Browser review remains separately evidenced.",
-    "page_renders_changed_by_final_correction": [
-      "page-8.png"
-    ],
+    "final_correction_review": "All eight pages rendered and visually inspected after removal of project dates, revision labels and presentation boilerplate. Numerical formulae, diagrams and source results remain unchanged. Proposed experimental status and engineering limitations retained. Browser and deployment evidence remain separate.",
+    "page_renders_changed_by_final_correction": [],
     "header_pixel_sha256": {
-      "page-1": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-2": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-3": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-4": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-5": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-6": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-7": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
-      "page-8": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f"
+      "page-1": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-2": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-3": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-4": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-5": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-6": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-7": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7",
+      "page-8": "d2afcae6266881f07cc3fd7ec1edaf7854cd2eca8234a4784a5b4a8f92270ec7"
     },
     "header_consistency": "Top 70 pixel strips identical across all eight renders; text and rules present.",
     "embedded_used_text_fonts": {
@@ -210,6 +203,9 @@
         }
       ]
     },
+    "equation_and_diagram_source_identical_to_previous_builder": true,
+    "pdf_author": "Meysam Bayat",
+    "presentation_change": "Removed project dates, revision labels, educational branding and prepared-for/AI/certification boilerplate from displayed report. Replaced change history with reproducibility method and repository resources.",
     "implementation_snapshot": {
       "python_tests": 195,
       "calculation_export_regression_tests": 179,
@@ -222,7 +218,17 @@
     },
     "browser_review": "RECORDED_SEPARATELY_NOT_VERIFIED_BY_PDF_QA",
     "publication": "NOT_ASSESSED_BY_PDF_QA_SEE_SEPARATE_DEPLOYMENT_RECORD",
-    "scope": "Presentation and reproducibility checks for an educational component study; no physical validation or overall connection approval."
+    "scope": "Presentation and reproducibility checks for an educational component study; no physical validation or overall connection approval.",
+    "equation_notation_source_sha256": "73d4d80e9fd05392c8c07926170a09c6109bbf02357dd7a6e69d3c316cf3af00",
+    "calculation_source_sha256": {
+      "timberkit/joint_case.py": "ebb919c2f8011636c334b2ecf5951230368c6841203bbe2800a24888e7f92ac9",
+      "timberkit/connections.py": "591549518707a839221bbe74d780cb1ec9fe2959e49c471ecb07e1e99d81d15d",
+      "timberkit/materials.py": "b23964413f01cc7f85c3c3bfd4d2ab3db715893c25ab09bf418df64373fd91f4",
+      "web/joint_case.mjs": "6955b91ac4ace7759d2b7ed8a8857225aec0d7660129eda5a24e484ee86a7992",
+      "web/connections.js": "2d4b424bf5393c73c849df88ca8ad1b77f8c4aceb935a4b753221b477833a01d",
+      "web/materials_fire_racking.js": "7a6c1b578c0dc8d42fcacba874242ed8b48075dc29512c6ec234e2af504e736d"
+    },
+    "presentation_update": "Removed project-date, revision and preparation branding; engineering content retained."
   },
   "static_pages": [
     {
@@ -246,9 +252,9 @@
     "status": "PASS",
     "record": "20261018_v5_BrowserQA.json",
     "page_sha256": {
-      "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
-      "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
-      "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+      "index.html": "4d9ee11b05787936777b43a5fd1b474f7010f12219e5d66bc408c8d7c510cc2a",
+      "20261018_v5_TimberJointCase.html": "cb31c6da7be9d8a500ae0bb5c00b5d813b89ea39bd4ba1b3df55780280d329eb",
+      "20261018_v3_Toolkit.html": "182ce593d842e777703fdffd06401d42ae894848f07c8e36535546f5cda75001"
     },
     "checks": [
       {
@@ -335,25 +341,40 @@
         "name": "Revised homepage footer wording and layout",
         "status": "PASS",
         "observed": "Live GitHub Pages displayed the shorter project description at 1280 x 900 and 390 x 844 CSS pixels. Footer links remained available; no document horizontal overflow. No numerical or engineering-scope text was changed."
+      },
+      {
+        "name": "Clean presentation, layout and retained interactions",
+        "status": "PASS",
+        "observed": "Current homepage, joint case and facade explorer reviewed at 1280 x 900 and 390 x 844 CSS pixels. Requested project-date/release/preparation labels absent; no document horizontal overflow. Joint baseline 10.026 kN / 0.703 / 1.198 mm; M16 detailing warning, invalid-input hiding and reset operated. Legacy baseline 6.037 kN / 0.5783 kN / 45 x 90 mm and M16 recalculation/reset retained. Captured warning/error logs and KaTeX error elements checked."
+      },
+      {
+        "name": "Clean technical documents and linked report",
+        "status": "PASS",
+        "observed": "Current technical note and proposed test/assembly plan reviewed in the live browser. Project-date/revision/preparation labels absent, source editions and proposed status retained. Updated eight-page PDF visually reviewed in full and delivered with SHA256 739c85a6ee8501d30ba8f880915f02437bb5194500c2658d21d971335e54acfa; separate PDF QA retained."
       }
     ],
     "scope": "Selected real-browser visual, keyboard and interaction checks. Separate from numerical source verification, physical validation, product qualification and complete design approval. This is not an exhaustive browser or accessibility certification.",
-    "checked_utc": "2026-10-18T13:04:34.374101+00:00"
+    "checked_utc": "2026-10-18T13:44:30.156345+00:00"
   },
   "deployment": {
     "status": "PASS",
     "record": "20261018_v5_Deployment.json",
     "page_sha256": {
-      "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
-      "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
-      "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+      "index.html": "4d9ee11b05787936777b43a5fd1b474f7010f12219e5d66bc408c8d7c510cc2a",
+      "20261018_v5_TimberJointCase.html": "cb31c6da7be9d8a500ae0bb5c00b5d813b89ea39bd4ba1b3df55780280d329eb",
+      "20261018_v3_Toolkit.html": "182ce593d842e777703fdffd06401d42ae894848f07c8e36535546f5cda75001"
     },
-    "build_commit": "012a0e7a0e7093969211029bb9953320dbdc664e",
+    "build_commit": "982f353ba2c1162d19faeb023cd3c9d23a0b19f1",
     "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/"
   },
   "homepage_wording_review": {
     "checked_utc": "2026-10-18T13:04:37.462839+00:00",
     "status": "PASS",
     "change": "Footer sentence only; unchanged numerical checks reused from the preceding verified release. No numerical tests rerun for this prose edit."
+  },
+  "presentation_review": {
+    "checked_utc": "2026-10-18T13:44:34.135534+00:00",
+    "status": "PASS",
+    "scope": "Current public presentation and PDF typography only. Equations, inputs and embedded calculation scripts unchanged. Earlier 195 numerical/release-evidence tests and parity checks retained as dated evidence; 22 page-wiring checks rerun after the copy changes."
   }
 }

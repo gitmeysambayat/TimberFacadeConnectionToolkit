@@ -1,13 +1,13 @@
 {
   "revision": "20261018_v5",
   "status": "PASS",
-  "checked_utc": "2026-10-18T13:04:34.374101+00:00",
+  "checked_utc": "2026-10-18T13:44:30.156345+00:00",
   "browser_surface": "Codex in-app browser",
-  "review_environment": "Owner-private HTTPS preview containing the same three page assets. Final publication destination is GitHub Pages.",
+  "review_environment": "Public GitHub Pages, following a source- and document-layout review. Earlier private-preview checks are retained only for unchanged calculation behaviours.",
   "page_sha256": {
-    "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
-    "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
-    "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+    "index.html": "4d9ee11b05787936777b43a5fd1b474f7010f12219e5d66bc408c8d7c510cc2a",
+    "20261018_v5_TimberJointCase.html": "cb31c6da7be9d8a500ae0bb5c00b5d813b89ea39bd4ba1b3df55780280d329eb",
+    "20261018_v3_Toolkit.html": "182ce593d842e777703fdffd06401d42ae894848f07c8e36535546f5cda75001"
   },
   "viewports_css_px": [
     [
@@ -104,6 +104,16 @@
       "name": "Revised homepage footer wording and layout",
       "status": "PASS",
       "observed": "Live GitHub Pages displayed the shorter project description at 1280 x 900 and 390 x 844 CSS pixels. Footer links remained available; no document horizontal overflow. No numerical or engineering-scope text was changed."
+    },
+    {
+      "name": "Clean presentation, layout and retained interactions",
+      "status": "PASS",
+      "observed": "Current homepage, joint case and facade explorer reviewed at 1280 x 900 and 390 x 844 CSS pixels. Requested project-date/release/preparation labels absent; no document horizontal overflow. Joint baseline 10.026 kN / 0.703 / 1.198 mm; M16 detailing warning, invalid-input hiding and reset operated. Legacy baseline 6.037 kN / 0.5783 kN / 45 x 90 mm and M16 recalculation/reset retained. Captured warning/error logs and KaTeX error elements checked."
+    },
+    {
+      "name": "Clean technical documents and linked report",
+      "status": "PASS",
+      "observed": "Current technical note and proposed test/assembly plan reviewed in the live browser. Project-date/revision/preparation labels absent, source editions and proposed status retained. Updated eight-page PDF visually reviewed in full and delivered with SHA256 739c85a6ee8501d30ba8f880915f02437bb5194500c2658d21d971335e54acfa; separate PDF QA retained."
     }
   ],
   "scope": "Selected real-browser visual, keyboard and interaction checks. Separate from numerical source verification, physical validation, product qualification and complete design approval. This is not an exhaustive browser or accessibility certification.",
@@ -128,6 +138,19 @@
         }
       },
       "scope": "Previous calculation and interaction checks are retained because the case pages and numerical code are unchanged. Exact comparison showed the homepage differs only by the stated footer sentence. The changed footer was checked again on the live GitHub Pages site at desktop and narrow widths."
+    },
+    {
+      "checked_utc": "2026-10-18T13:44:30.156345+00:00",
+      "change": "Removed project-date, release/revision, educational branding and preparation boilerplate from current public presentation",
+      "previous_browser_record": {
+        "checked_utc": "2026-10-18T13:04:34.374101+00:00",
+        "page_sha256": {
+          "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
+          "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+          "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+        }
+      },
+      "scope": "Calculation functions, embedded browser scripts, numerical inputs, equations and source editions are unchanged. Their earlier arithmetic/parameter checks are retained. Current page layout and representative interactions were reviewed again, as recorded below."
     }
   ]
 }

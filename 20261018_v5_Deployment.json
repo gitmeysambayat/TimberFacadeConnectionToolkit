@@ -1,25 +1,25 @@
 {
   "revision": "20261018_v5",
   "status": "PASS",
-  "checked_utc": "2026-10-18T13:04:37.257219+00:00",
+  "checked_utc": "2026-10-18T13:44:33.413343+00:00",
   "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/",
   "repository": "https://github.com/gitmeysambayat/TimberFacadeConnectionToolkit",
-  "build_commit": "012a0e7a0e7093969211029bb9953320dbdc664e",
+  "build_commit": "982f353ba2c1162d19faeb023cd3c9d23a0b19f1",
   "source": {
     "branch": "main",
     "path": "/"
   },
   "https_enforced": true,
   "page_sha256": {
-    "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
-    "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
-    "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+    "index.html": "4d9ee11b05787936777b43a5fd1b474f7010f12219e5d66bc408c8d7c510cc2a",
+    "20261018_v5_TimberJointCase.html": "cb31c6da7be9d8a500ae0bb5c00b5d813b89ea39bd4ba1b3df55780280d329eb",
+    "20261018_v3_Toolkit.html": "182ce593d842e777703fdffd06401d42ae894848f07c8e36535546f5cda75001"
   },
   "checks": [
     {
       "name": "GitHub Pages build identity",
       "status": "PASS",
-      "observed": "012a0e7a0e7093969211029bb9953320dbdc664e"
+      "observed": "982f353ba2c1162d19faeb023cd3c9d23a0b19f1"
     },
     {
       "name": "HTTPS enforcement",
@@ -39,13 +39,31 @@
           "sha256": "18284061a11f9def1f61f2166373690602239ce1d7145c3bff4e371324790b6f"
         },
         {
+          "name": "20261018_v3_ConnectionSources.md",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_ConnectionSources.md",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/markdown; charset=utf-8",
+          "bytes": 14300,
+          "sha256": "660c7451f41f0d667db646593cbbe5738f7fac5a159de82863f4a21d49506489"
+        },
+        {
           "name": "20261018_v3_LearningGuide.md",
           "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_LearningGuide.md",
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/markdown; charset=utf-8",
-          "bytes": 32218,
-          "sha256": "48ab4edaa0069bbe22d81e98e643133129decafb86fd695b732961b9caf983b0"
+          "bytes": 31639,
+          "sha256": "14168ee628718234b80c721804db88f2ecfcfcf566a493babb9605062aea5675"
+        },
+        {
+          "name": "20261018_v3_SeismicSourceNotes.md",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v3_SeismicSourceNotes.md",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "text/markdown; charset=utf-8",
+          "bytes": 5152,
+          "sha256": "6e36943432c905af11968c8dcc90c3dfcb6aafb869940f7e296472b23f489100"
         },
         {
           "name": "20261018_v3_TechnicalNote.html",
@@ -53,8 +71,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/html; charset=utf-8",
-          "bytes": 816593,
-          "sha256": "ac637a1d7a9ffd5df5923a8066fcd86a34c83446e44a5c669c3fd6582f3b4205"
+          "bytes": 816159,
+          "sha256": "4fef64c3c7716c31790d25c0c9a84f6940faa20ea995097c8d07a8532063b59f"
         },
         {
           "name": "20261018_v3_TestAndAssemblyPlan.html",
@@ -62,8 +80,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/html; charset=utf-8",
-          "bytes": 13206,
-          "sha256": "e5f01f8f3973e6c1ed6115ae39e18a4be03d27564954f67b9c5c7cce957c36a8"
+          "bytes": 12897,
+          "sha256": "5b142a181a6020382500f6b9d6eab608be2e6f7c48a8424a30540905c23914ec"
         },
         {
           "name": "20261018_v3_Toolkit.html",
@@ -71,8 +89,26 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/html; charset=utf-8",
-          "bytes": 826253,
-          "sha256": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+          "bytes": 826090,
+          "sha256": "182ce593d842e777703fdffd06401d42ae894848f07c8e36535546f5cda75001"
+        },
+        {
+          "name": "20261018_v5_CasePDF_QA.json",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_CasePDF_QA.json",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "bytes": 8778,
+          "sha256": "a050d2ca515c558cd521cfef44bd49c9c6ff3135a6c21a1f0937ee4241e498c3"
+        },
+        {
+          "name": "20261018_v5_CasePreview.png",
+          "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/20261018_v5_CasePreview.png",
+          "status": "PASS",
+          "http_status": 200,
+          "content_type": "image/png",
+          "bytes": 164997,
+          "sha256": "a5887ac59ba1dd0bdfc3bf314a082c47ddbd32badf7eb589da2cde82620ebae2"
         },
         {
           "name": "20261018_v5_JointCaseInputs.json",
@@ -98,8 +134,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "application/json; charset=utf-8",
-          "bytes": 17082,
-          "sha256": "408e6478556b09d954de72a7ddd9e9f2e026748bd1c94258b8057172b86bf649"
+          "bytes": 17695,
+          "sha256": "cbf8c28a433a2ef61ec593ebbbaffa74ba634fc8a2a231b60aba90a0f5e0cb85"
         },
         {
           "name": "20261018_v5_ReleaseVerification.json",
@@ -107,8 +143,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "application/json; charset=utf-8",
-          "bytes": 18845,
-          "sha256": "cc1b6f22f7536984e2283ddd5c8966e18f8a536be932652553f90d9aefda24fb"
+          "bytes": 19553,
+          "sha256": "3336e81b12050848cd8a861c7c383c77a8735e33eb9f4a1cfdc25e6f6010c1f9"
         },
         {
           "name": "20261018_v5_TimberJointCase.html",
@@ -116,8 +152,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/html; charset=utf-8",
-          "bytes": 742016,
-          "sha256": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3"
+          "bytes": 741861,
+          "sha256": "cb31c6da7be9d8a500ae0bb5c00b5d813b89ea39bd4ba1b3df55780280d329eb"
         },
         {
           "name": "20261018_v5_TimberJointCase.pdf",
@@ -125,8 +161,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "application/pdf",
-          "bytes": 368386,
-          "sha256": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589"
+          "bytes": 367850,
+          "sha256": "739c85a6ee8501d30ba8f880915f02437bb5194500c2658d21d971335e54acfa"
         },
         {
           "name": "README.md",
@@ -134,8 +170,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/markdown; charset=utf-8",
-          "bytes": 8387,
-          "sha256": "00be06270ad92475508b8c96038419dcc4b836be7a1ca0f232239603e7f5965f"
+          "bytes": 8357,
+          "sha256": "5c025031b95b515f087175687d35f51fce5d2753f9850119dc5ed850bbde4084"
         },
         {
           "name": "index.html",
@@ -143,8 +179,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/html; charset=utf-8",
-          "bytes": 17149,
-          "sha256": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d"
+          "bytes": 17086,
+          "sha256": "4d9ee11b05787936777b43a5fd1b474f7010f12219e5d66bc408c8d7c510cc2a"
         },
         {
           "name": "web/20261018_v1_KaTeX_LICENSE.txt",
