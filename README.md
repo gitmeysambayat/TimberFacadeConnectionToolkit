@@ -6,13 +6,15 @@ A browser calculator and reproducible Python study of connection mechanics for a
 
 ## Explore the study
 
-- [Browser demo](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/) is the intended deployment URL. Live availability has not yet been independently verified for this release.
+- [Live browser tool](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/).
 - [Source repository](https://github.com/gitmeysambayat/TimberFacadeConnectionToolkit).
 - [Technical note and calculation verification](20261018_v3_TechnicalNote.html).
 - [Worked learning guide](20261018_v3_LearningGuide.md).
 - [Proposed test and assembly plan](20261018_v3_TestAndAssemblyPlan.html).
 
 Open `index.html` locally for the same self-contained calculator. Calculations, plots and mathematical typography run in the browser without a server, external computation or telemetry. Source links require an internet connection when selected. Browser input changes remain in memory until downloaded as JSON.
+
+The [live deployment check](20261018_v3_Deployment.json) records the 18 October 2026 HTTP, content-identity and selected browser checks, including input changes, invalid-input handling, reset, JSON download and the six-page technical note.
 
 ## Engineering scope
 

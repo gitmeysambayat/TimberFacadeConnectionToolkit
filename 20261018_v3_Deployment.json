@@ -1,0 +1,60 @@
+{
+  "verified_at_utc": "2026-10-18T10:19:34.918715+00:00",
+  "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/",
+  "https": true,
+  "http": {
+    "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/",
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 826253,
+    "sha256": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a",
+    "matches_published_index": true
+  },
+  "linked_resources": [
+    {
+      "file": "20261018_v3_TechnicalNote.html",
+      "status": 200,
+      "matches_release": true
+    },
+    {
+      "file": "20261018_v3_TestAndAssemblyPlan.html",
+      "status": 200,
+      "matches_release": true
+    },
+    {
+      "file": "20261018_v3_LearningGuide.md",
+      "status": 200,
+      "matches_release": true
+    },
+    {
+      "file": "README.md",
+      "status": 200,
+      "matches_release": true
+    },
+    {
+      "file": "web/20261018_v1_KaTeX_LICENSE.txt",
+      "status": 200,
+      "matches_release": true
+    }
+  ],
+  "browser": {
+    "baseline_connection_component_kN": 6.037,
+    "baseline_seismic_force_kN": 0.5783,
+    "baseline_fire_effective_section_mm": [
+      45,
+      90
+    ],
+    "three_svg_plots": true,
+    "katex_errors": 0,
+    "console_error_logs": 0,
+    "diameter_16_result_kN": 7.15,
+    "zero_diameter_rejected_and_results_hidden": true,
+    "reset_restored_baseline": true,
+    "input_download": "20261018_v3_EditedCaseInputs.json",
+    "download_matches_source_case": true,
+    "technical_note_pages": 6,
+    "technical_note_overflow": false,
+    "technical_note_katex_errors": 0
+  },
+  "scope": "Selected live browser and deployment checks. Separate from numerical verification and physical validation."
+}
