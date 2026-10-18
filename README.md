@@ -12,6 +12,23 @@ A browser calculator and reproducible Python study of connection mechanics for a
 - [Worked learning guide](20261018_v3_LearningGuide.md).
 - [Proposed test and assembly plan](20261018_v3_TestAndAssemblyPlan.html).
 
+## Worked timber joint, version 4
+
+The [complete worked component study](20261018_v4_TimberJointCase.html) defines one symmetric, single-bolt double-shear timber lap joint. It adds a traceable load path, all Johansen modes, nominal net-section tension, explicit end/edge and hole/washer geometry, instantaneous and selected final slip with connection creep, and controlled parameter comparisons. The page includes a proposed nine-specimen screening programme and manufacturing/disassembly evidence plan. It is self-contained and works offline.
+
+These are calculated component results and proposed work. No physical timber experiment, prototype, calibrated FE model, connection fire qualification or life-cycle assessment has been completed. Read the unresolved checks beside the results. The original v3 deployment record does not establish deployment of this new case.
+
+Reproduce the new case from this checkout with:
+
+```text
+python -m timberkit.joint_case
+python -m pytest -q
+node tests/joint_case_parity.mjs
+python -m timberkit.build_joint_case
+```
+
+The new dated files use `20261018_v4_`; the original façade study retains its v3 prefix. See the [case verification record](20261018_v4_JointCaseVerification.json) for the checks actually performed.
+
 Open `index.html` locally for the same self-contained calculator. Calculations, plots and mathematical typography run in the browser without a server, external computation or telemetry. Source links require an internet connection when selected. Browser input changes remain in memory until downloaded as JSON.
 
 The [live deployment check](20261018_v3_Deployment.json) records the 18 October 2026 HTTP, content-identity and selected browser checks, including input changes, invalid-input handling, reset, JSON download and the six-page technical note.

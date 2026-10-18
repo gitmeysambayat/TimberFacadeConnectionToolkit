@@ -1,0 +1,68 @@
+{
+  "revision": "20261018_v4",
+  "checked_utc": "2026-10-18T11:24:11.611473+00:00",
+  "scope": "One-station symmetric timber lap joint; educational component results, no overall design pass",
+  "python_tests": {
+    "status": "PASS",
+    "total": 165,
+    "new_joint_case_tests": 48,
+    "command": "python -m pytest -q"
+  },
+  "new_case_parity": {
+    "status": "PASS",
+    "vectors": 40,
+    "numeric_comparisons": 3696,
+    "classification_comparisons": 1381,
+    "expected_rejections": 12,
+    "max_relative_difference": 0,
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-08,
+    "failures": [],
+    "scope": "Python/browser numerical parity only; separate from direct-source-equation tests and physical validation."
+  },
+  "page_wiring": {
+    "status": "PASS",
+    "checks": 10,
+    "method": "Node VM with DOM stub; excludes real-browser layout, focus, KaTeX rendering and console checks",
+    "browser_preview": "NOT_COMPLETED_LOCAL_FILE_URL_BLOCKED",
+    "page": "20261018_v4_TimberJointCase.html"
+  },
+  "independent_source_arithmetic": {
+    "status": "PASS",
+    "method": "Separate direct evaluation of source equations, plus Decimal reference fixtures independent of toolkit helpers",
+    "baseline_Rd_kN": 10.026122504722023,
+    "baseline_instantaneous_slip_mm": 0.5566890297077447,
+    "baseline_final_elastic_slip_mm": 1.1979947919310665,
+    "permanent_only_check": "Independent review reproduced both permanent-only Johansen and net-section failures"
+  },
+  "source_review": {
+    "SW1_2022": {
+      "url": "https://www.swedishwood.com/siteassets/5-publikationer/pdfer/sw-design-of-timber-structures-vol1-2022.pdf",
+      "pages": "157-159",
+      "sha256": "618e1417ab47696ea20a8d3dc11ecb6b4868a767c4d2f77ccc93b19836fe6f4c"
+    },
+    "standard_basis": "Selected first-generation EN 1995-1-1; EN 338:2016 C24 reference properties. Full project and National Annex verification absent."
+  },
+  "browser_ui": "NOT_COMPLETED_LOCAL_FILE_PROTOCOL_BLOCKED_BY_BROWSER_SECURITY_POLICY",
+  "publication": "LOCAL_REVIEW_REVISION_NOT_DEPLOYED",
+  "not_performed": [
+    "Physical testing",
+    "Prototype manufacture or assembly",
+    "Calibrated timber FE model",
+    "Connection/assembly fire qualification",
+    "Life-cycle assessment",
+    "Candidate personal study verification"
+  ],
+  "static_checks": {
+    "local_links": "PASS",
+    "source_files_scanned": 16,
+    "private_application_identifiers": "NONE_FOUND",
+    "em_dashes": "NONE_FOUND"
+  },
+  "pdf_review": {
+    "pages": 8,
+    "all_pages_visually_inspected": true,
+    "sha256": "df1ee6daae0ea274a40af543cdd6cb8ea74a6f85bc3c3dc5f48763252e6882bc",
+    "scope": "Static PDF layout only; excludes browser rendering"
+  }
+}

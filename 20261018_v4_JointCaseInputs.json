@@ -1,0 +1,20 @@
+{
+  "centre_thickness_mm": 100.0,
+  "side_thickness_mm": 50.0,
+  "width_mm": 200.0,
+  "overlap_mm": 200.0,
+  "end_distance_mm": 100.0,
+  "diameter_mm": 12.0,
+  "hole_diameter_mm": 13.0,
+  "washer_diameter_mm": 40.0,
+  "washer_thickness_mm": 4.0,
+  "Gk_N": 3000.0,
+  "Qk_N": 2000.0,
+  "gamma_G": 1.35,
+  "gamma_Q": 1.5,
+  "kmod": 0.8,
+  "gamma_M": 1.3,
+  "additional_freeplay_mm": 0.0,
+  "study_slip_budget_mm": 2.0,
+  "psi2": 0.3
+}
