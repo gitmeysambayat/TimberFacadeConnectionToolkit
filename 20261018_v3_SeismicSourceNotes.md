@@ -1,10 +1,10 @@
-# Module E source and verification notes
+# Seismic actions and movement sources
 
-Created 18 October 2026. Educational study, not for design. AI-assisted implementation. These notes record source inspection and implementation checks, separate from physical validation.
+Source provisions and implementation checks for non-structural seismic actions, drift and connection movement.
 
 ## Primary source actually opened
 
-[BS EN 1998-1:2004, English text of EN 1998-1:2004](https://www.phd.eng.br/wp-content/uploads/2015/02/en.1998.1.2004.pdf). Downloaded and opened locally; printed pages 67, 68, 76 and 77 were extracted, rendered and visually inspected. The 231-page PDF has SHA-256 `9c073425aa311fb5dcd8dc210281b9310de74cb2f3f66b46edd16b65385317e9` and 6,635,962 bytes. Accessed 18 October 2026. This is the explicitly requested 2004 edition, not a claim that it is the current design standard in any jurisdiction.
+[BS EN 1998-1:2004, English text of EN 1998-1:2004](https://www.phd.eng.br/wp-content/uploads/2015/02/en.1998.1.2004.pdf). Downloaded and opened locally; printed pages 67, 68, 76 and 77 were extracted, rendered and visually inspected. The 231-page PDF has SHA-256 `9c073425aa311fb5dcd8dc210281b9310de74cb2f3f66b46edd16b65385317e9` and 6,635,962 bytes. Accessed 18 October 2026. The calculations use this 2004 edition; the applicable project edition requires confirmation.
 
 | Implemented quantity | Exact clause/equation | Scope or qualification |
 |---|---|---|

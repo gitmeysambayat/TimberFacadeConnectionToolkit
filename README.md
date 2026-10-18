@@ -2,7 +2,7 @@
 
 A reproducible study of bolted timber connection mechanics, with a worked timber-to-timber joint and a separate façade component explorer. Inspect the load path, resistance modes, detailing, movement and the assumptions behind each calculation.
 
-**Educational component calculations.** The code and documentation were developed with AI assistance. No physical testing, product qualification or complete connection/façade design approval is reported.
+The tools implement selected analytical checks for the stated joint configurations. Each result identifies its assumptions, source equations and mechanisms requiring further assessment.
 
 ## Explore
 
@@ -15,7 +15,7 @@ A reproducible study of bolted timber connection mechanics, with a worked timber
 | [Current release checks](20261018_v5_ReleaseVerification.json) | Numerical, browser and release evidence with their separate scopes |
 | [Browser review](20261018_v5_BrowserQA.json) | Selected desktop, narrow-screen, keyboard and interaction checks for the exact page assets |
 
-The current v5 toolkit is published on [GitHub Pages](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/). The [deployment record](20261018_v5_Deployment.json) identifies the observed content build, HTTPS checks and exact public file comparisons. Numerical, browser and deployment evidence retain their separate scopes.
+The toolkit is published on [GitHub Pages](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/). The [deployment record](20261018_v5_Deployment.json) identifies the observed content build, HTTPS checks and exact public file comparisons. Numerical, browser and deployment evidence retain their separate scopes.
 
 ## The worked joint
 

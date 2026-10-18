@@ -1,6 +1,6 @@
 # Connection module sources and verification
 
-18 October 2026, public version 3. Connection module source record. Educational calculations, not for design. The Python and JavaScript were developed with AI assistance. The source-inspection record below distinguishes opened sources, arithmetic benchmarks and implementation checks. It does not report physical testing.
+Source provisions, arithmetic benchmarks and implementation checks for the connection module.
 
 ## Sources actually opened
 
@@ -10,7 +10,7 @@
 | SW3_2022 | [Swedish Wood, Design of timber structures, Volume 3, edition 3:2022](https://www.svenskttra.se/siteassets/5-publikationer/pdfer/sw-design-of-timber-structures-vol3-2022.pdf) | Opened as a 60-page PDF, downloaded and rendered. Examples 4.1 and 4.2, printed pp20-24, were read, with numerical equations on pp21, 23 and 24 visually inspected. |
 | EC5_PUBLIC_2004_A1 | [Public copy of BS EN 1995-1-1:2004+A1:2008](https://www.phd.eng.br/wp-content/uploads/2015/12/en.1995.1.1.2004.pdf) | Opened as a 123-page public copy of the original standard. Used to cross-check clause/equation references, the optional steel multiplier in 7.1(3), ultimate slip modulus in 2.2.2(2), plate classification and the distinction between nail spacings and end/edge distances. This host is not an official current standards subscription. |
 
-The public copy includes A1:2008. The UK handbook's dowel-spacing table specifically cites A2:2014. The implementation follows the requested EN 1995-1-1:2004 framework with those source amendments explicitly identified. It does not verify a current national adoption, a complete National Annex, a product ETA or a later Eurocode edition. The UK handbook itself explains that it is an educational publication and that original standards are required for practical design.
+The public copy includes A1:2008. The UK handbook's dowel-spacing table specifically cites A2:2014. The implementation uses the EN 1995-1-1:2004 framework with those source amendments explicitly identified. Current national adoption, the applicable National Annex, product ETA and later Eurocode provisions require project-specific review. The handbook refers practical design to the original standards.
 
 Source PDFs are linked rather than redistributed. The formula sources remain accessible through the links above.
 
@@ -61,11 +61,11 @@ The thick-plate condition in the opened original English standard is hole-diamet
 
 **National parameters:** both reproductions use material partial factor 1.3 for connections. Example4.1 uses modification factor 0.65 for medium-duration loading/service class3, and Example4.2 uses 0.8 for medium-duration loading/service class2. These match the corresponding recommended values in the opened handbook. No different National Annex factor has been invented. They differ from the illustrative case-study short-term factor 0.9 because the stated duration/service classes differ, not because the toolkit silently changes national choices.
 
-## Requested hand values and illustrative bracket
+## Reference hand calculations and illustrative bracket
 
 For characteristic density 350 kg/m³, mean density 420 kg/m³, diameter 12 mm and tensile strength 400 MPa, the unrounded results are:
 
-- Parallel embedment 25.256 MPa, which rounds to the requested 25.3 MPa.
+- Parallel embedment 25.256 MPa, which rounds to 25.3 MPa.
 - Yield moment 76,745.423 N mm, which rounds to 76.7 kN mm.
 - Base service slip modulus 4,490.838 N/mm, which rounds to 4.49 kN/mm. Base ultimate modulus is 2,993.892 N/mm, which rounds to 2.99 kN/mm.
 - Five bolts at spacing seven diameters give effective number 3.646378, which rounds to 3.65.

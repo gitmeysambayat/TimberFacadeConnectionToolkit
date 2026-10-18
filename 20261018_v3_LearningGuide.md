@@ -1,26 +1,20 @@
-# Timber façade connection toolkit learning guide
+# Timber façade connection calculation guide
 
-18 October 2026, version 3. **Educational independent study, not for design.**
+Equations, worked examples and implementation references for timber connections, non-structural seismic actions, member section loss in fire and conditional panel racking. The [proposed test and assembly plan](20261018_v3_TestAndAssemblyPlan.html) describes the measurements needed to investigate the wider connection detail.
 
-The software and this guide were developed with AI assistance. The exercises explain the stated component calculations and their boundaries. Development verification is recorded separately from any learner's own calculations. No laboratory test, physical validation or completed façade design is represented.
+## Worked-check workflow
 
-The additional proposed test and assembly plan is `20261018_v3_TestAndAssemblyPlan.html`. No test or prototype work in that plan has been performed.
-
-## A two-hour first learning session
-
-| Time | Work | Evidence to leave |
-|---|---|---|
-| 0-10 min | Read README, scope and missing inputs in the case JSON. Identify why this is not a complete façade design. | A list of three blocked checks and their missing inputs. |
-| 10-25 min | Draw the 6 mm steel plate, 45 mm timber thickness, M12 bolt and one shear plane. Work Exercise 1 without Python. | Your handwritten embedment, yield moment and governing-mode calculation. |
-| 25-40 min | Open `connections.py`; trace the same result through `embedment_strength`, `yield_moment` and `steel_to_timber_modes`. Change the load-to-grain angle to 90°. | A saved comparison explaining the changed embedment strength. |
-| 40-55 min | Work Exercise 2. Distinguish force demand, reduced drift and full reversing slot travel. | Three separate answers with units. |
-| 55-70 min | Work Exercise 3. Draw which face reduces the 145 mm depth. Then consider losing material from the 45 mm width instead. | An annotated cross-section explaining why orientation matters. |
-| 70-85 min | Read Method A. Calculate the width factor and identify the unverified applicability flags. | An explanation of why a numerical formula result is not usable wall capacity. |
-| 85-100 min | Run the tests and Python/JavaScript parity check using README instructions. Open the published-example records and their assumptions. | Date, command, actual result and one test you can explain. |
-| 100-110 min | Answer the 20 questions without looking at the key. Revisit incorrect answers. | Your score and corrected reasoning. |
-| 110-120 min | Explain the governing connection mode, seismic demand and fire scope without the software. | Your own wording and remaining learning priorities. |
-
-This first session establishes an overview. It does not establish timber-design competence or readiness to approve a connection.
+| Calculation step | Record |
+|---|---|
+| Read README, scope and missing inputs in the case JSON. Identify why this is not a complete façade design. | Three blocked checks and their missing inputs. |
+| Draw the 6 mm steel plate, 45 mm timber thickness, M12 bolt and one shear plane. Work Exercise 1 without Python. | Embedment, yield moment and governing-mode calculations. |
+| Open `connections.py`; trace the same result through `embedment_strength`, `yield_moment` and `steel_to_timber_modes`. Change the load-to-grain angle to 90°. | A comparison explaining the changed embedment strength. |
+| Work Exercise 2. Distinguish force demand, reduced drift and full reversing slot travel. | Three separate answers with units. |
+| Work Exercise 3. Draw which face reduces the 145 mm depth. Then consider losing material from the 45 mm width instead. | An annotated cross-section explaining why orientation matters. |
+| Read Method A. Calculate the width factor and identify the unverified applicability flags. | The conditions required before interpreting a formula result as wall resistance. |
+| Run the tests and Python/JavaScript parity check using README instructions. Open the published-example records and their assumptions. | Command, result and the purpose of each check. |
+| Answer the 20 questions and compare with the answer key. | Corrected reasoning for any differences. |
+| Explain the governing connection mode, seismic demand and fire scope. | The applicable assumptions and unresolved checks. |
 
 ## 1. Read the model in the right order
 
@@ -276,6 +270,6 @@ Choose one answer each before reading the key.
 
 1 **B**, the embedment formula uses rho,k. 2 **A**, the stiffness formula uses rho,m. 3 **C**, equality at 0.5d belongs to thin. 4 **B**, thickness and fit both enter the stated classification. 5 **A**, multiply by shear planes once only. 6 **C**, neither cap nor axial contribution can be assumed away. 7 **B**, effective number is a calculation model, not a revised drawing. 8 **C**, absence of evidence is not a dimensional pass. 9 **A**, the exposed factor is the specified stiffness option. 10 **A**, area times weight intensity is 2.025 kN. 11 **A**, the squared difference in the denominator vanishes. 12 **B**, the table does not qualify the actual detail. 13 **C**, the inequality compares dr times nu. 14 **B**, 12 + 15 + 15 = 42 mm. 15 **B**, effective loss includes both contributions. 16 **A**, 10/20 = 0.5. 17 **C**, member geometry is not assembly fire classification. 18 **A**, the method defines b0 = h/2; h/4 is a separate applicability bound. 19 **B**, load path and applicability remain required. 20 **A**, parity is implementation agreement, not independent physical validation.
 
-## Record independent learning checks
+## Record independent calculation checks
 
-The optional `learner_verification_records` array in the case-study JSON can hold a date, equation or function, calculation method and observed difference. Keep these learner records separate from the supplied development verification. An empty array is metadata, not a calculation input.
+The optional `learner_verification_records` array in the case-study JSON can hold a date, equation or function, calculation method and observed difference. These records are separate from the supplied implementation checks. An empty array is metadata, not a calculation input.
