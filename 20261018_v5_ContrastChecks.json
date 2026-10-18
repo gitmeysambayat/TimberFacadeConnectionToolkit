@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "method": "WCAG sRGB contrast calculation for selected authored colour pairs; not a rendered accessibility audit",
+  "pairs": [
+    {
+      "name": "Primary text",
+      "foreground": "#142b45",
+      "background": "#ffffff",
+      "contrast_ratio": 14.37,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "name": "Muted text",
+      "foreground": "#566779",
+      "background": "#ffffff",
+      "contrast_ratio": 5.81,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "name": "Blue link",
+      "foreground": "#245fc5",
+      "background": "#ffffff",
+      "contrast_ratio": 5.97,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "name": "Teal label",
+      "foreground": "#117c83",
+      "background": "#ffffff",
+      "contrast_ratio": 4.96,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "name": "Button text",
+      "foreground": "#ffffff",
+      "background": "#142b45",
+      "contrast_ratio": 14.37,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "name": "Warning text",
+      "foreground": "#8a5b12",
+      "background": "#fff8ec",
+      "contrast_ratio": 5.55,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "name": "Failure text",
+      "foreground": "#a32b32",
+      "background": "#ffffff",
+      "contrast_ratio": 7.12,
+      "minimum": 4.5,
+      "status": "PASS"
+    }
+  ]
+}

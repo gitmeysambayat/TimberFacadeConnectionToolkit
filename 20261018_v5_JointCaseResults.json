@@ -1,0 +1,295 @@
+{
+  "status": "EDUCATIONAL_COMPONENT_RESULTS_NO_OVERALL_DESIGN_PASS",
+  "inputs": {
+    "centre_thickness_mm": 100.0,
+    "side_thickness_mm": 50.0,
+    "width_mm": 200.0,
+    "overlap_mm": 200.0,
+    "end_distance_mm": 100.0,
+    "diameter_mm": 12.0,
+    "hole_diameter_mm": 13.0,
+    "washer_diameter_mm": 40.0,
+    "washer_thickness_mm": 4.0,
+    "Gk_N": 3000.0,
+    "Qk_N": 2000.0,
+    "gamma_G": 1.35,
+    "gamma_Q": 1.5,
+    "kmod": 0.8,
+    "gamma_M": 1.3,
+    "additional_freeplay_mm": 0.0,
+    "study_slip_budget_mm": 2.0,
+    "psi2": 0.3
+  },
+  "assumptions": {
+    "material_grade": "C24",
+    "bolt_grade": "8.8 (specified study assumption; product certification not verified)",
+    "bolt_fu_k_MPa": 800.0,
+    "service_class": 2,
+    "load_duration": "medium baseline; kmod overrides are numerical scenarios",
+    "load_to_grain_angle_deg": 0.0,
+    "number_of_fasteners": 1,
+    "shear_planes": 2,
+    "size_factor_kh": 1.0,
+    "rope_effect_N": 0.0,
+    "washer_locations": "One washer under the head and one under the nut",
+    "action_basis": "Selected illustrative 1.35Gk + 1.5Qk; Nser = Gk + Qk. Not a verified project combination.",
+    "slip_basis": "Post-seating instantaneous elastic increment; two identical shear-plane springs in parallel.",
+    "freeplay_basis": "Additional total assembly movement is an explicit scenario input, not inferred from hole diameter.",
+    "study_budget_basis": "Chosen 2 mm study budget is not a Eurocode limit or product acceptance criterion.",
+    "final_slip_basis": "First-generation action-wise creep estimate, identical SC2 timbers: connection kdef = 2 x member kdef. psi2 is a selected scenario, not a verified occupancy category.",
+    "duration_envelope_basis": "Combined action uses the explicit kmod input; permanent-only action is separately checked with first-generation SC2 kmod = 0.6."
+  },
+  "material": {
+    "grade": "C24",
+    "material_type": "solid_timber",
+    "fm_k_MPa": 24.0,
+    "ft_0_k_MPa": 14.5,
+    "ft_90_k_MPa": 0.4,
+    "fc_0_k_MPa": 21.0,
+    "fc_90_k_MPa": 2.5,
+    "fv_k_MPa": 4.0,
+    "E_0_mean_MPa": 11000.0,
+    "E_0_05_MPa": 7400.0,
+    "E_90_mean_MPa": 370.0,
+    "G_mean_MPa": 690.0,
+    "rho_k_kg_m3": 350.0,
+    "rho_mean_kg_m3": 420.0,
+    "source": "Swedish Wood/TDUK UK Vol.2 1:2022, Table 3.3 p.10; EN 338:2016; EN 1995-1-1 3.2",
+    "source_url": "https://www.universityofgalway.ie/media/timberengineeringresearchgroup/Design-of-timber-structures_Volume2_Rules-and-formulas-according-to-Eurocode-5.pdf",
+    "status": "REFERENCE_PROPERTIES_NOT_PRODUCT_VERIFIED"
+  },
+  "actions": {
+    "NEd_N": 7050.0,
+    "Nser_N": 5000.0,
+    "per_plane_design_N": 3525.0,
+    "per_plane_service_N": 2500.0,
+    "centre_design_N": 7050.0,
+    "one_side_design_N": 3525.0
+  },
+  "embedment": {
+    "fh0_k": 25.256,
+    "fh_k": 25.256,
+    "k90": 1.53,
+    "status": "VERIFIED_FORMULA",
+    "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+    "source_ids": [
+      "SW2_2022_UK"
+    ],
+    "warnings": []
+  },
+  "yield_moment": {
+    "My_Rk": 153490.8465738723,
+    "coefficient": 0.3,
+    "status": "VERIFIED_FORMULA",
+    "clause": "EN1995-1-1 8.5.1.1(1), Eq8.30; SW2 p44",
+    "source_ids": [
+      "SW2_2022_UK"
+    ],
+    "warnings": []
+  },
+  "johansen": {
+    "modes": {
+      "g": {
+        "johansen_N": 15153.599999999999,
+        "rope_N": 0.0,
+        "Fv_Rk_N": 15153.599999999999
+      },
+      "h": {
+        "johansen_N": 15153.599999999999,
+        "rope_N": 0.0,
+        "Fv_Rk_N": 15153.599999999999
+      },
+      "j": {
+        "johansen_N": 8146.224535086643,
+        "rope_N": 0.0,
+        "Fv_Rk_N": 8146.224535086643
+      },
+      "k": {
+        "johansen_N": 11092.43739764858,
+        "rope_N": 0.0,
+        "Fv_Rk_N": 11092.43739764858
+      }
+    },
+    "governing_mode": "j",
+    "Fv_Rk_N": 8146.224535086643,
+    "shear_planes": 2,
+    "per_fastener_total_N": 16292.449070173287,
+    "rope_cap_fraction": 0.25,
+    "status": "VERIFIED_FORMULA",
+    "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+    "source_ids": [
+      "SW2_2022_UK"
+    ],
+    "warnings": [
+      "Rope effect neglected; axial resistance is not established"
+    ]
+  },
+  "design_capacity": {
+    "Fv_Rd_per_plane_N": 5013.061252361012,
+    "group_design_capacity_N": 10026.122504722023,
+    "n_eff": 1.0,
+    "shear_planes": 2,
+    "kmod": 0.8,
+    "gamma_M": 1.3,
+    "status": "PASS_IN_SCOPE",
+    "clause": "EN1995-1-1 2.4.1, 8.1; SW2 p36",
+    "source_ids": [
+      "SW2_2022_UK"
+    ],
+    "warnings": [],
+    "utilisation": 0.703163161698817
+  },
+  "geometry": {
+    "status": "PASS_IN_SCOPE",
+    "checks": {
+      "left_loaded_end": {
+        "actual_mm": 100.0,
+        "required_mm": 84.0,
+        "comparison": "minimum",
+        "status": "PASS",
+        "clause": "EN1995-1-1 8.5.1.1 Table8.4, parallel grain; SW2 p45"
+      },
+      "right_loaded_end": {
+        "actual_mm": 100.0,
+        "required_mm": 84.0,
+        "comparison": "minimum",
+        "status": "PASS",
+        "clause": "EN1995-1-1 8.5.1.1 Table8.4, parallel grain; SW2 p45"
+      },
+      "both_centred_edges": {
+        "actual_mm": 100.0,
+        "required_mm": 36.0,
+        "comparison": "minimum",
+        "status": "PASS",
+        "clause": "EN1995-1-1 8.5.1.1 Table8.4, parallel grain; SW2 p45"
+      },
+      "timber_hole_diameter": {
+        "actual_mm": 13.0,
+        "required_mm": 13.0,
+        "comparison": "maximum",
+        "status": "PASS",
+        "clause": "EN1995-1-1 10.4.3(1)-(2)"
+      },
+      "washer_diameter": {
+        "actual_mm": 40.0,
+        "required_mm": 36.0,
+        "comparison": "minimum",
+        "status": "PASS",
+        "clause": "EN1995-1-1 10.4.3(1)-(2)"
+      },
+      "washer_thickness": {
+        "actual_mm": 4.0,
+        "required_mm": 3.5999999999999996,
+        "comparison": "minimum",
+        "status": "PASS",
+        "clause": "EN1995-1-1 10.4.3(1)-(2)"
+      },
+      "washer_face_footprint": {
+        "actual_mm": 20.0,
+        "required_mm": 100.0,
+        "comparison": "maximum",
+        "status": "PASS",
+        "clause": "Elementary footprint geometry; full bearing resistance remains unverified"
+      },
+      "washer_outer_diameter_exceeds_hole": {
+        "actual_mm": 40.0,
+        "required_mm": 13.0,
+        "comparison": "strictly_greater",
+        "status": "PASS",
+        "clause": "Elementary ring geometry; washer hole/product geometry remains unverified"
+      }
+    },
+    "opposite_end_mm": 100.0,
+    "centred_edge_mm": 100.0,
+    "inter_fastener_spacing": "NOT_APPLICABLE_SINGLE_BOLT",
+    "bearing_resistance_status": "UNVERIFIED"
+  },
+  "net_tension": {
+    "centre": {
+      "net_area_mm2": 18700.0,
+      "demand_N": 7050.0,
+      "stress_MPa": 0.3770053475935829,
+      "design_resistance_N": 166861.53846153847,
+      "utilisation": 0.042250599299280836,
+      "status": "PASS_IN_SCOPE"
+    },
+    "one_side": {
+      "net_area_mm2": 9350.0,
+      "demand_N": 3525.0,
+      "stress_MPa": 0.3770053475935829,
+      "design_resistance_N": 83430.76923076923,
+      "utilisation": 0.042250599299280836,
+      "status": "PASS_IN_SCOPE"
+    },
+    "ft_0_k_MPa": 14.5,
+    "ft_0_d_MPa": 8.923076923076923,
+    "size_factor_kh": 1.0,
+    "clause": "EN1995-1-1 5.1(2), 6.1.2; SW2 p22. Net area at one hole, no favourable size increase."
+  },
+  "load_duration_checks": {
+    "combined": {
+      "NEd_N": 7050.0,
+      "kmod": 0.8,
+      "Rd_N": 10026.122504722023,
+      "utilisation": 0.703163161698817,
+      "net_tension_utilisation": 0.042250599299280836,
+      "centre_net_tension_utilisation": 0.042250599299280836,
+      "one_side_net_tension_utilisation": 0.042250599299280836,
+      "status": "PASS_IN_SCOPE"
+    },
+    "permanent_only": {
+      "NEd_N": 4050.0000000000005,
+      "kmod": 0.6,
+      "Rd_N": 7519.591878541516,
+      "utilisation": 0.5385930600246259,
+      "ft_0_d_MPa": 6.692307692307692,
+      "net_tension_utilisation": 0.03236216116540661,
+      "centre_net_tension_utilisation": 0.03236216116540661,
+      "one_side_net_tension_utilisation": 0.03236216116540661,
+      "status": "PASS_IN_SCOPE"
+    },
+    "governing_case": "combined",
+    "status": "PASS_IN_SCOPE",
+    "clause": "EN1995-1-1 3.1.3/Table3.1; SW2 pp7-8. Selected illustrative G and G+Q envelope, not a complete project combination set."
+  },
+  "slip": {
+    "Kser_per_plane_N_per_mm": 4490.837553081424,
+    "Kjoint_N_per_mm": 8981.675106162847,
+    "postseating_elastic_mm": 0.5566890297077447,
+    "additional_freeplay_mm": 0.0,
+    "illustrative_total_mm": 0.5566890297077447,
+    "study_budget_mm": 2.0,
+    "study_budget_utilisation": 0.27834451485387235,
+    "study_budget_status": "WITHIN_CHOSEN_STUDY_BUDGET",
+    "clearance_model_status": "NOT_MODELLED_INPUT_SCENARIO_ONLY",
+    "member_kdef": 0.8,
+    "connection_kdef": 1.6,
+    "psi2": 0.3,
+    "final_G_component_mm": 0.8684348863440816,
+    "final_Q_component_mm": 0.32955990558698484,
+    "final_elastic_mm": 1.1979947919310665,
+    "final_total_mm": 1.1979947919310665,
+    "final_budget_utilisation": 0.5989973959655333,
+    "final_budget_status": "WITHIN_CHOSEN_STUDY_BUDGET",
+    "final_deformation_status": "FIRST_GENERATION_CREEP_ESTIMATE_NOT_TEST_VALIDATED",
+    "clause": "EN1995-1-1 7.1 Table7.1, 2.3.2.2(3), 2.2.3(5); SW2 p33, SW1 pp157-159 Table5.4/Eq5.86. Parallel-spring equilibrium."
+  },
+  "component_resistance_and_geometry_status": "NO_FAILURE_IN_CHECKED_COMPONENTS",
+  "failed_component_checks": [],
+  "unresolved_checks": [
+    "Applicable current standard edition, National Annex and project action combinations",
+    "Product and timber grading declarations; bolt yield moment and shank/thread position",
+    "Bolt steel resistance, washer bearing resistance and full bearing in the assembled detail",
+    "Brittle splitting, row shear and end tear-out; minimum distances alone are not verification",
+    "Restraint against rotation: a single bolt has no established moment-resisting function",
+    "Fabrication tolerances, seating/freeplay, tightening, moisture movement, corrosion and durability",
+    "Applicability and physical validation of the long-term creep estimate; reversals, cyclic degradation and repeated assembly",
+    "Fire resistance of the connection and the complete timber/envelope assembly",
+    "Physical prototype testing, model calibration and manufacturing/assembly trials"
+  ],
+  "source_ids": [
+    "SW2_2022_UK",
+    "EC5_PUBLIC_2004_A1",
+    "SW1_2022"
+  ]
+}

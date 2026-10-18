@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 22,
+  "method": "Node VM with DOM stub; excludes real-browser layout, focus, KaTeX rendering and console checks",
+  "browser_preview": "NOT_COMPLETED_LOCAL_FILE_URL_BLOCKED",
+  "page": "20261018_v5_TimberJointCase.html"
+}

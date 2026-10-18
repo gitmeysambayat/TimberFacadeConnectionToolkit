@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "vectors": 42,
+  "numeric_comparisons": 3960,
+  "classification_comparisons": 1480,
+  "expected_rejections": 12,
+  "max_relative_difference": 0,
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-8,
+  "failures": [],
+  "scope": "Python/browser numerical parity only; separate from direct-source-equation tests and physical validation."
+}

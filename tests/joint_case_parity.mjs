@@ -5,7 +5,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const prefix=process.env.TFK_OUTPUT_PREFIX||'20261018_v4_';
+const prefix=process.env.TFK_OUTPUT_PREFIX||'20261018_v5_';
 if(!/^[0-9]{8}_v[1-9][0-9]*_$/.test(prefix))throw Error('Invalid output prefix');
 for(const name of ['connections.js','materials_fire_racking.js','joint_case.mjs'])
  vm.runInThisContext(fs.readFileSync(path.join(root,'web',name),'utf8'),{filename:name});

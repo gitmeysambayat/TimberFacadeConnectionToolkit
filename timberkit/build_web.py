@@ -48,7 +48,8 @@ def build_tool():
     notice=(ROOT/'web/20261018_v1_KaTeX_LICENSE.txt').read_text(encoding='utf-8')
     html=html.replace('</html>', '<!-- KaTeX third-party licence\n'+notice+'\n--></html>')
     assert '\u2014' not in html
-    for name in (PREFIX+'Toolkit.html','index.html'):(ROOT/name).write_text(html,encoding='utf-8')
+    # The portfolio builder owns index.html; never overwrite it here.
+    (ROOT/(PREFIX+'Toolkit.html')).write_text(html,encoding='utf-8')
     return len(html)
 
 

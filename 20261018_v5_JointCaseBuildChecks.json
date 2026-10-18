@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": 7,
+  "details": [
+    "Custom exported input rejected before fixed-prose page write",
+    "Inconsistent reference result rejected before page write",
+    "Canonical page rebuild is byte-for-byte deterministic",
+    "No duplicate static HTML identifiers",
+    "Every local section link resolves to an existing static identifier",
+    "All standalone calculation and KaTeX assets are embedded",
+    "Skip link, visible focus, reduced-motion rule and section navigation present"
+  ],
+  "page": "20261018_v5_TimberJointCase.html",
+  "sha256": "13b15ee20ed9e561c2e3e197fceefe1cb5efd3cfd4dbc127aff9f02bde7c48d2",
+  "method": "Python builder guard tests and static HTML parsing; no rendered browser verification"
+}

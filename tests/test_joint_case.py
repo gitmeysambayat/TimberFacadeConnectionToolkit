@@ -5,6 +5,7 @@ than asking the existing connection module for its own expected values.
 These are implementation checks, not validation against physical tests.
 """
 from decimal import Decimal, localcontext
+import json
 import math
 import pytest
 
@@ -232,3 +233,60 @@ def test_default_data_and_outputs_do_not_share_mutable_state():
 
 def test_public_evaluate_accepts_case_object_and_operation_form():
     assert case.evaluate({}) == case.evaluate("case", {}) == case.calculate_case()
+
+
+@pytest.mark.parametrize("relative_increment", [0, 1e-15, 1e-12])
+def test_duration_envelope_uses_same_boundary_classification_as_its_components(relative_increment):
+    base = case.calculate_case()
+    rd = base["design_capacity"]["group_design_capacity_N"]
+    r = case.calculate_case(dict(Gk_N=0, Qk_N=rd / 1.5 * (1 + relative_increment)))
+    assert r["load_duration_checks"]["combined"]["status"] == r["design_capacity"]["status"]
+    assert r["load_duration_checks"]["status"] == r["design_capacity"]["status"]
+    assert bool(r["failed_component_checks"]) == (r["design_capacity"]["status"] == "FAIL")
+
+
+def test_export_uses_changed_dated_inputs_and_matching_baseline_fixture(tmp_path):
+    prefix = "20261018_v5_"
+    source = tmp_path / (prefix + "JointCaseInputs.json")
+    source.write_text(json.dumps(dict(Gk_N=4000, Qk_N=1000)), encoding="utf-8")
+    case.export_case(tmp_path, prefix=prefix)
+    exported = json.loads((tmp_path / (prefix + "JointCaseResults.json")).read_text())
+    saved_inputs = json.loads(source.read_text())
+    vectors = json.loads((tmp_path / (prefix + "JointCaseParityVectors.json")).read_text())
+    assert exported["actions"]["NEd_N"] == 6900
+    assert exported["inputs"] == saved_inputs == vectors[0]["inputs"]
+    assert vectors[0]["expected"] == exported
+    # Canonical comparisons carry their explicit inputs rather than silently
+    # changing to the edited baseline.
+    sensitivity = json.loads((tmp_path / (prefix + "JointCaseSensitivity.json")).read_text())
+    assert sensitivity[0]["result"]["inputs"]["Gk_N"] == 3000
+
+
+def test_export_explicit_input_path_and_defaults_only_when_dated_source_absent(tmp_path):
+    record = case.export_case(tmp_path)
+    assert record["baseline_source"] == "canonical defaults"
+    source = tmp_path / "alternate.json"
+    source.write_text(json.dumps(dict(Gk_N=0, Qk_N=1000)), encoding="utf-8")
+    record = case.export_case(tmp_path, input_path=source)
+    result = json.loads((tmp_path / (case.PREFIX + "JointCaseResults.json")).read_text())
+    assert result["actions"]["NEd_N"] == 1500
+    assert record["baseline_source"] == source.name
+
+
+@pytest.mark.parametrize("bad_input", ["{not json", '{"diameter_mm": 0}', "[]", '{"Gk_N": NaN}'])
+def test_invalid_input_file_never_overwrites_previous_exports(tmp_path, bad_input):
+    prefix = "20261018_v5_"
+    case.export_case(tmp_path, prefix=prefix)
+    source = tmp_path / (prefix + "JointCaseInputs.json")
+    source.write_text(bad_input, encoding="utf-8")
+    previous = {p.name: p.read_bytes() for p in tmp_path.iterdir()}
+    with pytest.raises(ValueError):
+        case.export_case(tmp_path, prefix=prefix)
+    assert {p.name: p.read_bytes() for p in tmp_path.iterdir()} == previous
+
+
+@pytest.mark.parametrize("prefix", ["../20261018_v5_", "20261018_v0_", "20261018_v5_/", "20261018_v5_\\", "v5_"])
+def test_output_prefix_cannot_escape_output_directory(tmp_path, prefix):
+    with pytest.raises(ValueError):
+        case.export_case(tmp_path, prefix=prefix)
+    assert list(tmp_path.iterdir()) == []

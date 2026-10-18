@@ -105,16 +105,20 @@ function calculateCase(inputs){
  permanentSideU=(permanentNed/2)/(nets.one_side.net_area_mm2*permanentFt),
  combinedMax=Math.max(capacity.utilisation,nets.centre.utilisation,nets.one_side.utilisation),
  permanentMax=Math.max(permanentNed/permanentRd,permanentCentreU,permanentSideU),
+ // Match the component comparisons, including their 1e-10 N round-off
+ // tolerance, instead of contradicting them with a strict ratio > 1.
+ combinedFailed=capacity.status==="FAIL"||[nets.centre,nets.one_side].some(v=>v.status==="FAIL"),
+ permanentFailed=permanentMax>1,
  durationChecks={combined:{NEd_N:ned,kmod:p.kmod,Rd_N:resistance,utilisation:capacity.utilisation,
  net_tension_utilisation:Math.max(nets.centre.utilisation,nets.one_side.utilisation),
  centre_net_tension_utilisation:nets.centre.utilisation,one_side_net_tension_utilisation:nets.one_side.utilisation,
- status:combinedMax>1?"FAIL":"PASS_IN_SCOPE"},
+ status:combinedFailed?"FAIL":"PASS_IN_SCOPE"},
  permanent_only:{NEd_N:permanentNed,kmod:permanentKmod,Rd_N:permanentRd,utilisation:permanentNed/permanentRd,
  ft_0_d_MPa:permanentFt,net_tension_utilisation:Math.max(permanentCentreU,permanentSideU),
  centre_net_tension_utilisation:permanentCentreU,one_side_net_tension_utilisation:permanentSideU,
- status:permanentMax>1?"FAIL":"PASS_IN_SCOPE"},
+ status:permanentFailed?"FAIL":"PASS_IN_SCOPE"},
  governing_case:permanentMax>combinedMax?"permanent_only":"combined",
- status:Math.max(combinedMax,permanentMax)>1?"FAIL":"PASS_IN_SCOPE",
+ status:combinedFailed||permanentFailed?"FAIL":"PASS_IN_SCOPE",
  clause:"EN1995-1-1 3.1.3/Table3.1; SW2 pp7-8. Selected illustrative G and G+Q envelope, not a complete project combination set."};
  const perPlane=root.TFKConnections.evaluate("slip_modulus",{rho_m:material.rho_mean_kg_m3,d,fastener:"bolt",steel_factor:1}),
  kjoint=2*perPlane.Kser_N_per_mm,elastic=nser/kjoint,total=elastic+p.additional_freeplay_mm,

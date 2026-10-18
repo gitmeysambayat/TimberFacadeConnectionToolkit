@@ -1,97 +1,102 @@
-# Timber façade connection toolkit
+# Timber connection mechanics
 
-A browser calculator and reproducible Python study of connection mechanics for an illustrative timber-frame façade renovation element. Explore local fastener resistance, non-structural seismic demand, isolated-member section loss in fire and a conditional panel-racking subcheck.
+A reproducible study of bolted timber connection mechanics, with a worked timber-to-timber joint and a separate façade component explorer. Inspect the load path, resistance modes, detailing, movement and the assumptions behind each calculation.
 
-**Educational component calculations, not for design, approval or certification.** The calculator reports required inputs and component limitations, without an overall façade design pass. The code and documentation were developed with AI assistance.
+**Educational component calculations.** The code and documentation were developed with AI assistance. No physical testing, product qualification or complete connection/façade design approval is reported.
 
-## Explore the study
+## Explore
 
-- [Live browser tool](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/).
-- [Source repository](https://github.com/gitmeysambayat/TimberFacadeConnectionToolkit).
-- [Technical note and calculation verification](20261018_v3_TechnicalNote.html).
-- [Worked learning guide](20261018_v3_LearningGuide.md).
-- [Proposed test and assembly plan](20261018_v3_TestAndAssemblyPlan.html).
+| Resource | What it provides |
+|---|---|
+| [Portfolio homepage](index.html) | An overview of the two studies and their evidence |
+| [Worked timber joint](20261018_v5_TimberJointCase.html) | Interactive reference case, component checks, movement and controlled comparisons |
+| [Technical report](20261018_v5_TimberJointCase.pdf) | Joint definition, source-linked calculations, sensitivity and proposed laboratory work |
+| [Façade component explorer](20261018_v3_Toolkit.html) | Original timber-to-steel fixing illustration, seismic demand, isolated-member fire section loss and conditional panel racking |
+| [Current release checks](20261018_v5_ReleaseVerification.json) | Actual check results, counts and outstanding browser review |
 
-## Worked timber joint, version 4
+The v5 work is a **local review build**. The [existing live site](https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/) and its v3 deployment record do not establish deployment of v5.
 
-The [complete worked component study](20261018_v4_TimberJointCase.html) defines one symmetric, single-bolt double-shear timber lap joint. It adds a traceable load path, all Johansen modes, nominal net-section tension, explicit end/edge and hole/washer geometry, instantaneous and selected final slip with connection creep, and controlled parameter comparisons. The page includes a proposed nine-specimen screening programme and manufacturing/disassembly evidence plan. It is self-contained and works offline.
+## The worked joint
 
-These are calculated component results and proposed work. No physical timber experiment, prototype, calibrated FE model, connection fire qualification or life-cycle assessment has been completed. Read the unresolved checks beside the results. The original v3 deployment record does not establish deployment of this new case.
+One bolt transfers parallel-to-grain tension from a central C24 timber member to two identical outer members. Both shear planes act in parallel. The worked calculation retains all double-shear Johansen modes, selected combined/permanent-only action-duration checks, nominal net-section tension, loaded-end and edge distances, hole and washer geometry, and instantaneous/final slip under a stated linear creep model.
 
-Reproduce the new case from this checkout with:
+The case also defines a **proposed** nine-specimen screening programme. No specimen fabrication, experiment, cyclic calibration or assembly trial has been completed.
 
-```text
-python -m timberkit.joint_case
-python -m pytest -q
-node tests/joint_case_parity.mjs
-python -m timberkit.build_joint_case
-```
+Two different diameter comparisons are retained deliberately. The exported engineering sensitivity record scales washer dimensions to maintain the selected washer geometry; the interactive fixed-detail comparison holds the baseline washers and end distances constant to expose incompatible detailing. Each comparison states its basis. Neither is an optimisation algorithm or an experimental dataset.
 
-The new dated files use `20261018_v4_`; the original façade study retains its v3 prefix. See the [case verification record](20261018_v4_JointCaseVerification.json) for the checks actually performed.
+## Reproduce
 
-Open `index.html` locally for the same self-contained calculator. Calculations, plots and mathematical typography run in the browser without a server, external computation or telemetry. Source links require an internet connection when selected. Browser input changes remain in memory until downloaded as JSON.
-
-The [live deployment check](20261018_v3_Deployment.json) records the 18 October 2026 HTTP, content-identity and selected browser checks, including input changes, invalid-input handling, reset, JSON download and the six-page technical note.
-
-## Engineering scope
-
-| Component | Implemented study | Principal boundary |
-|---|---|---|
-| Timber connections | Embedment, fastener yield, implemented Johansen configurations, bounded rope effects, effective fastener count, spacing and slip modulus | Component expressions do not establish bracket, timber brittle-failure, steel or concrete-anchor resistance |
-| Seismic demand | Non-structural element force, damage-limitation drift inequality and a separate sliding-slot geometry illustration | Actual classification, periods, bracket load shares and load paths are required |
-| Fire | Reduced cross-section of an isolated unprotected rectangular timber member, with explicit exposed faces | Protected/insulated assemblies, member stability, connections and fire classification remain outside scope |
-| Racking | Simplified Method A sheathed-panel expression, gated by explicit applicability inputs | Complete wall, hold-down, stud, sheathing and out-of-plane assessment is separate |
-| Reference materials | Source-labelled C24 and GL24h properties, modification/deformation factors and recommended partial factors | Reference tables do not replace product declarations or applicable National Annex choices |
-
-The illustrative panel is 2,700 × 1,250 mm. Its two-bolt subcase uses M12 bolts, a 6 mm steel plate and 45 mm assumed timber penetration. These are study inputs, not a fabrication drawing, measurements or verified site data. Gravity, in-plane and out-of-plane force transfer need a justified three-dimensional load path. Missing end/edge geometry, factored actions, load distribution, anchor ETA information, fire actions and racking prerequisites remain required.
-
-The method follows explicitly cited first-generation EN 1995/EN 1998 provisions, including identified amendments where used. It does not implement the 2025 Eurocode 5 editions or assert current UK National Annex compliance. Confirm the standards framework for the actual project. Source scope, exact clauses and observed limitations are recorded in the [connection sources](20261018_v3_ConnectionSources.md), [seismic notes](20261018_v3_SeismicSourceNotes.md) and [materials/fire/racking source register](20261018_v3_MaterialsFireRackingSources.json).
-
-## Reproduce the calculations
-
-Use Python 3.11 or later with the pinned dependencies in `requirements.txt`. Node.js is required only for the browser-module parity comparison.
+Use Python 3.11 or later and Node.js. From this repository root:
 
 ```text
 python -m venv .venv
 ```
 
-Activate the environment using the appropriate command for your shell, then run:
+Activate the environment for your shell, then install the pinned dependencies:
 
 ```text
 python -m pip install -r requirements.txt
-python -m pytest -q
-python -m timberkit.study
-node tests/parity.cjs
-python -m timberkit.build_web
-python -m timberkit.build_note
 ```
 
-Run commands from the repository root. The study exports full-precision results, parameter sweeps, plots, benchmark comparisons and Python fixtures. The parity command compares those fixtures with the actual browser calculation modules before both page builders embed the current results.
+Rebuild and check the current joint study and homepage:
 
-The current prefix is `20261018_v3_`. For a new dated revision, set `TFK_OUTPUT_PREFIX` to a value such as `YYYYMMDD_vN_` and copy the reviewed case inputs to the matching prefix before regenerating. Reusing a prefix regenerates that revision; it does not create a new version automatically. Static page builders preserve the stated equations and scope text, so review that text when changing a study beyond its documented illustrative case.
+```text
+python -m timberkit.joint_case
+node tests/joint_case_parity.mjs
+python -m timberkit.build_joint_case
+python -m timberkit.build_home
+python -m pytest -q
+node tests/joint_case_page.cjs
+python -m timberkit.check_release
+```
 
-The editable source case is [20261018_v3_CaseStudyInputs.json](20261018_v3_CaseStudyInputs.json). The browser embeds its release snapshot. Metadata schema version 2 uses `learner_verification_records` for optional independent learning records. That array does not change any engineering calculation.
+The release checker also replays the legacy parity fixtures, checks local page dependencies and writes the dated verification record. It reports real-browser review as outstanding. A passing numerical or DOM-stub check does not establish browser rendering.
+
+The current joint prefix is `20261018_v5_`. The exporter reads the matching saved input JSON when it exists, or uses canonical defaults if it is absent. To export a different allowed input case:
+
+```text
+python -m timberkit.joint_case --inputs path/to/inputs.json
+```
+
+The fixed worked report contains a specific reference geometry and method examples. Its builder rejects noncanonical reference inputs rather than combining a changed case with stale printed equations or dimensions. Use the interactive controls for supported parameter studies; a different published worked case requires a corresponding report/template revision. Exported input/result records are engineering data and do not execute code.
+
+A different dated prefix can be selected with the `TFK_OUTPUT_PREFIX` environment variable. Setting the prefix does not duplicate source documents or PDF reports automatically. The original façade study retains its v3 inputs and fixtures. Its page builder writes the dated component-explorer page; `timberkit.build_home` owns `index.html`.
 
 ## Verification and interpretation
 
-This release passed **117 Python tests, 20 rounded-hand/published-example comparisons and 155 Python/browser parity vectors**. The [verification summary](20261018_v3_VerificationSummary.json) distinguishes these checks; the [benchmark CSV](20261018_v3_Verification.csv) records reference values, differences, tolerances and source clauses.
+Current execution counts and results are in the [release record](20261018_v5_ReleaseVerification.json). The checks answer different questions:
 
-The parity run compared 973 numeric quantities, 33 Boolean values and 231 classification strings. Its relative tolerance is 0.1 per cent, with a 10⁻⁹ absolute tolerance for numerical zero. The largest observed relative difference was approximately 3.56 × 10⁻¹⁶. Parity establishes agreement between the implementations for those fixtures. Hand arithmetic and published examples provide separate reference comparisons.
+- Direct source-equation and rounded-hand/published-example fixtures check selected arithmetic against independent references.
+- Automated tests cover numerical behaviour, missing inputs, units, geometry boundaries and invalid data.
+- Python/browser parity compares two implementations of the same selected formulae; it is not an independent scientific validation.
+- DOM-stub checks exercise page wiring without a real browser. They do not establish layout, keyboard behaviour or KaTeX rendering.
+- PDF visual review checks the delivered document. It does not validate the engineering model.
 
-No physical testing, experimental validation, calibrated cyclic model, prototype assembly or product approval is reported. The [test and assembly plan](20261018_v3_TestAndAssemblyPlan.html) describes proposed work only. Reference calculations and automated tests do not qualify the illustrative detail for construction.
+The retained data key `final_elastic_mm` denotes calculated final slip including the selected creep increment and excluding prescribed free play. Public labels use “calculated final slip” to avoid implying a fully elastic response.
 
-## Repository contents
+Legacy identifiers such as `VERIFIED_FORMULA` and `PASS_IN_SCOPE` describe an implemented expression or bounded subcheck. They do not mean that a product, whole connection, current-code compliance or physical behaviour has been verified.
 
-- `timberkit/`: Python component calculations, study exporter and static page builders.
-- `web/`: browser calculation modules, interface code and retained KaTeX distribution records.
-- `tests/`: numerical, boundary and missing-input tests, plus cross-language parity runner.
-- `20261018_v3_*`: current inputs, calculated results, figures, source records, guides and standalone HTML.
-- `index.html`: the same calculator as the dated toolkit page, suitable for static hosting.
+The original façade release separately records [20 rounded-hand/published-example comparisons](20261018_v3_Verification.csv) and [155 legacy parity vectors](20261018_v3_ParityResults.json). These are not additional physical tests and should not be combined with the joint-case counts without identifying their scope.
+
+## Engineering scope
+
+The method uses explicitly cited first-generation EN 1995/EN 1998 provisions and reference material tables, including the identified amendments and EN 338:2016 C24 properties. It does not implement the second-generation 2025 Eurocode 5 provisions or establish a project's applicable National Annex choices.
+
+The worked joint does **not** establish brittle timber splitting/shear-out/block failure, bolt steel or washer bearing resistance, installation quality, durability, fatigue, repeated assembly, connection fire performance or a complete façade load path. The façade tools retain their separate applicability and missing-input gates. Isolated-member section loss is not an assembly fire rating, and geometric material-volume comparisons are not a life-cycle assessment.
+
+Read the case report and the original [connection source record](20261018_v3_ConnectionSources.md), [seismic source notes](20261018_v3_SeismicSourceNotes.md) and [material/fire/racking register](20261018_v3_MaterialsFireRackingSources.json) for exact clauses, source URLs and limits.
+
+## Repository guide
+
+- `timberkit/`: calculation modules, data exporter, builders and release checker.
+- `web/`: page templates, browser calculations and retained mathematical-typography assets.
+- `tests/`: independent reference, boundary, parity and page-wiring checks.
+- `20261018_v5_*`: current worked-joint inputs, results, report and local release evidence.
+- `20261018_v3_*` and `20261018_v4_*`: preserved earlier artifacts; follow the current links above for the review build.
+- `index.html`: portfolio landing page for static hosting.
 
 ## Provenance and rights
 
-Sources are cited by title, edition, clause or table and URL. The material/fire/racking register also retains inspected-source SHA-256 fingerprints. Public source PDFs are linked, rather than redistributed as repository assets. Published-example reproductions retain the original geometry, property and rounding assumptions; they are separate from the illustrative façade subcase.
+Source PDFs are linked rather than redistributed. Retain the underlying engineering source citation and exact repository revision when reusing a calculation. The report distinguishes prescribed inputs, calculated results and proposed experimental work.
 
-KaTeX 0.19.0 supplies browser-only mathematical typography under its [retained MIT licence](web/20261018_v1_KaTeX_LICENSE.txt). Its [distribution manifest](web/20261018_v1_KaTeXManifest.json) records source URLs and integrity checks. The notice is also embedded in each standalone HTML file that includes KaTeX. KaTeX asset filenames retain the original acquisition version for traceability.
-
-No project-wide redistribution licence has been assigned. The third-party KaTeX licence applies to that dependency. Cite the repository and exact release/commit when referring to this educational study, and cite the underlying engineering sources for the provisions used.
+KaTeX 0.19.0 supplies mathematical typography under its [retained MIT licence](web/20261018_v1_KaTeX_LICENSE.txt). That notice is embedded in standalone pages containing KaTeX. No project-wide redistribution licence has been assigned; the KaTeX licence applies to that dependency.

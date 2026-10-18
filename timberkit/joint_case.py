@@ -14,6 +14,7 @@ Run ``python -m timberkit.joint_case`` for dated JSON/CSV calculations.
 from __future__ import annotations
 
 from copy import deepcopy
+import argparse
 import csv
 import json
 import math
@@ -23,9 +24,14 @@ import re
 
 from . import connections, materials
 
-PREFIX = os.environ.get("TFK_OUTPUT_PREFIX", "20261018_v4_")
-if not re.fullmatch(r"[0-9]{8}_v[1-9][0-9]*_", PREFIX):
-    raise ValueError("TFK_OUTPUT_PREFIX must look like YYYYMMDD_v4_")
+def checked_prefix(value):
+    """Keep a release prefix a filename component, never a path."""
+    if not isinstance(value, str) or not re.fullmatch(r"[0-9]{8}_v[1-9][0-9]*_", value):
+        raise ValueError("TFK_OUTPUT_PREFIX must look like YYYYMMDD_vN_")
+    return value
+
+
+PREFIX = checked_prefix(os.environ.get("TFK_OUTPUT_PREFIX", "20261018_v5_"))
 
 STATUS = "EDUCATIONAL_COMPONENT_RESULTS_NO_OVERALL_DESIGN_PASS"
 SOURCES = {
@@ -229,18 +235,24 @@ def _calculate_case(inputs=None):
     permanent_side_u = (permanent_ned / 2) / (nets["one_side"]["net_area_mm2"] * permanent_ft_d)
     combined_max = max(capacity["utilisation"], nets["centre"]["utilisation"], nets["one_side"]["utilisation"])
     permanent_max = max(permanent_ned / permanent_rd, permanent_centre_u, permanent_side_u)
+    # Reuse each component's stated numerical comparison. A strict ratio > 1
+    # would otherwise contradict a component that is within its 1e-10 N
+    # floating-point comparison tolerance at the exact resistance boundary.
+    combined_failed = capacity["status"] == "FAIL" or any(
+        nets[member]["status"] == "FAIL" for member in ("centre", "one_side"))
+    permanent_failed = permanent_max > 1
     duration_checks = dict(
         combined=dict(NEd_N=ned, kmod=p["kmod"], Rd_N=resistance, utilisation=capacity["utilisation"],
             net_tension_utilisation=max(nets["centre"]["utilisation"], nets["one_side"]["utilisation"]),
             centre_net_tension_utilisation=nets["centre"]["utilisation"], one_side_net_tension_utilisation=nets["one_side"]["utilisation"],
-            status="FAIL" if combined_max > 1 else "PASS_IN_SCOPE"),
+            status="FAIL" if combined_failed else "PASS_IN_SCOPE"),
         permanent_only=dict(NEd_N=permanent_ned, kmod=permanent_kmod, Rd_N=permanent_rd,
             utilisation=permanent_ned / permanent_rd, ft_0_d_MPa=permanent_ft_d,
             net_tension_utilisation=max(permanent_centre_u, permanent_side_u),
             centre_net_tension_utilisation=permanent_centre_u, one_side_net_tension_utilisation=permanent_side_u,
-            status="FAIL" if permanent_max > 1 else "PASS_IN_SCOPE"),
+            status="FAIL" if permanent_failed else "PASS_IN_SCOPE"),
         governing_case="permanent_only" if permanent_max > combined_max else "combined",
-        status="FAIL" if max(combined_max, permanent_max) > 1 else "PASS_IN_SCOPE",
+        status="FAIL" if combined_failed or permanent_failed else "PASS_IN_SCOPE",
         clause="EN1995-1-1 3.1.3/Table3.1; SW2 pp7-8. Selected illustrative G and G+Q envelope, not a complete project combination set.")
     per_plane = connections.slip_modulus(material["rho_mean_kg_m3"], d, "bolt", steel_factor=1)
     kjoint = 2 * per_plane["Kser_N_per_mm"]
@@ -327,10 +339,15 @@ def evaluate(operation=None, inputs=None):
     return calculate_case(inputs)
 
 
-def parity_cases():
-    cases = [dict(operation="case", inputs={}, expected=calculate_case())]
+def parity_cases(baseline_inputs=None):
+    baseline = _checked_inputs(baseline_inputs)
+    cases = [dict(operation="case", inputs=baseline, expected=calculate_case(baseline))]
     cases.extend(dict(operation="case", inputs=c["result"]["inputs"], expected=c["result"])
                  for c in sensitivity_cases())
+    reference_rd = calculate_case()["design_capacity"]["group_design_capacity_N"]
+    for relative_increment in (1e-15, 1e-12):
+        args = dict(Gk_N=0, Qk_N=reference_rd / 1.5 * (1 + relative_increment))
+        cases.append(dict(operation="case", inputs=args, expected=calculate_case(args)))
     for args in (dict(end_distance_mm=50), dict(hole_diameter_mm=14), dict(washer_thickness_mm=2),
                  dict(Qk_N=20000), dict(width_mm=40, hole_diameter_mm=13),
                  dict(diameter_mm=16, hole_diameter_mm=17), dict(Gk_N=0, Qk_N=0),
@@ -343,13 +360,32 @@ def parity_cases():
     return cases
 
 
-def main():
-    root = Path(__file__).resolve().parents[1]
-    result = calculate_case()
+def export_case(root, *, prefix=PREFIX, input_path=None):
+    """Export a validated baseline and canonical sensitivity study.
+
+    An existing dated input file is the baseline source unless an explicit
+    source is supplied. All input parsing and calculations finish before any
+    artefact is written, so invalid input cannot replace earlier results.
+    Sensitivities remain the defined canonical study, with their complete
+    input records, rather than silently changing the published comparison.
+    """
+    root = Path(root)
+    prefix = checked_prefix(prefix)
+    source = Path(input_path) if input_path is not None else root / (prefix + "JointCaseInputs.json")
+    has_source = input_path is not None or source.exists()
+    if has_source:
+        try:
+            supplied = json.loads(source.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, json.JSONDecodeError) as error:
+            raise ValueError(f"Cannot read case input JSON: {source}") from error
+        inputs = _checked_inputs(supplied)
+    else:
+        inputs = default_inputs()
+    result = calculate_case(inputs)
     alternatives = sensitivity_cases()
-    for suffix, data in (("JointCaseInputs.json", default_inputs()), ("JointCaseResults.json", result),
-                         ("JointCaseSensitivity.json", alternatives), ("JointCaseParityVectors.json", parity_cases())):
-        (root / (PREFIX + suffix)).write_text(json.dumps(data, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    for suffix, data in (("JointCaseInputs.json", inputs), ("JointCaseResults.json", result),
+                         ("JointCaseSensitivity.json", alternatives), ("JointCaseParityVectors.json", parity_cases(inputs))):
+        (root / (prefix + suffix)).write_text(json.dumps(data, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     rows = []
     for case in alternatives:
         r = case["result"]
@@ -360,13 +396,24 @@ def main():
             final_elastic_slip_mm=r["slip"]["final_elastic_mm"], final_total_scenario_mm=r["slip"]["final_total_mm"],
             governing_duration_case=r["load_duration_checks"]["governing_case"],
             geometry_status=r["geometry"]["status"], component_status=r["component_resistance_and_geometry_status"]))
-    with (root / (PREFIX + "JointCaseSensitivity.csv")).open("w", newline="", encoding="utf-8") as handle:
+    with (root / (prefix + "JointCaseSensitivity.csv")).open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
         writer.writeheader()
         writer.writerows(rows)
-    print(json.dumps(dict(status=result["status"], governing_mode=result["johansen"]["governing_mode"],
+    return dict(status=result["status"], governing_mode=result["johansen"]["governing_mode"],
         design_resistance_N=result["design_capacity"]["group_design_capacity_N"],
-        postseating_elastic_mm=result["slip"]["postseating_elastic_mm"], alternatives=len(alternatives)), indent=2))
+        postseating_elastic_mm=result["slip"]["postseating_elastic_mm"], alternatives=len(alternatives),
+        baseline_source=source.name if has_source else "canonical defaults",
+        sensitivity_basis="Canonical default study; each scenario includes its own inputs")
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--inputs", type=Path,
+        help="Input JSON path; otherwise use the existing dated input file, or canonical defaults if absent")
+    args = parser.parse_args(argv)
+    root = Path(__file__).resolve().parents[1]
+    print(json.dumps(export_case(root, input_path=args.inputs), indent=2))
 
 
 if __name__ == "__main__":

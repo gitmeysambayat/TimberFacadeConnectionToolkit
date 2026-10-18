@@ -1,0 +1,337 @@
+{
+  "revision": "20261018_v5",
+  "checked_utc": "2026-10-18T12:18:16.094348+00:00",
+  "status": "LOCAL_CHECKS_PASSED_BROWSER_REVIEW_REQUIRED",
+  "publication": "NOT_PERFORMED",
+  "commands": [
+    {
+      "check": "Joint export from saved inputs",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "check": "Python tests",
+      "status": "PASS",
+      "exit_code": 0,
+      "passed": 179
+    },
+    {
+      "check": "Joint calculation parity",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "check": "Legacy calculation parity",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "check": "Worked-case page build",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "check": "Portfolio page build",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "check": "Page-wiring tests with DOM stub",
+      "status": "PASS",
+      "exit_code": 0
+    }
+  ],
+  "joint_calculation_parity": {
+    "status": "PASS",
+    "vectors": 42,
+    "numeric_comparisons": 3960,
+    "classification_comparisons": 1480,
+    "expected_rejections": 12,
+    "max_relative_difference": 0,
+    "relative_tolerance": 1e-10,
+    "absolute_tolerance": 1e-08,
+    "failures": [],
+    "scope": "Python/browser numerical parity only; separate from direct-source-equation tests and physical validation."
+  },
+  "legacy_calculation_parity": {
+    "status": "PASS",
+    "vectors": 155,
+    "numeric_comparisons": 973,
+    "Boolean_comparisons": 33,
+    "classification_comparisons": 231,
+    "relative_tolerance": 0.001,
+    "absolute_tolerance": 1e-09,
+    "max_relative_difference": 3.5589030754534643e-16,
+    "failures": [],
+    "scope": "Numerical implementation parity only, separate from source and hand/worked-example checks."
+  },
+  "page_wiring": {
+    "status": "PASS",
+    "checks": 22,
+    "method": "Node VM with DOM stub; excludes real-browser layout, focus, KaTeX rendering and console checks",
+    "browser_preview": "NOT_COMPLETED_LOCAL_FILE_URL_BLOCKED",
+    "page": "20261018_v5_TimberJointCase.html"
+  },
+  "pdf_review": {
+    "output": "20261018_v5_TimberJointCase.pdf",
+    "sha256": "03ab6dfc43e3bdddba7b85453bd81764e12fcd5e2a54fa6109dfed5581683f71",
+    "pages": 8,
+    "source_results": "20261018_v5_JointCaseResults.json",
+    "source_results_sha256": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c",
+    "source_sensitivity_sha256": "2e7fa564b207b7508ec48f8c68a95d6b01664d8b79c659ff325f3b400e1e0182",
+    "baseline_resistance_kN": 10.026122504722023,
+    "instantaneous_slip_mm": 0.5566890297077447,
+    "final_slip_mm": 1.1979947919310665,
+    "numerical_formulae_and_baseline_changed": false,
+    "parity_snapshot": {
+      "status": "PASS",
+      "vectors": 42,
+      "numeric_comparisons": 3960,
+      "classification_comparisons": 1480,
+      "expected_rejections": 12,
+      "max_relative_difference": 0,
+      "relative_tolerance": 1e-10,
+      "absolute_tolerance": 1e-08,
+      "failures": [],
+      "scope": "Python/browser numerical parity only; separate from direct-source-equation tests and physical validation."
+    },
+    "render_review_pending": false,
+    "presentation_changes": [
+      "Executive component-result panel and explicit interpretation",
+      "Dimensioned side elevation and plan detail",
+      "Vector mathematical notation with numbered equations",
+      "Two-panel resistance/movement scientific comparison",
+      "Action-wise movement decomposition figure",
+      "Structured proposed laboratory and assembly evidence plans",
+      "Public technical voice with private interview coaching removed"
+    ],
+    "all_eight_pages_visually_reviewed": true,
+    "render_method": "Poppler pdftoppm, 120 dpi; every final page inspected.",
+    "independent_visual_review_pages": [
+      2,
+      4,
+      5,
+      8
+    ],
+    "rendered_page_sha256": {
+      "page-1.png": "0a6c680d8b423e36be7eebdcdaa318962b6614be525a4f1408b07dd1a8450f13",
+      "page-2.png": "4e4ff3e106393874b422cdeb97bb9c714d7d3dd31988b75d6ccf042fe0d3b6ec",
+      "page-3.png": "5f2f5668e791849b4c82c7715438f5e57d1925d3aad26d5d421c6988a29e4362",
+      "page-4.png": "b23c8710c1e7271decc5a1fd055ce1856d598afa120b23f8d9aca90b19bdd214",
+      "page-5.png": "40350b3fb3de18376619003fcad9e67b91577ea6ba10ada848afb0226968d9bd",
+      "page-6.png": "09393caa983b13379ea4794a689f35279448cd00774d96eb418da8ab9978b47a",
+      "page-7.png": "70576e0a6a3821d9fc52f8e2841ebc57776b000dac11ea323dbb7f06e55d90ea",
+      "page-8.png": "d002047c7bf9760bc9949edd603a137fe06a853e2c35dc817ff08078b2196e7a"
+    },
+    "final_correction_review": "Page 5 corrected to match the exported adapted-washer sensitivity series, re-rendered and visually inspected. Other seven page renders were byte-identical to the previously inspected revision; full-document font/link/bounds checks repeated.",
+    "page_renders_changed_by_final_correction": [
+      "page-5.png"
+    ],
+    "header_pixel_sha256": {
+      "page-1": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-2": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-3": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-4": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-5": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-6": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-7": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f",
+      "page-8": "a98808257b0161b08f5c98c1cb574b31bfdf390746628c3589e317772e57cc8f"
+    },
+    "header_consistency": "Top 70 pixel strips identical across all eight renders; text and rules present.",
+    "embedded_used_text_fonts": {
+      "/AAAAAA+Arial-BoldMT": true,
+      "/AAAAAA+ArialMT": true,
+      "/AAAAAA+Arial-ItalicMT": true
+    },
+    "clickable_links": [
+      "https://www.universityofgalway.ie/media/timberengineeringresearchgroup/Design-of-timber-structures_Volume2_Rules-and-formulas-according-to-Eurocode-5.pdf",
+      "https://www.swedishwood.com/siteassets/5-publikationer/pdfer/sw-design-of-timber-structures-vol1-2022.pdf",
+      "https://www.phd.eng.br/wp-content/uploads/2015/12/en.1995.1.1.2004.pdf",
+      "https://accord-checkout.bsigroup.com/products/uk-national-annex-to-eurocode-5-design-of-timber-structures-general-common-rules-and-rules-for-buildings",
+      "https://landingpage.bsigroup.com/LandingPage/Undated?UPI=000000000000248652",
+      "https://landingpage.bsigroup.com/LandingPage/Undated?UPI=000000000030143811",
+      "https://github.com/gitmeysambayat/TimberFacadeConnectionToolkit"
+    ],
+    "text_outside_page": [],
+    "math_representation": "Vector mathematical glyph paths, stacked fractions and true subscripts; numbered equations. Not editable Word equations or tagged semantic mathematics.",
+    "layout_findings": "No observed clipping, overlap, broken tables, missing glyphs or blank pages in reviewed renders.",
+    "figure_data": "Full-precision v5 calculation and sensitivity JSON; charts rendered at 300 dpi.",
+    "independent_geometry_arithmetic": {
+      "status": "PASS",
+      "configurations": 7,
+      "individual_checks": 56,
+      "method": "Direct distance, edge, hole and washer arithmetic independent of toolkit helpers; exported values and classifications cross-checked.",
+      "diameter_scenario_method": "End distance fixed at 100 mm; hole diameter d+1; washer diameter max(40,3d) mm and thickness max(4,0.3d) mm.",
+      "scenarios": [
+        {
+          "scenario": "baseline",
+          "diameter_mm": 12.0,
+          "washer_diameter_mm": 40.0,
+          "washer_thickness_mm": 4.0,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": []
+        },
+        {
+          "scenario": "diameter_8",
+          "diameter_mm": 8.0,
+          "washer_diameter_mm": 40.0,
+          "washer_thickness_mm": 4.0,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": []
+        },
+        {
+          "scenario": "diameter_10",
+          "diameter_mm": 10.0,
+          "washer_diameter_mm": 40.0,
+          "washer_thickness_mm": 4.0,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": []
+        },
+        {
+          "scenario": "diameter_12",
+          "diameter_mm": 12.0,
+          "washer_diameter_mm": 40.0,
+          "washer_thickness_mm": 4.0,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": []
+        },
+        {
+          "scenario": "diameter_14",
+          "diameter_mm": 14.0,
+          "washer_diameter_mm": 42.0,
+          "washer_thickness_mm": 4.2,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": []
+        },
+        {
+          "scenario": "diameter_16",
+          "diameter_mm": 16.0,
+          "washer_diameter_mm": 48.0,
+          "washer_thickness_mm": 4.8,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": [
+            "left_loaded_end",
+            "right_loaded_end"
+          ]
+        },
+        {
+          "scenario": "diameter_20",
+          "diameter_mm": 20.0,
+          "washer_diameter_mm": 60.0,
+          "washer_thickness_mm": 6.0,
+          "loaded_end_distance_mm": 100.0,
+          "failed_checks": [
+            "left_loaded_end",
+            "right_loaded_end"
+          ]
+        }
+      ]
+    },
+    "implementation_snapshot": {
+      "python_tests": 179,
+      "joint_case_tests": 62,
+      "parity_vectors": 42,
+      "numeric_comparisons": 3960,
+      "classification_comparisons": 1480,
+      "expected_rejections": 12
+    },
+    "publication": "LOCAL_REVIEW_ONLY_NOT_DEPLOYED",
+    "scope": "Presentation and reproducibility checks for an educational component study; no physical validation or overall connection approval."
+  },
+  "selected_colour_contrast": {
+    "status": "PASS",
+    "method": "WCAG sRGB contrast calculation for selected authored colour pairs; not a rendered accessibility audit",
+    "pairs": [
+      {
+        "name": "Primary text",
+        "foreground": "#142b45",
+        "background": "#ffffff",
+        "contrast_ratio": 14.37,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "Muted text",
+        "foreground": "#566779",
+        "background": "#ffffff",
+        "contrast_ratio": 5.81,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "Blue link",
+        "foreground": "#245fc5",
+        "background": "#ffffff",
+        "contrast_ratio": 5.97,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "Teal label",
+        "foreground": "#117c83",
+        "background": "#ffffff",
+        "contrast_ratio": 4.96,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "Button text",
+        "foreground": "#ffffff",
+        "background": "#142b45",
+        "contrast_ratio": 14.37,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "Warning text",
+        "foreground": "#8a5b12",
+        "background": "#fff8ec",
+        "contrast_ratio": 5.55,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "Failure text",
+        "foreground": "#a32b32",
+        "background": "#ffffff",
+        "contrast_ratio": 7.12,
+        "minimum": 4.5,
+        "status": "PASS"
+      }
+    ]
+  },
+  "static_pages": [
+    {
+      "page": "index.html",
+      "local_links": 21,
+      "status": "PASS"
+    },
+    {
+      "page": "20261018_v5_Portfolio.html",
+      "local_links": 21,
+      "status": "PASS"
+    },
+    {
+      "page": "20261018_v5_TimberJointCase.html",
+      "local_links": 22,
+      "status": "PASS"
+    }
+  ],
+  "browser_review": {
+    "status": "NOT_COMPLETED",
+    "reason": "Local file URL was rejected by browser security policy; no alternate browser route attempted",
+    "required": [
+      "Desktop and narrow-screen visual review",
+      "Keyboard/focus operation",
+      "Representative interactions and invalid-input recovery",
+      "KaTeX rendering and browser console"
+    ]
+  },
+  "interpretation": "Numerical agreement, static checks and DOM-stub tests are distinct from physical validation and real-browser review.",
+  "artifact_sha256": {
+    "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+    "20261018_v5_TimberJointCase.html": "13b15ee20ed9e561c2e3e197fceefe1cb5efd3cfd4dbc127aff9f02bde7c48d2",
+    "20261018_v5_TimberJointCase.pdf": "03ab6dfc43e3bdddba7b85453bd81764e12fcd5e2a54fa6109dfed5581683f71",
+    "20261018_v5_JointCaseResults.json": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c"
+  }
+}

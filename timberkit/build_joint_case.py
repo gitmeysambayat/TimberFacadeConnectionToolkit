@@ -3,13 +3,21 @@ from pathlib import Path
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-PREFIX = '20261018_v4_'
 
 
 def build():
-    from .joint_case import default_inputs, evaluate
-    case = default_inputs()
+    from .joint_case import PREFIX, default_inputs, evaluate
+    # The prose and diagram describe a fixed M12 reference. A custom exported
+    # calculation must never silently acquire those canonical labels.
+    input_path = ROOT / (PREFIX + 'JointCaseInputs.json')
+    result_path = ROOT / (PREFIX + 'JointCaseResults.json')
+    case = json.loads(input_path.read_text(encoding='utf-8'))
+    if case != default_inputs():
+        raise ValueError('Worked-case page requires the canonical M12 reference inputs; custom cases must use the scenario explorer or calculation JSON.')
     result = evaluate(case)
+    exported = json.loads(result_path.read_text(encoding='utf-8'))
+    if exported != result:
+        raise ValueError('Saved worked-case results do not match the reference inputs. Re-run python -m timberkit.joint_case before building the page.')
     template = (ROOT/'web/joint_case_page.html').read_text(encoding='utf-8')
     assets = '\n'.join((ROOT/'web'/n).read_text(encoding='utf-8') for n in
                        ['connections.js', 'materials_fire_racking.js', 'joint_case.mjs'])
