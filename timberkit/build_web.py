@@ -43,6 +43,7 @@ def build_tool():
 <script id="case-data" type="application/json">__CASE__</script><script id="fixture-data" type="application/json">__FIXTURES__</script><script>__KATEX_JS__</script><script>__SCRIPTS__</script></body></html>'''
     for key,value in {'__KATEX_CSS__':css,'__KATEX_JS__':katex,'__CASE__':case,'__FIXTURES__':fixtures,'__SCRIPTS__':scripts,'__FLAGS__':flags}.items():html=html.replace(key,value)
     html=html.replace('20261018_v1_TechnicalNote.html', PREFIX+'TechnicalNote.html').replace('20261018_v1_LearningGuide.md', PREFIX+'LearningGuide.md')
+    html=html.replace('20261018_v1_EditedCaseInputs.json', PREFIX+'EditedCaseInputs.json')
     html=html.replace('<a href="README.md">Scope and provenance</a>', '<a href="README.md">Scope and provenance</a> · <a href="'+PREFIX+'TestAndAssemblyPlan.html">Proposed test and assembly plan</a>')
     notice=(ROOT/'web/20261018_v1_KaTeX_LICENSE.txt').read_text(encoding='utf-8')
     html=html.replace('</html>', '<!-- KaTeX third-party licence\n'+notice+'\n--></html>')
