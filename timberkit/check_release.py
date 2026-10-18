@@ -119,13 +119,20 @@ def main():
         run('Python tests', [sys.executable, '-m', 'pytest', '-q'], test_env)
         run('Joint calculation parity', [args.node, 'tests/joint_case_parity.mjs'])
         legacy_env = dict(os.environ, TFK_OUTPUT_PREFIX='20261018_v3_')
-        run('Legacy calculation parity', [args.node, 'tests/parity.cjs'], legacy_env)
+        legacy_path = ROOT/'20261018_v3_ParityResults.json'
+        legacy_original = legacy_path.read_bytes()
+        try:
+            run('Legacy calculation parity', [args.node, 'tests/parity.cjs'], legacy_env)
+            legacy = json.loads(legacy_path.read_text())
+        finally:
+            # Preserve the published record, including its original bytes.
+            # The fresh run is captured in this revision's release record.
+            legacy_path.write_bytes(legacy_original)
         run('Worked-case page build', [sys.executable, '-m', 'timberkit.build_joint_case'])
         run('Portfolio page build', [sys.executable, '-m', 'timberkit.build_home'])
         run('Page-wiring tests with DOM stub', [args.node, 'tests/joint_case_page.cjs'])
         pages = static_checks()
         joint = json.loads((ROOT/(PREFIX+'JointCaseParityResults.json')).read_text())
-        legacy = json.loads((ROOT/'20261018_v3_ParityResults.json').read_text())
         wiring = json.loads((ROOT/(PREFIX+'JointCasePageChecks.json')).read_text())
         pdf_review = json.loads((ROOT/(PREFIX+'CasePDF_QA.json')).read_text())
         case_record_path = ROOT/(PREFIX+'JointCaseVerification.json')
