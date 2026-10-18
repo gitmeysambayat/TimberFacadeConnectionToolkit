@@ -1,17 +1,17 @@
 {
   "revision": "20261018_v5",
   "status": "PASS",
-  "checked_utc": "2026-10-18T12:49:56.288175+00:00",
+  "checked_utc": "2026-10-18T13:04:37.257219+00:00",
   "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/",
   "repository": "https://github.com/gitmeysambayat/TimberFacadeConnectionToolkit",
-  "build_commit": "9e331f361df0d0015e3a1fe0f8dc804ffd5fa264",
+  "build_commit": "012a0e7a0e7093969211029bb9953320dbdc664e",
   "source": {
     "branch": "main",
     "path": "/"
   },
   "https_enforced": true,
   "page_sha256": {
-    "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+    "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
     "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
     "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
   },
@@ -19,7 +19,7 @@
     {
       "name": "GitHub Pages build identity",
       "status": "PASS",
-      "observed": "9e331f361df0d0015e3a1fe0f8dc804ffd5fa264"
+      "observed": "012a0e7a0e7093969211029bb9953320dbdc664e"
     },
     {
       "name": "HTTPS enforcement",
@@ -98,8 +98,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "application/json; charset=utf-8",
-          "bytes": 16674,
-          "sha256": "cb3c324cf2828afc5d41c8a186fc76e9d8d86f58b96cd3bd1ae8f61ca920b6b4"
+          "bytes": 17082,
+          "sha256": "408e6478556b09d954de72a7ddd9e9f2e026748bd1c94258b8057172b86bf649"
         },
         {
           "name": "20261018_v5_ReleaseVerification.json",
@@ -107,8 +107,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "application/json; charset=utf-8",
-          "bytes": 18437,
-          "sha256": "1d68f940d1f69d18b4a8d1c87e569d831b3b5677dac0e4d9f9ddd82478c2879e"
+          "bytes": 18845,
+          "sha256": "cc1b6f22f7536984e2283ddd5c8966e18f8a536be932652553f90d9aefda24fb"
         },
         {
           "name": "20261018_v5_TimberJointCase.html",
@@ -134,8 +134,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/markdown; charset=utf-8",
-          "bytes": 8326,
-          "sha256": "1d77dee58d2350df3a05516fc83c484c6aa2a9c6801f6cea32ec4200d90068f3"
+          "bytes": 8387,
+          "sha256": "00be06270ad92475508b8c96038419dcc4b836be7a1ca0f232239603e7f5965f"
         },
         {
           "name": "index.html",
@@ -143,8 +143,8 @@
           "status": "PASS",
           "http_status": 200,
           "content_type": "text/html; charset=utf-8",
-          "bytes": 17212,
-          "sha256": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3"
+          "bytes": 17149,
+          "sha256": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d"
         },
         {
           "name": "web/20261018_v1_KaTeX_LICENSE.txt",
@@ -160,25 +160,7 @@
     {
       "name": "Live page identity matches the independently reviewed pages",
       "status": "PASS"
-    },
-    {
-      "name": "Selected post-deployment real-browser interaction recheck",
-      "status": "PASS"
     }
   ],
-  "scope": "Actual public GitHub Pages build and selected asset delivery. Numerical/browser checks and physical validation have distinct scopes. The observed build commit is dated evidence; later metadata-only commits need not change the reviewed page assets.",
-  "live_browser_recheck": {
-    "checked_utc": "2026-10-18T12:51:20.046981+00:00",
-    "status": "PASS",
-    "checks": [
-      "Fresh GitHub Pages homepage and worked-case navigation",
-      "Reference result 10.026 kN, utilisation 0.703, final movement 1.198 mm",
-      "M16 fixed-detail warning",
-      "Blank-input result hiding and disabled download",
-      "Reference reset",
-      "390 px viewport with document width 375 px and zero KaTeX errors",
-      "Captured warning/error logs empty"
-    ],
-    "scope": "Selected post-deployment interaction recheck; the separate 16-check browser record provides the fuller pre-publication review."
-  }
+  "scope": "Actual public GitHub Pages build and selected asset delivery. Numerical/browser checks and physical validation have distinct scopes. The observed build commit is dated evidence; later metadata-only commits need not change the reviewed page assets."
 }

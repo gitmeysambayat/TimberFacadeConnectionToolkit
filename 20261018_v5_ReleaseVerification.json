@@ -8,11 +8,11 @@
     "status": "PASS",
     "record": "20261018_v5_Deployment.json",
     "page_sha256": {
-      "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+      "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
       "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
       "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
     },
-    "build_commit": "9e331f361df0d0015e3a1fe0f8dc804ffd5fa264",
+    "build_commit": "012a0e7a0e7093969211029bb9953320dbdc664e",
     "url": "https://gitmeysambayat.github.io/TimberFacadeConnectionToolkit/"
   },
   "commands": [
@@ -336,7 +336,7 @@
     "status": "PASS",
     "record": "20261018_v5_BrowserQA.json",
     "page_sha256": {
-      "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+      "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
       "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
       "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
     },
@@ -420,16 +420,28 @@
         "name": "Captured browser console and maths errors",
         "status": "PASS",
         "observed": "Captured warning/error logs were empty in the reviewed legacy page and fresh corrected case page. Zero KaTeX error elements in the reviewed pages."
+      },
+      {
+        "name": "Revised homepage footer wording and layout",
+        "status": "PASS",
+        "observed": "Live GitHub Pages displayed the shorter project description at 1280 x 900 and 390 x 844 CSS pixels. Footer links remained available; no document horizontal overflow. No numerical or engineering-scope text was changed."
       }
     ],
     "scope": "Selected real-browser visual, keyboard and interaction checks. Separate from numerical source verification, physical validation, product qualification and complete design approval. This is not an exhaustive browser or accessibility certification.",
-    "checked_utc": "2026-10-18T12:47:03.498274+00:00"
+    "checked_utc": "2026-10-18T13:04:34.374101+00:00"
   },
   "interpretation": "Numerical agreement, static checks and DOM-stub tests are distinct from physical validation and real-browser review.",
   "artifact_sha256": {
-    "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+    "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
     "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
     "20261018_v5_TimberJointCase.pdf": "a33b5f02fb9346f8161ba89c94e919693cc8a5b998817681301db231bc21b589",
     "20261018_v5_JointCaseResults.json": "e50f1b998c87d692bd77b4acaf6800dc5dd8d0a37da3048e26aed54d00e6763c"
+  },
+  "numerical_checks_last_run_utc": "2026-10-18T12:51:23.543554+00:00",
+  "browser_ui": "PASS",
+  "homepage_wording_review": {
+    "checked_utc": "2026-10-18T13:04:37.462839+00:00",
+    "status": "PASS",
+    "change": "Footer sentence only; unchanged numerical checks reused from the preceding verified release. No numerical tests rerun for this prose edit."
   }
 }

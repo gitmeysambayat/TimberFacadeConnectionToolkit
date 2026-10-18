@@ -1,11 +1,11 @@
 {
   "revision": "20261018_v5",
   "status": "PASS",
-  "checked_utc": "2026-10-18T12:47:03.498274+00:00",
+  "checked_utc": "2026-10-18T13:04:34.374101+00:00",
   "browser_surface": "Codex in-app browser",
   "review_environment": "Owner-private HTTPS preview containing the same three page assets. Final publication destination is GitHub Pages.",
   "page_sha256": {
-    "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+    "index.html": "e04ced44a4863b39b0fc20a6bf6a2ac7e67186ad18df6b88212e6069192e3b3d",
     "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
     "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
   },
@@ -99,6 +99,11 @@
       "name": "Captured browser console and maths errors",
       "status": "PASS",
       "observed": "Captured warning/error logs were empty in the reviewed legacy page and fresh corrected case page. Zero KaTeX error elements in the reviewed pages."
+    },
+    {
+      "name": "Revised homepage footer wording and layout",
+      "status": "PASS",
+      "observed": "Live GitHub Pages displayed the shorter project description at 1280 x 900 and 390 x 844 CSS pixels. Footer links remained available; no document horizontal overflow. No numerical or engineering-scope text was changed."
     }
   ],
   "scope": "Selected real-browser visual, keyboard and interaction checks. Separate from numerical source verification, physical validation, product qualification and complete design approval. This is not an exhaustive browser or accessibility certification.",
@@ -109,5 +114,20 @@
     "20261018_v6_MobileCaseQA.png",
     "20261018_v6_MobileLegacyQA.png"
   ],
-  "fixed_issue": "Sensitivity grid min-content width caused narrow-screen document overflow. The corrected page was redeployed privately and reviewed again before GitHub publication."
+  "fixed_issue": "Sensitivity grid min-content width caused narrow-screen document overflow. The corrected page was redeployed privately and reviewed again before GitHub publication.",
+  "review_history": [
+    {
+      "checked_utc": "2026-10-18T13:04:34.374101+00:00",
+      "change": "Homepage footer wording only",
+      "previous_browser_record": {
+        "checked_utc": "2026-10-18T12:47:03.498274+00:00",
+        "page_sha256": {
+          "index.html": "944d066b0ef49a6fceff81244e3dbb9bc7fec38f13228e40f04bffd75b5acba3",
+          "20261018_v5_TimberJointCase.html": "3586a85fcca8622d06d35d9c9d972c9fdb16fcbcf075487714873a5a829eabc3",
+          "20261018_v3_Toolkit.html": "375ae8239d91c62b2e6932a3190d42393864b822ce06ab2bbd6c93dce4883d7a"
+        }
+      },
+      "scope": "Previous calculation and interaction checks are retained because the case pages and numerical code are unchanged. Exact comparison showed the homepage differs only by the stated footer sentence. The changed footer was checked again on the live GitHub Pages site at desktop and narrow widths."
+    }
+  ]
 }
