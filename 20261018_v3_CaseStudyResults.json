@@ -1,0 +1,420 @@
+{
+  "status": "EDUCATIONAL_COMPONENT_RESULTS_NO_OVERALL_DESIGN_PASS",
+  "panel_area_m2": 3.375,
+  "characteristic_wind_resultant_kN": 3.375,
+  "connection": {
+    "status": "UNVERIFIED",
+    "embedment": {
+      "fh0_k": 25.256,
+      "fh_k": 25.256,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    },
+    "yield_moment": {
+      "My_Rk": 76745.42328693614,
+      "coefficient": 0.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(1), Eq8.30; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    },
+    "modes": {
+      "modes": {
+        "a": {
+          "johansen_N": 5455.296,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 5455.296
+        },
+        "b": {
+          "johansen_N": 7843.537703764573,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 7843.537703764573
+        }
+      },
+      "governing_mode": "a",
+      "Fv_Rk_N": 5455.296,
+      "shear_planes": 1,
+      "per_fastener_total_N": 5455.296,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.9; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "Rope effect neglected; axial resistance is not established"
+      ],
+      "plate_class": "thin",
+      "interpolation_fraction": 0.0,
+      "applicability_verified": true
+    },
+    "effective_number": {
+      "n_eff": 1.5985111429979286,
+      "n_eff_parallel": 1.5985111429979286,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    },
+    "design": {
+      "Fv_Rd_per_plane_N": 3776.743384615385,
+      "group_design_capacity_N": 6037.166384551405,
+      "n_eff": 1.5985111429979286,
+      "shear_planes": 1,
+      "kmod": 0.9,
+      "gamma_M": 1.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 2.4.1, 8.1; SW2 p36",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    },
+    "slip": {
+      "Kser_base_N_per_mm": 4490.837553081424,
+      "Kser_N_per_mm": 8981.675106162847,
+      "Ku_N_per_mm": 5987.783404108565,
+      "steel_factor": 2.0,
+      "rho_m_effective": 420.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 7.1 Table7.1, 7.1(3), 2.2.2(2); SW2 p33",
+      "source_ids": [
+        "SW2_2022_UK",
+        "EC5_PUBLIC_2004_A1"
+      ],
+      "warnings": [
+        "Bolt-hole clearance slip must be added separately"
+      ]
+    },
+    "spacing": {
+      "checks": {
+        "a1": {
+          "required_mm": 60.0,
+          "actual_mm": 84.0,
+          "status": "PASS"
+        },
+        "a2": {
+          "required_mm": 48.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a3_t": {
+          "required_mm": 84.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a3_c": {
+          "required_mm": 48.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a4_t": {
+          "required_mm": 36.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a4_c": {
+          "required_mm": 36.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        }
+      },
+      "status": "UNVERIFIED",
+      "missing_inputs": [
+        "a2",
+        "a3_t",
+        "a3_c",
+        "a4_t",
+        "a4_c"
+      ],
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "clause": "EN1995-1-1 applicable spacing table; SW2 pp42/45"
+    },
+    "minimum_spacings": {
+      "minimum_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1 Table8.4; SW2 p45 Table10.4",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    },
+    "design_shear_N": null,
+    "utilisation": null,
+    "anchor_utilisation": null,
+    "missing_inputs": [
+      "a2",
+      "a3_t",
+      "a3_c",
+      "a4_t",
+      "a4_c",
+      "design_shear_N",
+      "anchor_capacity_N from applicable ETA",
+      "anchor_ETA_reference"
+    ],
+    "unverified_components": [],
+    "source_ids": [
+      "SW2_2022_UK",
+      "EC5_PUBLIC_2004_A1"
+    ],
+    "excluded_checks": [
+      "Steel plate/fastener steel resistance",
+      "Timber splitting, block/plug shear and net section",
+      "Combined axial/lateral action and eccentricity",
+      "Bracket bending, prying and actual load path",
+      "Concrete anchor-group and substrate verification",
+      "Cyclic, fire, moisture and long-term behaviour"
+    ],
+    "warnings": [
+      "Educational calculation, not for design",
+      "Load angle and timber penetration are illustrative inputs",
+      "Rope effect explicitly neglected when Fax_Rk is zero"
+    ]
+  },
+  "seismic": {
+    "Sa": 0.5711878453038673,
+    "weight_kN": 2.025,
+    "Fa_kN": 0.5783276933701657,
+    "bracket_forces_kN": null,
+    "bracket_status": "REQUIRED: justified bracket load shares",
+    "anchor_status": "REQUIRED: project-specific manufacturer ETA capacity; no default",
+    "drift": {
+      "category": "brittle_attached",
+      "demand_mm": 7.5,
+      "limit_mm": 15.0,
+      "dr_limit_mm": 30.0,
+      "ratio": 0.5,
+      "passes": true
+    },
+    "slot": {
+      "slot_length_mm": 42.0,
+      "travel_each_direction_mm": 15.0,
+      "reversed_motion_accommodated": true,
+      "assumption": "centred, friction-free, reversing translation"
+    }
+  },
+  "fire": [
+    {
+      "section": {
+        "time_min": 10.0,
+        "dchar_0_mm": 6.5,
+        "dchar_n_mm": 8.0,
+        "k0": 0.5,
+        "d0_mm": 7.0,
+        "effective_char_depth_mm": 11.5,
+        "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+        "width_mm": 45.0,
+        "depth_mm": 145.0,
+        "exposed_faces": [
+          "depth_front"
+        ],
+        "residual_width_mm": 45.0,
+        "residual_depth_mm": 137.0,
+        "effective_width_mm": 45.0,
+        "effective_depth_mm": 133.5,
+        "effective_area_mm2": 6007.5,
+        "I_y_mm4": 8922263.90625,
+        "W_y_mm3": 133666.875,
+        "I_z_mm4": 1013765.625,
+        "W_z_mm3": 45056.25,
+        "centroid_shift_width_mm": 0.0,
+        "centroid_shift_depth_mm": 5.75,
+        "status": "SECTION_ONLY_NOT_FIRE_RESISTANCE_APPROVAL",
+        "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+        "limitations": [
+          "Isolated unprotected member under standard fire only",
+          "No protected or insulated assembly assessment",
+          "No fire actions, stability, connection fire check or separating-function classification"
+        ]
+      },
+      "bending": {
+        "status": "REQUIRED_INPUT",
+        "required_inputs": [
+          "design_bending_moment_Nmm"
+        ],
+        "utilisation": null,
+        "capacity_Nmm": null,
+        "passed": null,
+        "source": "EN 1995-1-2:2004 4.1/4.2.2 and EN 1995-1-1 6.1.6; uniaxial section bending only, stability excluded"
+      }
+    },
+    {
+      "section": {
+        "time_min": 30.0,
+        "dchar_0_mm": 19.5,
+        "dchar_n_mm": 24.0,
+        "k0": 1.0,
+        "d0_mm": 7.0,
+        "effective_char_depth_mm": 31.0,
+        "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+        "width_mm": 45.0,
+        "depth_mm": 145.0,
+        "exposed_faces": [
+          "depth_front"
+        ],
+        "residual_width_mm": 45.0,
+        "residual_depth_mm": 121.0,
+        "effective_width_mm": 45.0,
+        "effective_depth_mm": 114.0,
+        "effective_area_mm2": 5130.0,
+        "I_y_mm4": 5555790.0,
+        "W_y_mm3": 97470.0,
+        "I_z_mm4": 865687.5,
+        "W_z_mm3": 38475.0,
+        "centroid_shift_width_mm": 0.0,
+        "centroid_shift_depth_mm": 15.5,
+        "status": "SECTION_ONLY_NOT_FIRE_RESISTANCE_APPROVAL",
+        "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+        "limitations": [
+          "Isolated unprotected member under standard fire only",
+          "No protected or insulated assembly assessment",
+          "No fire actions, stability, connection fire check or separating-function classification"
+        ]
+      },
+      "bending": {
+        "status": "REQUIRED_INPUT",
+        "required_inputs": [
+          "design_bending_moment_Nmm"
+        ],
+        "utilisation": null,
+        "capacity_Nmm": null,
+        "passed": null,
+        "source": "EN 1995-1-2:2004 4.1/4.2.2 and EN 1995-1-1 6.1.6; uniaxial section bending only, stability excluded"
+      }
+    },
+    {
+      "section": {
+        "time_min": 60.0,
+        "dchar_0_mm": 39.0,
+        "dchar_n_mm": 48.0,
+        "k0": 1.0,
+        "d0_mm": 7.0,
+        "effective_char_depth_mm": 55.0,
+        "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+        "width_mm": 45.0,
+        "depth_mm": 145.0,
+        "exposed_faces": [
+          "depth_front"
+        ],
+        "residual_width_mm": 45.0,
+        "residual_depth_mm": 97.0,
+        "effective_width_mm": 45.0,
+        "effective_depth_mm": 90.0,
+        "effective_area_mm2": 4050.0,
+        "I_y_mm4": 2733750.0,
+        "W_y_mm3": 60750.0,
+        "I_z_mm4": 683437.5,
+        "W_z_mm3": 30375.0,
+        "centroid_shift_width_mm": 0.0,
+        "centroid_shift_depth_mm": 27.5,
+        "status": "SECTION_ONLY_NOT_FIRE_RESISTANCE_APPROVAL",
+        "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+        "limitations": [
+          "Isolated unprotected member under standard fire only",
+          "No protected or insulated assembly assessment",
+          "No fire actions, stability, connection fire check or separating-function classification"
+        ]
+      },
+      "bending": {
+        "status": "REQUIRED_INPUT",
+        "required_inputs": [
+          "design_bending_moment_Nmm"
+        ],
+        "utilisation": null,
+        "capacity_Nmm": null,
+        "passed": null,
+        "source": "EN 1995-1-2:2004 4.1/4.2.2 and EN 1995-1-1 6.1.6; uniaxial section bending only, stability excluded"
+      }
+    }
+  ],
+  "racking": {
+    "b0_mm": 1350.0,
+    "minimum_sheet_width_mm": 675.0,
+    "width_factor_ci": 0.9259259259259259,
+    "width_condition_passed": true,
+    "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50",
+    "status": "REQUIRED_INPUT",
+    "required_inputs": [
+      "tied_down",
+      "no_openings",
+      "sheet_edge_sufficient",
+      "sheet_fixings_verified",
+      "fastener_design_resistance_N"
+    ],
+    "failed_conditions": [],
+    "fastener_edge_factor_applied": 1.2,
+    "edge_fastener_design_resistance_N": null,
+    "formula_capacity_N": null,
+    "capacity_N": null,
+    "edge_factor_source": "EN 1995-1-1 9.2.4.2(5), 1.2 sheet-edge enhancement relative to Section 8",
+    "limitations": [
+      "Not a complete wall or façade resistance check",
+      "Method A national choice not verified",
+      "Stud buckling/bearing, sheet shear buckling, central fixings, inter-element transfer, anchorage and serviceability remain to be verified"
+    ]
+  },
+  "materials": {
+    "C24": {
+      "grade": "C24",
+      "material_type": "solid_timber",
+      "fm_k_MPa": 24.0,
+      "ft_0_k_MPa": 14.5,
+      "ft_90_k_MPa": 0.4,
+      "fc_0_k_MPa": 21.0,
+      "fc_90_k_MPa": 2.5,
+      "fv_k_MPa": 4.0,
+      "E_0_mean_MPa": 11000.0,
+      "E_0_05_MPa": 7400.0,
+      "E_90_mean_MPa": 370.0,
+      "G_mean_MPa": 690.0,
+      "rho_k_kg_m3": 350.0,
+      "rho_mean_kg_m3": 420.0,
+      "source": "Swedish Wood/TDUK UK Vol.2 1:2022, Table 3.3 p.10; EN 338:2016; EN 1995-1-1 3.2",
+      "source_url": "https://www.universityofgalway.ie/media/timberengineeringresearchgroup/Design-of-timber-structures_Volume2_Rules-and-formulas-according-to-Eurocode-5.pdf",
+      "status": "REFERENCE_PROPERTIES_NOT_PRODUCT_VERIFIED"
+    },
+    "GL24h": {
+      "grade": "GL24h",
+      "material_type": "glulam",
+      "fm_k_MPa": 24.0,
+      "ft_0_k_MPa": 19.2,
+      "ft_90_k_MPa": 0.5,
+      "fc_0_k_MPa": 24.0,
+      "fc_90_k_MPa": 2.5,
+      "fv_k_MPa": 3.5,
+      "fr_k_MPa": 1.2,
+      "E_0_mean_MPa": 11500.0,
+      "E_0_05_MPa": 9600.0,
+      "E_90_mean_MPa": 300.0,
+      "E_90_05_MPa": 250.0,
+      "G_mean_MPa": 650.0,
+      "G_05_MPa": 540.0,
+      "rho_k_kg_m3": 385.0,
+      "rho_mean_kg_m3": 420.0,
+      "source": "Swedish Wood/TDUK UK Vol.2 1:2022, Table 3.4 p.12; EN 14080:2013; EN 1995-1-1 3.3",
+      "source_url": "https://www.universityofgalway.ie/media/timberengineeringresearchgroup/Design-of-timber-structures_Volume2_Rules-and-formulas-according-to-Eurocode-5.pdf",
+      "status": "REFERENCE_PROPERTIES_NOT_PRODUCT_VERIFIED"
+    }
+  },
+  "learner_verification_records": []
+}

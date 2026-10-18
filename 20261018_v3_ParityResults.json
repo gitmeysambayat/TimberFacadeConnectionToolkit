@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "vectors": 155,
+  "numeric_comparisons": 973,
+  "Boolean_comparisons": 33,
+  "classification_comparisons": 231,
+  "relative_tolerance": 0.001,
+  "absolute_tolerance": 1e-9,
+  "max_relative_difference": 3.5589030754534643e-16,
+  "failures": [],
+  "scope": "Numerical implementation parity only, separate from source and hand/worked-example checks."
+}

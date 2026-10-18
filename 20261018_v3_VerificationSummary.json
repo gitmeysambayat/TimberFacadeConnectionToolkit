@@ -1,0 +1,35 @@
+{
+  "date_uk": "2026-10-18",
+  "release_prefix": "20261018_v3_",
+  "scope": "Educational numerical implementation verification, separate from physical validation",
+  "python_tests": {
+    "command": "python -m pytest -q",
+    "passed": 117,
+    "failed": 0
+  },
+  "hand_and_published_benchmarks": {
+    "command": "python -m timberkit.study",
+    "passed": 20,
+    "failed": 0,
+    "details_file": "20261018_v3_Verification.json"
+  },
+  "python_browser_parity": {
+    "command": "node tests/parity.cjs",
+    "status": "PASS",
+    "vectors": 155,
+    "numeric_comparisons": 973,
+    "Boolean_comparisons": 33,
+    "classification_comparisons": 231,
+    "relative_tolerance": 0.001,
+    "absolute_tolerance": 1e-09,
+    "max_relative_difference": 3.5589030754534643e-16,
+    "failures": [],
+    "scope": "Numerical implementation parity only, separate from source and hand/worked-example checks."
+  },
+  "metadata_schema": {
+    "schema_version": 2,
+    "learner_verification_records": "Optional learner metadata, excluded from engineering calculations"
+  },
+  "physical_validation_performed": false,
+  "numerical_formula_changes_for_public_release": false
+}

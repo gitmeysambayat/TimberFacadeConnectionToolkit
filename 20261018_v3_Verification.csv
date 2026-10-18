@@ -1,0 +1,21 @@
+﻿quantity,reference_value,toolkit_value,difference,unit,tolerance,passed,source
+Bolt embedment parallel to grain,25.3,25.256,-0.04400000000000048,MPa,0.05,True,Hand: EN 1995-1-1 8.5.1.1 Eq8.32
+M12 characteristic yield moment,76.7,76.74542328693614,0.04542328693614195,kN mm,0.05,True,Hand: EN 1995-1-1 8.5.1.1 Eq8.30
+Timber-to-timber Kser per plane,4.49,4.490837553081423,0.0008375530814230814,kN/mm,0.005,True,Hand: EN 1995-1-1 Table7.1
+Timber-to-timber Ku per plane,2.99,2.993891702054283,0.0038917020542825753,kN/mm,0.005,True,Hand: EN 1995-1-1 2.2.2(2)
+Effective number of five bolts at 7d,3.65,3.646377901350935,-0.003622098649064931,count,0.005,True,Hand: EN 1995-1-1 Eq8.34
+Effective section loss at 10 min,11.5,11.5,0.0,mm,1e-10,True,Hand: EN 1995-1-2 4.2.2 Eq4.1/Table4.1
+Effective section loss at 30 min,31.0,31.0,0.0,mm,1e-10,True,Hand: EN 1995-1-2 4.2.2 Eq4.1/Table4.1
+Effective section loss at 60 min,55.0,55.0,0.0,mm,1e-10,True,Hand: EN 1995-1-2 4.2.2 Eq4.1/Table4.1
+Non-structural seismic coefficient Sa,0.571,0.5711878453038673,0.0001878453038673955,dimensionless,0.0005,True,Hand: EN 1998-1 4.3.5.2 Eq4.25
+Whole-panel weight,2.03,2.025,-0.004999999999999893,kN,0.0050001,True,Hand: stated area times assumed self-weight;2.025 exact
+Whole-panel seismic force Fa,0.578,0.5783276933701657,0.00032769337016569366,kN,0.0005,True,Hand: EN 1998-1 4.3.5.2 Eq4.24
+"Reduced drift RHS, brittle_attached",15.0,15.0,0.0,mm,1e-10,True,Hand: EN 1998-1 4.4.3.2 Eqs4.31-4.33; compares dr*nu
+"Reduced drift RHS, ductile",22.5,22.5,0.0,mm,1e-10,True,Hand: EN 1998-1 4.4.3.2 Eqs4.31-4.33; compares dr*nu
+"Reduced drift RHS, non_interfering",30.0,30.0,0.0,mm,1e-10,True,Hand: EN 1998-1 4.4.3.2 Eqs4.31-4.33; compares dr*nu
+Method A sheet width factor ci,0.926,0.9259259259259259,-7.407407407411526e-05,dimensionless,0.0005,True,Hand: EN 1995-1-1 9.2.4.2 Eq9.22
+SW3_4_1 characteristic,4830.0,4831.703385225147,1.7033852251470307,N,10,True,Published: Swedish Wood Vol3 2022 SW3_4_1; documented example parameters
+SW3_4_1 group design,29000.0,28990.22031135088,-9.779688649119635,N,100,True,Published: Swedish Wood Vol3 2022 SW3_4_1; documented example parameters
+SW3_4_2 no rope,1607.0,1606.9490474044517,-0.0509525955483241,N,2,True,Published: Swedish Wood Vol3 2022 SW3_4_2; documented example parameters
+SW3_4_2 with rope,1700.0,1702.6990474044517,2.699047404451676,N,10,True,Published: Swedish Wood Vol3 2022 SW3_4_2; documented example parameters
+SW3_4_2 design,1050.0,1047.8147984027396,-2.185201597260402,N,10,True,Published: Swedish Wood Vol3 2022 SW3_4_2; documented example parameters

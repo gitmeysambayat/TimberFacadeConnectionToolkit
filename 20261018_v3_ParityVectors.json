@@ -1,0 +1,4371 @@
+[
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 0
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 25.256,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 45
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 19.965217391304343,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 90
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 16.50718954248366,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "dowel",
+      "alpha_deg": 0
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 25.256,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "dowel",
+      "alpha_deg": 45
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 19.965217391304343,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "dowel",
+      "alpha_deg": 90
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 16.50718954248366,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "screw",
+      "alpha_deg": 0,
+      "nominal_d": 12
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 25.256,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "screw",
+      "alpha_deg": 45,
+      "nominal_d": 12
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 19.965217391304343,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "screw",
+      "alpha_deg": 90,
+      "nominal_d": 12
+    },
+    "expected": {
+      "fh0_k": 25.256,
+      "fh_k": 16.50718954248366,
+      "k90": 1.53,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 5.5,
+      "fastener": "screw",
+      "nominal_d": 8,
+      "alpha_deg": 45
+    },
+    "expected": {
+      "fh0_k": 27.1215,
+      "fh_k": 22.299280575539566,
+      "k90": 1.4325,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 4,
+      "fastener": "screw",
+      "nominal_d": 5,
+      "alpha_deg": 90
+    },
+    "expected": {
+      "fh0_k": 18.934938519591032,
+      "fh_k": 18.934938519591032,
+      "k90": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1; SW2 p41",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 2.8,
+      "fastener": "nail_round",
+      "predrilled": false
+    },
+    "expected": {
+      "fh0_k": 21.073394013912623,
+      "fh_k": 21.073394013912623,
+      "k90": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1; SW2 p41",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "slip_modulus",
+    "inputs": {
+      "rho_m": 420,
+      "d": 2.8,
+      "fastener": "nail_round",
+      "predrilled": false
+    },
+    "expected": {
+      "Kser_base_N_per_mm": 653.8514722406436,
+      "Kser_N_per_mm": 653.8514722406436,
+      "Ku_N_per_mm": 435.9009814937624,
+      "steel_factor": 1.0,
+      "rho_m_effective": 420.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 7.1 Table7.1, 7.1(3), 2.2.2(2); SW2 p33",
+      "source_ids": [
+        "SW2_2022_UK",
+        "EC5_PUBLIC_2004_A1"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 2.8,
+      "fastener": "nail_round",
+      "predrilled": true
+    },
+    "expected": {
+      "fh0_k": 27.896400000000003,
+      "fh_k": 27.896400000000003,
+      "k90": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1; SW2 p41",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "slip_modulus",
+    "inputs": {
+      "rho_m": 420,
+      "d": 2.8,
+      "fastener": "nail_round",
+      "predrilled": true
+    },
+    "expected": {
+      "Kser_base_N_per_mm": 1047.862095718999,
+      "Kser_N_per_mm": 1047.862095718999,
+      "Ku_N_per_mm": 698.5747304793326,
+      "steel_factor": 1.0,
+      "rho_m_effective": 420.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 7.1 Table7.1, 7.1(3), 2.2.2(2); SW2 p33",
+      "source_ids": [
+        "SW2_2022_UK",
+        "EC5_PUBLIC_2004_A1"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 12,
+      "fu_k": 400,
+      "fastener": "bolt"
+    },
+    "expected": {
+      "My_Rk": 76745.42328693614,
+      "coefficient": 0.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(1), Eq8.30; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 12,
+      "fu_k": 400,
+      "fastener": "dowel"
+    },
+    "expected": {
+      "My_Rk": 76745.42328693614,
+      "coefficient": 0.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(1), Eq8.30; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 4,
+      "fu_k": 600,
+      "fastener": "nail_round"
+    },
+    "expected": {
+      "My_Rk": 6616.502524782923,
+      "coefficient": 0.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1(4); SW2 p40",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 4,
+      "fu_k": 600,
+      "fastener": "nail_square"
+    },
+    "expected": {
+      "My_Rk": 9924.753787174383,
+      "coefficient": 0.45,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1(4); SW2 p40",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 4,
+      "fu_k": 600,
+      "fastener": "nail_grooved"
+    },
+    "expected": {
+      "My_Rk": 9924.753787174383,
+      "coefficient": 0.45,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1(4); SW2 p40",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 12,
+      "fu_k": 400,
+      "fastener": "screw"
+    },
+    "expected": {
+      "My_Rk": 76745.42328693614,
+      "coefficient": 0.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(1), Eq8.30; SW2 p44",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "nail_round",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 10734.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 993.8602791396938,
+          "Fv_Rk_N": 7619.595473404319
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 11969.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1225.6334081054326,
+          "Fv_Rk_N": 9396.522795474983
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7619.595473404319,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7619.595473404319,
+      "rope_cap_fraction": 0.15,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "nail_square",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 10734.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 11969.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7875.7351942646255,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "nail_grooved",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 10734.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 11969.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7875.7351942646255,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "nail_other",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 10734.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 11969.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7875.7351942646255,
+      "rope_cap_fraction": 0.5,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "screw",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 10734.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 11969.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7875.7351942646255,
+      "rope_cap_fraction": 1.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 10734.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 11969.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7875.7351942646255,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "single",
+      "fastener": "dowel",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "b": {
+          "johansen_N": 28800.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 28800.0
+        },
+        "c": {
+          "johansen_N": 9484.241683632003,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 9484.241683632003
+        },
+        "d": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6625.7351942646255
+        },
+        "e": {
+          "johansen_N": 10719.65350927355,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 10719.65350927355
+        },
+        "f": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 8170.889387369551
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 6625.7351942646255,
+      "shear_planes": 1,
+      "per_fastener_total_N": 6625.7351942646255,
+      "rope_cap_fraction": 0.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.6; SW2 pp36-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "nail_round",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 993.8602791396938,
+          "Fv_Rk_N": 7619.595473404319
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1225.6334081054326,
+          "Fv_Rk_N": 9396.522795474983
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 7619.595473404319,
+      "shear_planes": 2,
+      "per_fastener_total_N": 15239.190946808638,
+      "rope_cap_fraction": 0.15,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "nail_square",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 2,
+      "per_fastener_total_N": 15751.470388529251,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "nail_grooved",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 2,
+      "per_fastener_total_N": 15751.470388529251,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "nail_other",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 2,
+      "per_fastener_total_N": 15751.470388529251,
+      "rope_cap_fraction": 0.5,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "screw",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 2,
+      "per_fastener_total_N": 15751.470388529251,
+      "rope_cap_fraction": 1.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 7875.7351942646255
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9420.88938736955
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 7875.7351942646255,
+      "shear_planes": 2,
+      "per_fastener_total_N": 15751.470388529251,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "timber_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "t2": 80,
+      "fh1_k": 25.256,
+      "fh2_k": 30.0,
+      "My_Rk": 76700.0,
+      "shear": "double",
+      "fastener": "dowel",
+      "Fax_Rk": 5000.0
+    },
+    "expected": {
+      "modes": {
+        "g": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "h": {
+          "johansen_N": 14400.0,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 14400.0
+        },
+        "j": {
+          "johansen_N": 6625.7351942646255,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6625.7351942646255
+        },
+        "k": {
+          "johansen_N": 8170.889387369551,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 8170.889387369551
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 6625.7351942646255,
+      "shear_planes": 2,
+      "per_fastener_total_N": 13251.470388529251,
+      "rope_cap_fraction": 0.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.2 Eq8.7; SW2 pp37-38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 5.9,
+      "configuration": "single",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 5455.296,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 5455.296
+        },
+        "b": {
+          "johansen_N": 7841.216184240809,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9091.21618424081
+        }
+      },
+      "governing_mode": "a",
+      "Fv_Rk_N": 5455.296,
+      "shear_planes": 1,
+      "per_fastener_total_N": 5455.296,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.9; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thin",
+      "interpolation_fraction": 0.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 6.0,
+      "configuration": "single",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "a": {
+          "johansen_N": 5455.296,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 5455.296
+        },
+        "b": {
+          "johansen_N": 7841.216184240809,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9091.21618424081
+        }
+      },
+      "governing_mode": "a",
+      "Fv_Rk_N": 5455.296,
+      "shear_planes": 1,
+      "per_fastener_total_N": 5455.296,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.9; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thin",
+      "interpolation_fraction": 0.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 9.0,
+      "configuration": "single",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "thin_a": {
+          "johansen_N": 5455.296,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 5455.296
+        },
+        "thin_b": {
+          "johansen_N": 7841.216184240809,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9091.21618424081
+        },
+        "thick_c": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "thick_d": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "thick_e": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "interpolation(a,d)",
+      "Fv_Rk_N": 7315.291192947617,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7315.291192947617,
+      "rope_cap_fraction": 0.25,
+      "plate_class": "intermediate",
+      "interpolation_fraction": 0.5,
+      "thin_capacity_N": 5455.296,
+      "thick_capacity_N": 9175.286385895233,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3(1), Eqs8.9-8.13; SW2 pp38-39",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12.0,
+      "configuration": "single",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "c": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "d": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "e": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 1,
+      "per_fastener_total_N": 9175.286385895233,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.10; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thick",
+      "interpolation_fraction": 1.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12.1,
+      "configuration": "single",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "c": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "d": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "e": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 1,
+      "per_fastener_total_N": 9175.286385895233,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.10; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thick",
+      "interpolation_fraction": 1.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 5.9,
+      "configuration": "central",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "f": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "g": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "h": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "g",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 2,
+      "per_fastener_total_N": 18350.572771790467,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.11; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 6.0,
+      "configuration": "central",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "f": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "g": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "h": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "g",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 2,
+      "per_fastener_total_N": 18350.572771790467,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.11; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 9.0,
+      "configuration": "central",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "f": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "g": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "h": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "g",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 2,
+      "per_fastener_total_N": 18350.572771790467,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.11; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12.0,
+      "configuration": "central",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "f": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "g": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "h": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "g",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 2,
+      "per_fastener_total_N": 18350.572771790467,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.11; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12.1,
+      "configuration": "central",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "f": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "g": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9175.286385895233
+        },
+        "h": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "g",
+      "Fv_Rk_N": 9175.286385895233,
+      "shear_planes": 2,
+      "per_fastener_total_N": 18350.572771790467,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.11; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 5.9,
+      "configuration": "outer",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "j": {
+          "johansen_N": 6819.12,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6819.12
+        },
+        "k": {
+          "johansen_N": 7841.216184240809,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9091.21618424081
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 6819.12,
+      "shear_planes": 2,
+      "per_fastener_total_N": 13638.24,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.12; SW2 p39",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thin",
+      "interpolation_fraction": 0.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 6.0,
+      "configuration": "outer",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "j": {
+          "johansen_N": 6819.12,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6819.12
+        },
+        "k": {
+          "johansen_N": 7841.216184240809,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9091.21618424081
+        }
+      },
+      "governing_mode": "j",
+      "Fv_Rk_N": 6819.12,
+      "shear_planes": 2,
+      "per_fastener_total_N": 13638.24,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.12; SW2 p39",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thin",
+      "interpolation_fraction": 0.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 9.0,
+      "configuration": "outer",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "thin_j": {
+          "johansen_N": 6819.12,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6819.12
+        },
+        "thin_k": {
+          "johansen_N": 7841.216184240809,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 9091.21618424081
+        },
+        "thick_l": {
+          "johansen_N": 6819.12,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6819.12
+        },
+        "thick_m": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "interpolation(j,l)",
+      "Fv_Rk_N": 6819.12,
+      "shear_planes": 2,
+      "per_fastener_total_N": 13638.24,
+      "rope_cap_fraction": 0.25,
+      "plate_class": "intermediate",
+      "interpolation_fraction": 0.5,
+      "thin_capacity_N": 6819.12,
+      "thick_capacity_N": 6819.12,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3(1), Eqs8.9-8.13; SW2 pp38-39",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12.0,
+      "configuration": "outer",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "l": {
+          "johansen_N": 6819.12,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6819.12
+        },
+        "m": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "l",
+      "Fv_Rk_N": 6819.12,
+      "shear_planes": 2,
+      "per_fastener_total_N": 13638.24,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.13; SW2 p39",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thick",
+      "interpolation_fraction": 1.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12.1,
+      "configuration": "outer",
+      "fastener": "bolt",
+      "Fax_Rk": 5000.0,
+      "hole_tolerance_mm": 0.1
+    },
+    "expected": {
+      "modes": {
+        "l": {
+          "johansen_N": 6819.12,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 6819.12
+        },
+        "m": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 1250.0,
+          "Fv_Rk_N": 12339.154273252761
+        }
+      },
+      "governing_mode": "l",
+      "Fv_Rk_N": 6819.12,
+      "shear_planes": 2,
+      "per_fastener_total_N": 13638.24,
+      "rope_cap_fraction": 0.25,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.2.3 Eq8.13; SW2 p39",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [],
+      "plate_class": "thick",
+      "interpolation_fraction": 1.0,
+      "applicability_verified": true
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 1,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 0
+    },
+    "expected": {
+      "n_eff": 1.0,
+      "n_eff_parallel": 1.0,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "Single fastener; no group reduction",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 1,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 45
+    },
+    "expected": {
+      "n_eff": 1.0,
+      "n_eff_parallel": 1.0,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "Single fastener; no group reduction",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 1,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 90
+    },
+    "expected": {
+      "n_eff": 1.0,
+      "n_eff_parallel": 1.0,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "Single fastener; no group reduction",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 2,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 0
+    },
+    "expected": {
+      "n_eff": 1.5985111429979286,
+      "n_eff_parallel": 1.5985111429979286,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 2,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 45
+    },
+    "expected": {
+      "n_eff": 1.7992555714989642,
+      "n_eff_parallel": 1.5985111429979286,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 2,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 90
+    },
+    "expected": {
+      "n_eff": 2.0,
+      "n_eff_parallel": 1.5985111429979286,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 5,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 0
+    },
+    "expected": {
+      "n_eff": 3.646377901350935,
+      "n_eff_parallel": 3.646377901350935,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 5,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 45
+    },
+    "expected": {
+      "n_eff": 4.323188950675467,
+      "n_eff_parallel": 3.646377901350935,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 5,
+      "a1": 84,
+      "d": 12,
+      "alpha_deg": 90
+    },
+    "expected": {
+      "n_eff": 5.0,
+      "n_eff_parallel": 3.646377901350935,
+      "kef": null,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 19.599999999999998,
+      "d": 2.8
+    },
+    "expected": {
+      "kef": 0.7,
+      "a1_over_d": 7.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 23.799999999999997,
+      "d": 2.8
+    },
+    "expected": {
+      "kef": 0.7749999999999999,
+      "a1_over_d": 8.5,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 28.0,
+      "d": 2.8
+    },
+    "expected": {
+      "kef": 0.85,
+      "a1_over_d": 10.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 33.599999999999994,
+      "d": 2.8
+    },
+    "expected": {
+      "kef": 0.9249999999999999,
+      "a1_over_d": 11.999999999999998,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 39.199999999999996,
+      "d": 2.8
+    },
+    "expected": {
+      "kef": 1.0,
+      "a1_over_d": 14.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 56.0,
+      "d": 2.8
+    },
+    "expected": {
+      "kef": 1.0,
+      "a1_over_d": 20.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "nail_kef",
+    "inputs": {
+      "a1": 14.0,
+      "d": 2.8,
+      "predrilled": true
+    },
+    "expected": {
+      "kef": 0.5,
+      "a1_over_d": 5.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.1 Table8.1; SW2 p41 Table10.1",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 0,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1 Table8.4; SW2 p45 Table10.4",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 45,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 56.485281374238575,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 62.91168824543143,
+        "a4_t": 40.970562748477136,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1 Table8.4; SW2 p45 Table10.4",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 90,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 48.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 84.0,
+        "a4_t": 48.0,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.5.1.1 Table8.4; SW2 p45 Table10.4",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 12,
+      "fastener": "dowel",
+      "alpha_deg": 0,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 60.0,
+        "a2": 36.0,
+        "a3_t": 84.0,
+        "a3_c": 42.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.6, amended table; SW2 p45 Table10.5 (A2:2014)",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 12,
+      "fastener": "dowel",
+      "alpha_deg": 45,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 52.970562748477136,
+        "a2": 36.0,
+        "a3_t": 84.0,
+        "a3_c": 59.396969619669996,
+        "a4_t": 40.970562748477136,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.6, amended table; SW2 p45 Table10.5 (A2:2014)",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 12,
+      "fastener": "dowel",
+      "alpha_deg": 90,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 36.0,
+        "a2": 36.0,
+        "a3_t": 84.0,
+        "a3_c": 84.0,
+        "a4_t": 48.0,
+        "a4_c": 36.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.6, amended table; SW2 p45 Table10.5 (A2:2014)",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 2.8,
+      "fastener": "nail_round",
+      "alpha_deg": 0,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 28.0,
+        "a2": 14.0,
+        "a3_t": 42.0,
+        "a3_c": 28.0,
+        "a4_t": 14.0,
+        "a4_c": 14.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.2 Table8.2, 8.3.1.3/4; SW2 p42 Table10.2",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "Nail spacing table is marked NDP in the opened UK handbook; caller may supply confirmed minima to check_spacings"
+      ],
+      "national_annex_status": "UNVERIFIED: recommended EN spacing values; applicable National Annex choices not confirmed"
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 2.8,
+      "fastener": "nail_round",
+      "alpha_deg": 45,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 23.899494936611664,
+        "a2": 14.0,
+        "a3_t": 37.89949493661166,
+        "a3_c": 28.0,
+        "a4_t": 17.959797974644665,
+        "a4_c": 14.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.2 Table8.2, 8.3.1.3/4; SW2 p42 Table10.2",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "Nail spacing table is marked NDP in the opened UK handbook; caller may supply confirmed minima to check_spacings"
+      ],
+      "national_annex_status": "UNVERIFIED: recommended EN spacing values; applicable National Annex choices not confirmed"
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "minimum_spacings",
+    "inputs": {
+      "d": 2.8,
+      "fastener": "nail_round",
+      "alpha_deg": 90,
+      "rho_k": 350
+    },
+    "expected": {
+      "minimum_mm": {
+        "a1": 14.0,
+        "a2": 14.0,
+        "a3_t": 28.0,
+        "a3_c": 28.0,
+        "a4_t": 19.599999999999998,
+        "a4_c": 14.0
+      },
+      "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.2 Table8.2, 8.3.1.3/4; SW2 p42 Table10.2",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "Nail spacing table is marked NDP in the opened UK handbook; caller may supply confirmed minima to check_spacings"
+      ],
+      "national_annex_status": "UNVERIFIED: recommended EN spacing values; applicable National Annex choices not confirmed"
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "panel_embedment",
+    "inputs": {
+      "d": 2.8,
+      "t_panel": 15,
+      "panel": "osb",
+      "head_d": 5.6
+    },
+    "expected": {
+      "fh_k": 41.44879035733742,
+      "applicability_verified": true,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 8.3.1.3; SW2 p41",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "panel_embedment",
+    "inputs": {
+      "d": 2.8,
+      "t_panel": 15,
+      "panel": "osb"
+    },
+    "expected": {
+      "fh_k": 41.44879035733742,
+      "applicability_verified": false,
+      "status": "UNVERIFIED",
+      "clause": "EN1995-1-1 8.3.1.3; SW2 p41",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "REQUIRED: nail head diameter to verify head_d >= 2d"
+      ]
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "steel_modes",
+    "inputs": {
+      "d": 12,
+      "t1": 45,
+      "fh_k": 25.256,
+      "My_Rk": 76700.0,
+      "t_steel": 12
+    },
+    "expected": {
+      "modes": {
+        "c": {
+          "johansen_N": 13638.24,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 13638.24
+        },
+        "d": {
+          "johansen_N": 7925.286385895233,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 7925.286385895233
+        },
+        "e": {
+          "johansen_N": 11089.154273252761,
+          "rope_N": 0.0,
+          "Fv_Rk_N": 11089.154273252761
+        }
+      },
+      "governing_mode": "d",
+      "Fv_Rk_N": 7925.286385895233,
+      "shear_planes": 1,
+      "per_fastener_total_N": 7925.286385895233,
+      "rope_cap_fraction": 0.25,
+      "status": "UNVERIFIED",
+      "clause": "EN1995-1-1 8.2.3 Eq8.10; SW2 p38",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "Rope effect neglected; axial resistance is not established",
+        "REQUIRED: thick-plate limiting case needs hole-diameter tolerance < 0.1d"
+      ],
+      "plate_class": "thick",
+      "interpolation_fraction": 1.0,
+      "applicability_verified": false
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "effective_number",
+    "inputs": {
+      "n": 5,
+      "a1": 28.0,
+      "d": 2.8,
+      "fastener": "nail_round",
+      "alpha_deg": 45.0
+    },
+    "expected": {
+      "n_eff": null,
+      "n_eff_parallel": 3.9275751511588215,
+      "kef": 0.85,
+      "status": "UNVERIFIED",
+      "clause": "EN1995-1-1 8.3.1.1; SW2 p41",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": [
+        "Nail group rule verified for parallel/perpendicular loading; no intermediate-angle interpolation assumed"
+      ]
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "check_spacings",
+    "inputs": {
+      "minimum_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      },
+      "actual_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      }
+    },
+    "expected": {
+      "checks": {
+        "a1": {
+          "required_mm": 60.0,
+          "actual_mm": 60.0,
+          "status": "PASS"
+        },
+        "a2": {
+          "required_mm": 48.0,
+          "actual_mm": 48.0,
+          "status": "PASS"
+        },
+        "a3_t": {
+          "required_mm": 84.0,
+          "actual_mm": 84.0,
+          "status": "PASS"
+        },
+        "a3_c": {
+          "required_mm": 48.0,
+          "actual_mm": 48.0,
+          "status": "PASS"
+        },
+        "a4_t": {
+          "required_mm": 36.0,
+          "actual_mm": 36.0,
+          "status": "PASS"
+        },
+        "a4_c": {
+          "required_mm": 36.0,
+          "actual_mm": 36.0,
+          "status": "PASS"
+        }
+      },
+      "status": "PASS",
+      "missing_inputs": [],
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "clause": "EN1995-1-1 applicable spacing table; SW2 pp42/45"
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "check_spacings",
+    "inputs": {
+      "minimum_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      },
+      "actual_mm": {
+        "a1": 84.0
+      }
+    },
+    "expected": {
+      "checks": {
+        "a1": {
+          "required_mm": 60.0,
+          "actual_mm": 84.0,
+          "status": "PASS"
+        },
+        "a2": {
+          "required_mm": 48.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a3_t": {
+          "required_mm": 84.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a3_c": {
+          "required_mm": 48.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a4_t": {
+          "required_mm": 36.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        },
+        "a4_c": {
+          "required_mm": 36.0,
+          "actual_mm": null,
+          "status": "UNVERIFIED"
+        }
+      },
+      "status": "UNVERIFIED",
+      "missing_inputs": [
+        "a2",
+        "a3_t",
+        "a3_c",
+        "a4_t",
+        "a4_c"
+      ],
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "clause": "EN1995-1-1 applicable spacing table; SW2 pp42/45"
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "check_spacings",
+    "inputs": {
+      "minimum_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 84.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      },
+      "actual_mm": {
+        "a1": 60.0,
+        "a2": 48.0,
+        "a3_t": 83.0,
+        "a3_c": 48.0,
+        "a4_t": 36.0,
+        "a4_c": 36.0
+      }
+    },
+    "expected": {
+      "checks": {
+        "a1": {
+          "required_mm": 60.0,
+          "actual_mm": 60.0,
+          "status": "PASS"
+        },
+        "a2": {
+          "required_mm": 48.0,
+          "actual_mm": 48.0,
+          "status": "PASS"
+        },
+        "a3_t": {
+          "required_mm": 84.0,
+          "actual_mm": 83.0,
+          "status": "FAIL"
+        },
+        "a3_c": {
+          "required_mm": 48.0,
+          "actual_mm": 48.0,
+          "status": "PASS"
+        },
+        "a4_t": {
+          "required_mm": 36.0,
+          "actual_mm": 36.0,
+          "status": "PASS"
+        },
+        "a4_c": {
+          "required_mm": 36.0,
+          "actual_mm": 36.0,
+          "status": "PASS"
+        }
+      },
+      "status": "FAIL",
+      "missing_inputs": [],
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "clause": "EN1995-1-1 applicable spacing table; SW2 pp42/45"
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "slip_modulus",
+    "inputs": {
+      "rho_m": 420,
+      "d": 12,
+      "steel_factor": 1
+    },
+    "expected": {
+      "Kser_base_N_per_mm": 4490.837553081424,
+      "Kser_N_per_mm": 4490.837553081424,
+      "Ku_N_per_mm": 2993.8917020542826,
+      "steel_factor": 1.0,
+      "rho_m_effective": 420.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 7.1 Table7.1, 7.1(3), 2.2.2(2); SW2 p33",
+      "source_ids": [
+        "SW2_2022_UK",
+        "EC5_PUBLIC_2004_A1"
+      ],
+      "warnings": [
+        "Bolt-hole clearance slip must be added separately"
+      ]
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "slip_modulus",
+    "inputs": {
+      "rho_m": 420,
+      "d": 12,
+      "steel_factor": 2
+    },
+    "expected": {
+      "Kser_base_N_per_mm": 4490.837553081424,
+      "Kser_N_per_mm": 8981.675106162847,
+      "Ku_N_per_mm": 5987.783404108565,
+      "steel_factor": 2.0,
+      "rho_m_effective": 420.0,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 7.1 Table7.1, 7.1(3), 2.2.2(2); SW2 p33",
+      "source_ids": [
+        "SW2_2022_UK",
+        "EC5_PUBLIC_2004_A1"
+      ],
+      "warnings": [
+        "Bolt-hole clearance slip must be added separately"
+      ]
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "design_capacity",
+    "inputs": {
+      "Fv_Rk_N": 5455.296,
+      "kmod": 0.9,
+      "gamma_M": 1.3,
+      "n_eff": 1.6
+    },
+    "expected": {
+      "Fv_Rd_per_plane_N": 3776.743384615385,
+      "group_design_capacity_N": 6042.789415384616,
+      "n_eff": 1.6,
+      "shear_planes": 1,
+      "kmod": 0.9,
+      "gamma_M": 1.3,
+      "status": "VERIFIED_FORMULA",
+      "clause": "EN1995-1-1 2.4.1, 8.1; SW2 p36",
+      "source_ids": [
+        "SW2_2022_UK"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "connection_summary",
+    "inputs": {
+      "rho_k": 350,
+      "rho_m": 420,
+      "d": 12,
+      "fu_k": 400,
+      "t1": 45,
+      "t_steel": 6,
+      "n": 2,
+      "a1": 84,
+      "kmod": 0.9,
+      "gamma_M": 1.3
+    },
+    "expected": {
+      "status": "UNVERIFIED",
+      "embedment": {
+        "fh0_k": 25.256,
+        "fh_k": 25.256,
+        "k90": 1.53,
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 8.5.1.1(2)-(3), Eqs8.31-8.33; SW2 p44",
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "warnings": []
+      },
+      "yield_moment": {
+        "My_Rk": 76745.42328693614,
+        "coefficient": 0.3,
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 8.5.1.1(1), Eq8.30; SW2 p44",
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "warnings": []
+      },
+      "modes": {
+        "modes": {
+          "a": {
+            "johansen_N": 5455.296,
+            "rope_N": 0.0,
+            "Fv_Rk_N": 5455.296
+          },
+          "b": {
+            "johansen_N": 7843.537703764573,
+            "rope_N": 0.0,
+            "Fv_Rk_N": 7843.537703764573
+          }
+        },
+        "governing_mode": "a",
+        "Fv_Rk_N": 5455.296,
+        "shear_planes": 1,
+        "per_fastener_total_N": 5455.296,
+        "rope_cap_fraction": 0.25,
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 8.2.3 Eq8.9; SW2 p38",
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "warnings": [
+          "Rope effect neglected; axial resistance is not established"
+        ],
+        "plate_class": "thin",
+        "interpolation_fraction": 0.0,
+        "applicability_verified": true
+      },
+      "effective_number": {
+        "n_eff": 1.5985111429979286,
+        "n_eff_parallel": 1.5985111429979286,
+        "kef": null,
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 8.5.1.1(4), Eq8.34; SW2 p45",
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "warnings": []
+      },
+      "design": {
+        "Fv_Rd_per_plane_N": 3776.743384615385,
+        "group_design_capacity_N": 6037.166384551405,
+        "n_eff": 1.5985111429979286,
+        "shear_planes": 1,
+        "kmod": 0.9,
+        "gamma_M": 1.3,
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 2.4.1, 8.1; SW2 p36",
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "warnings": []
+      },
+      "slip": {
+        "Kser_base_N_per_mm": 4490.837553081424,
+        "Kser_N_per_mm": 8981.675106162847,
+        "Ku_N_per_mm": 5987.783404108565,
+        "steel_factor": 2.0,
+        "rho_m_effective": 420.0,
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 7.1 Table7.1, 7.1(3), 2.2.2(2); SW2 p33",
+        "source_ids": [
+          "SW2_2022_UK",
+          "EC5_PUBLIC_2004_A1"
+        ],
+        "warnings": [
+          "Bolt-hole clearance slip must be added separately"
+        ]
+      },
+      "spacing": {
+        "checks": {
+          "a1": {
+            "required_mm": 60.0,
+            "actual_mm": 84.0,
+            "status": "PASS"
+          },
+          "a2": {
+            "required_mm": 48.0,
+            "actual_mm": null,
+            "status": "UNVERIFIED"
+          },
+          "a3_t": {
+            "required_mm": 84.0,
+            "actual_mm": null,
+            "status": "UNVERIFIED"
+          },
+          "a3_c": {
+            "required_mm": 48.0,
+            "actual_mm": null,
+            "status": "UNVERIFIED"
+          },
+          "a4_t": {
+            "required_mm": 36.0,
+            "actual_mm": null,
+            "status": "UNVERIFIED"
+          },
+          "a4_c": {
+            "required_mm": 36.0,
+            "actual_mm": null,
+            "status": "UNVERIFIED"
+          }
+        },
+        "status": "UNVERIFIED",
+        "missing_inputs": [
+          "a2",
+          "a3_t",
+          "a3_c",
+          "a4_t",
+          "a4_c"
+        ],
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "clause": "EN1995-1-1 applicable spacing table; SW2 pp42/45"
+      },
+      "minimum_spacings": {
+        "minimum_mm": {
+          "a1": 60.0,
+          "a2": 48.0,
+          "a3_t": 84.0,
+          "a3_c": 48.0,
+          "a4_t": 36.0,
+          "a4_c": 36.0
+        },
+        "angle_convention": "principal 0-90; unloaded end uses 180-alpha",
+        "status": "VERIFIED_FORMULA",
+        "clause": "EN1995-1-1 8.5.1.1 Table8.4; SW2 p45 Table10.4",
+        "source_ids": [
+          "SW2_2022_UK"
+        ],
+        "warnings": []
+      },
+      "design_shear_N": null,
+      "utilisation": null,
+      "anchor_utilisation": null,
+      "missing_inputs": [
+        "a2",
+        "a3_t",
+        "a3_c",
+        "a4_t",
+        "a4_c",
+        "design_shear_N",
+        "anchor_capacity_N from applicable ETA"
+      ],
+      "unverified_components": [],
+      "source_ids": [
+        "SW2_2022_UK",
+        "EC5_PUBLIC_2004_A1"
+      ],
+      "excluded_checks": [
+        "Steel plate/fastener steel resistance",
+        "Timber splitting, block/plug shear and net section",
+        "Combined axial/lateral action and eccentricity",
+        "Bracket bending, prying and actual load path",
+        "Concrete anchor-group and substrate verification",
+        "Cyclic, fire, moisture and long-term behaviour"
+      ],
+      "warnings": [
+        "Educational calculation, not for design",
+        "Load angle and timber penetration are illustrative inputs",
+        "Rope effect explicitly neglected when Fax_Rk is zero"
+      ]
+    }
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 5.5,
+      "fastener": "screw"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 8,
+      "fastener": "screw",
+      "nominal_d": 6
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "connection_summary",
+    "inputs": {
+      "rho_k": 350,
+      "rho_m": 420,
+      "d": 12,
+      "fu_k": 400,
+      "t1": 45,
+      "t_steel": 6,
+      "n": 2,
+      "a1": 84,
+      "kmod": 0.9,
+      "gamma_M": 1.3,
+      "fastener": "screw"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "connection_summary",
+    "inputs": {
+      "rho_k": 350,
+      "rho_m": 420,
+      "d": 12,
+      "fu_k": 400,
+      "t1": 45,
+      "t_steel": 6,
+      "n": 2,
+      "a1": 84,
+      "kmod": 0.9,
+      "gamma_M": 1.3,
+      "fastener": "nail_round"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "connection_summary",
+    "inputs": {
+      "rho_k": 350,
+      "rho_m": 420,
+      "d": 12,
+      "fu_k": 400,
+      "t1": 45,
+      "t_steel": 6,
+      "n": 2,
+      "a1": 84,
+      "kmod": 0.9,
+      "gamma_M": 1.3,
+      "spacing_actual": {
+        "a1": 200.0
+      }
+    },
+    "expectedError": true
+  },
+  {
+    "module": "materials",
+    "operation": "material",
+    "inputs": {
+      "grade": "C24"
+    },
+    "expected": {
+      "grade": "C24",
+      "material_type": "solid_timber",
+      "fm_k_MPa": 24.0,
+      "ft_0_k_MPa": 14.5,
+      "ft_90_k_MPa": 0.4,
+      "fc_0_k_MPa": 21.0,
+      "fc_90_k_MPa": 2.5,
+      "fv_k_MPa": 4.0,
+      "E_0_mean_MPa": 11000.0,
+      "E_0_05_MPa": 7400.0,
+      "E_90_mean_MPa": 370.0,
+      "G_mean_MPa": 690.0,
+      "rho_k_kg_m3": 350.0,
+      "rho_mean_kg_m3": 420.0,
+      "source": "Swedish Wood/TDUK UK Vol.2 1:2022, Table 3.3 p.10; EN 338:2016; EN 1995-1-1 3.2",
+      "source_url": "https://www.universityofgalway.ie/media/timberengineeringresearchgroup/Design-of-timber-structures_Volume2_Rules-and-formulas-according-to-Eurocode-5.pdf",
+      "status": "REFERENCE_PROPERTIES_NOT_PRODUCT_VERIFIED"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "material",
+    "inputs": {
+      "grade": "GL24h"
+    },
+    "expected": {
+      "grade": "GL24h",
+      "material_type": "glulam",
+      "fm_k_MPa": 24.0,
+      "ft_0_k_MPa": 19.2,
+      "ft_90_k_MPa": 0.5,
+      "fc_0_k_MPa": 24.0,
+      "fc_90_k_MPa": 2.5,
+      "fv_k_MPa": 3.5,
+      "fr_k_MPa": 1.2,
+      "E_0_mean_MPa": 11500.0,
+      "E_0_05_MPa": 9600.0,
+      "E_90_mean_MPa": 300.0,
+      "E_90_05_MPa": 250.0,
+      "G_mean_MPa": 650.0,
+      "G_05_MPa": 540.0,
+      "rho_k_kg_m3": 385.0,
+      "rho_mean_kg_m3": 420.0,
+      "source": "Swedish Wood/TDUK UK Vol.2 1:2022, Table 3.4 p.12; EN 14080:2013; EN 1995-1-1 3.3",
+      "source_url": "https://www.universityofgalway.ie/media/timberengineeringresearchgroup/Design-of-timber-structures_Volume2_Rules-and-formulas-according-to-Eurocode-5.pdf",
+      "status": "REFERENCE_PROPERTIES_NOT_PRODUCT_VERIFIED"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "kmod",
+    "inputs": {
+      "load_duration": "short",
+      "service_class": 2,
+      "material_type": "solid_timber"
+    },
+    "expected": {
+      "value": 0.9,
+      "source": "EN 1995-1-1:2004 3.1.3/Table 3.1; UK handbook Table 3.2 p.8"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "kmod",
+    "inputs": {
+      "load_duration": "permanent",
+      "service_class": 3,
+      "material_type": "glulam"
+    },
+    "expected": {
+      "value": 0.5,
+      "source": "EN 1995-1-1:2004 3.1.3/Table 3.1; UK handbook Table 3.2 p.8"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "kmod",
+    "inputs": {
+      "load_duration": "instantaneous",
+      "service_class": 2,
+      "material_type": "osb3"
+    },
+    "expected": {
+      "value": 0.9,
+      "source": "EN 1995-1-1:2004 3.1.3/Table 3.1; UK handbook Table 3.2 p.8"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "kdef",
+    "inputs": {
+      "service_class": 1,
+      "material_type": "solid_timber"
+    },
+    "expected": {
+      "value": 0.6,
+      "source": "EN 1995-1-1:2004 3.1.4/Table 3.2; UK handbook Table 9.1 p.32"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "kdef",
+    "inputs": {
+      "service_class": 3,
+      "material_type": "glulam"
+    },
+    "expected": {
+      "value": 2.0,
+      "source": "EN 1995-1-1:2004 3.1.4/Table 3.2; UK handbook Table 9.1 p.32"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "kdef",
+    "inputs": {
+      "service_class": 2,
+      "material_type": "osb3"
+    },
+    "expected": {
+      "value": 2.25,
+      "source": "EN 1995-1-1:2004 3.1.4/Table 3.2; UK handbook Table 9.1 p.32"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "gamma_m",
+    "inputs": {
+      "material_type": "solid_timber"
+    },
+    "expected": {
+      "value": 1.3,
+      "status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source": "EN 1995-1-1:2004 2.4.1/Table 2.3; UK handbook Table 3.1 p.7; recommended NDP"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "gamma_m",
+    "inputs": {
+      "material_type": "glulam"
+    },
+    "expected": {
+      "value": 1.25,
+      "status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source": "EN 1995-1-1:2004 2.4.1/Table 2.3; UK handbook Table 3.1 p.7; recommended NDP"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "gamma_m",
+    "inputs": {
+      "material_type": "osb3"
+    },
+    "expected": {
+      "value": 1.2,
+      "status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source": "EN 1995-1-1:2004 2.4.1/Table 2.3; UK handbook Table 3.1 p.7; recommended NDP"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "gamma_m",
+    "inputs": {
+      "material_type": "connections"
+    },
+    "expected": {
+      "value": 1.3,
+      "status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source": "EN 1995-1-1:2004 2.4.1/Table 2.3; UK handbook Table 3.1 p.7; recommended NDP"
+    }
+  },
+  {
+    "module": "materials",
+    "operation": "design_strength",
+    "inputs": {
+      "fk_MPa": 24.0,
+      "kmod_value": 0.9,
+      "gamma_M": 1.3
+    },
+    "expected": {
+      "fd_MPa": 16.615384615384617,
+      "source": "EN 1995-1-1:2004 2.4.1, Equation (2.14); UK handbook 3.1 p.7"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "parameters",
+    "inputs": {
+      "material_type": "solid_softwood",
+      "rho_k_kg_m3": 350.0
+    },
+    "expected": {
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "kfi": 1.25,
+      "kmod_fi": 1.0,
+      "gamma_M_fi_recommended": 1.0,
+      "gamma_status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source_url": "https://www.phd.eng.br/wp-content/uploads/2015/12/en.1995.1.2.2004.pdf",
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 2.3, Equations (2.1),(2.4), Table 2.1; printed pp.15-16"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "parameters",
+    "inputs": {
+      "material_type": "glulam_softwood",
+      "rho_k_kg_m3": 385.0
+    },
+    "expected": {
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.7,
+      "kfi": 1.15,
+      "kmod_fi": 1.0,
+      "gamma_M_fi_recommended": 1.0,
+      "gamma_status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source_url": "https://www.phd.eng.br/wp-content/uploads/2015/12/en.1995.1.2.2004.pdf",
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 2.3, Equations (2.1),(2.4), Table 2.1; printed pp.15-16"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "parameters",
+    "inputs": {
+      "material_type": "lvl",
+      "rho_k_kg_m3": 480.0
+    },
+    "expected": {
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.7,
+      "kfi": 1.1,
+      "kmod_fi": 1.0,
+      "gamma_M_fi_recommended": 1.0,
+      "gamma_status": "RECOMMENDED_NDP_NOT_NATIONAL_ANNEX_VERIFIED",
+      "source_url": "https://www.phd.eng.br/wp-content/uploads/2015/12/en.1995.1.2.2004.pdf",
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 2.3, Equations (2.1),(2.4), Table 2.1; printed pp.15-16"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": 0.0,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expected": {
+      "time_min": 0.0,
+      "dchar_0_mm": 0.0,
+      "dchar_n_mm": 0.0,
+      "k0": 0.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 0.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": 10.0,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expected": {
+      "time_min": 10.0,
+      "dchar_0_mm": 6.5,
+      "dchar_n_mm": 8.0,
+      "k0": 0.5,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 11.5,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": 19.999,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expected": {
+      "time_min": 19.999,
+      "dchar_0_mm": 12.99935,
+      "dchar_n_mm": 15.9992,
+      "k0": 0.9999499999999999,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 22.998849999999997,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": 20.0,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expected": {
+      "time_min": 20.0,
+      "dchar_0_mm": 13.0,
+      "dchar_n_mm": 16.0,
+      "k0": 1.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 23.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": 30.0,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expected": {
+      "time_min": 30.0,
+      "dchar_0_mm": 19.5,
+      "dchar_n_mm": 24.0,
+      "k0": 1.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 31.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": 60.0,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expected": {
+      "time_min": 60.0,
+      "dchar_0_mm": 39.0,
+      "dchar_n_mm": 48.0,
+      "k0": 1.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 55.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "section",
+    "inputs": {
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "time_min": 10.0
+    },
+    "expected": {
+      "time_min": 10.0,
+      "dchar_0_mm": 6.5,
+      "dchar_n_mm": 8.0,
+      "k0": 0.5,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 11.5,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "residual_width_mm": 45.0,
+      "residual_depth_mm": 137.0,
+      "effective_width_mm": 45.0,
+      "effective_depth_mm": 133.5,
+      "effective_area_mm2": 6007.5,
+      "I_y_mm4": 8922263.90625,
+      "W_y_mm3": 133666.875,
+      "I_z_mm4": 1013765.625,
+      "W_z_mm3": 45056.25,
+      "centroid_shift_width_mm": 0.0,
+      "centroid_shift_depth_mm": 5.75,
+      "status": "SECTION_ONLY_NOT_FIRE_RESISTANCE_APPROVAL",
+      "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+      "limitations": [
+        "Isolated unprotected member under standard fire only",
+        "No protected or insulated assembly assessment",
+        "No fire actions, stability, connection fire check or separating-function classification"
+      ]
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "section",
+    "inputs": {
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "time_min": 30.0
+    },
+    "expected": {
+      "time_min": 30.0,
+      "dchar_0_mm": 19.5,
+      "dchar_n_mm": 24.0,
+      "k0": 1.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 31.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "residual_width_mm": 45.0,
+      "residual_depth_mm": 121.0,
+      "effective_width_mm": 45.0,
+      "effective_depth_mm": 114.0,
+      "effective_area_mm2": 5130.0,
+      "I_y_mm4": 5555790.0,
+      "W_y_mm3": 97470.0,
+      "I_z_mm4": 865687.5,
+      "W_z_mm3": 38475.0,
+      "centroid_shift_width_mm": 0.0,
+      "centroid_shift_depth_mm": 15.5,
+      "status": "SECTION_ONLY_NOT_FIRE_RESISTANCE_APPROVAL",
+      "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+      "limitations": [
+        "Isolated unprotected member under standard fire only",
+        "No protected or insulated assembly assessment",
+        "No fire actions, stability, connection fire check or separating-function classification"
+      ]
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "section",
+    "inputs": {
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "time_min": 60.0
+    },
+    "expected": {
+      "time_min": 60.0,
+      "dchar_0_mm": 39.0,
+      "dchar_n_mm": 48.0,
+      "k0": 1.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 55.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "residual_width_mm": 45.0,
+      "residual_depth_mm": 97.0,
+      "effective_width_mm": 45.0,
+      "effective_depth_mm": 90.0,
+      "effective_area_mm2": 4050.0,
+      "I_y_mm4": 2733750.0,
+      "W_y_mm3": 60750.0,
+      "I_z_mm4": 683437.5,
+      "W_z_mm3": 30375.0,
+      "centroid_shift_width_mm": 0.0,
+      "centroid_shift_depth_mm": 27.5,
+      "status": "SECTION_ONLY_NOT_FIRE_RESISTANCE_APPROVAL",
+      "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+      "limitations": [
+        "Isolated unprotected member under standard fire only",
+        "No protected or insulated assembly assessment",
+        "No fire actions, stability, connection fire check or separating-function classification"
+      ]
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "section",
+    "inputs": {
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "width_left"
+      ],
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "time_min": 60.0
+    },
+    "expected": {
+      "time_min": 60.0,
+      "dchar_0_mm": 39.0,
+      "dchar_n_mm": 48.0,
+      "k0": 1.0,
+      "d0_mm": 7.0,
+      "effective_char_depth_mm": 55.0,
+      "source": "EN 1995-1-2:2004 3.4.2, Equations (3.1)-(3.2), Table 3.1; printed pp.21-23; EN 1995-1-2:2004 4.2.2, Equation (4.1), Table 4.1; printed pp.30-31",
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "width_left"
+      ],
+      "residual_width_mm": 0.0,
+      "residual_depth_mm": 145.0,
+      "effective_width_mm": 0.0,
+      "effective_depth_mm": 145.0,
+      "effective_area_mm2": 0.0,
+      "I_y_mm4": 0.0,
+      "W_y_mm3": 0.0,
+      "I_z_mm4": 0.0,
+      "W_z_mm3": 0.0,
+      "centroid_shift_width_mm": null,
+      "centroid_shift_depth_mm": null,
+      "status": "SECTION_EXHAUSTED",
+      "orientation": "depth_front/back reduce depth; width_left/right reduce width; y bending uses width*depth^2/6",
+      "limitations": [
+        "Isolated unprotected member under standard fire only",
+        "No protected or insulated assembly assessment",
+        "No fire actions, stability, connection fire check or separating-function classification"
+      ]
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "bending",
+    "inputs": {
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "time_min": 30.0,
+      "design_bending_moment_Nmm": null,
+      "fm_k_MPa": 24.0,
+      "kfi": 1.25,
+      "gamma_M_fi": 1.0,
+      "kmod_fi": 1.0
+    },
+    "expected": {
+      "status": "REQUIRED_INPUT",
+      "required_inputs": [
+        "design_bending_moment_Nmm"
+      ],
+      "utilisation": null,
+      "capacity_Nmm": null,
+      "passed": null,
+      "source": "EN 1995-1-2:2004 4.1/4.2.2 and EN 1995-1-1 6.1.6; uniaxial section bending only, stability excluded"
+    }
+  },
+  {
+    "module": "fire",
+    "operation": "bending",
+    "inputs": {
+      "width_mm": 45.0,
+      "depth_mm": 145.0,
+      "exposed_faces": [
+        "depth_front"
+      ],
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8,
+      "time_min": 30.0,
+      "design_bending_moment_Nmm": 1000000.0,
+      "fm_k_MPa": 24.0,
+      "kfi": 1.25,
+      "gamma_M_fi": 1.0,
+      "kmod_fi": 1.0
+    },
+    "expected": {
+      "status": "SECTION_BENDING_ONLY",
+      "capacity_Nmm": 2924100.0,
+      "utilisation": 0.3419855682090216,
+      "passed": true,
+      "fd_fi_MPa": 30.0,
+      "demand_Nmm": 1000000.0,
+      "axis": "y",
+      "source": "EN 1995-1-2:2004 2.3, Equations (2.1),(2.4), Table 2.1; printed pp.15-16; EN 1995-1-2:2004 4.2.2(5); printed p.31; EN 1995-1-2:2004 4.1/4.2.2 and EN 1995-1-1 6.1.6; uniaxial section bending only, stability excluded",
+      "limitations": [
+        "No beam stability or combined-action check",
+        "No fire-action combination is generated",
+        "Not a fire-resistance time rating"
+      ]
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "geometry",
+    "inputs": {
+      "sheet_width_mm": 1250.0,
+      "wall_height_mm": 2700.0
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.9259259259259259,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50"
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "geometry",
+    "inputs": {
+      "sheet_width_mm": 675.0,
+      "wall_height_mm": 2700.0
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.5,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50"
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "geometry",
+    "inputs": {
+      "sheet_width_mm": 674.9,
+      "wall_height_mm": 2700.0
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.4999259259259259,
+      "width_condition_passed": false,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50"
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "geometry",
+    "inputs": {
+      "sheet_width_mm": 1350.0,
+      "wall_height_mm": 2700.0
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 1.0,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50"
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "panel",
+    "inputs": {
+      "fastener_design_resistance_N": 1000.0,
+      "sheet_width_mm": 1250.0,
+      "wall_height_mm": 2700.0,
+      "perimeter_spacing_mm": 150.0,
+      "tied_down": true,
+      "no_openings": true,
+      "regular_spacing": true,
+      "sheet_edge_sufficient": true,
+      "sheet_fixings_verified": true
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.9259259259259259,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50",
+      "status": "CONDITIONAL_PANEL_SUBCHECK",
+      "required_inputs": [],
+      "failed_conditions": [],
+      "fastener_edge_factor_applied": 1.2,
+      "edge_fastener_design_resistance_N": 1200.0,
+      "formula_capacity_N": 9259.25925925926,
+      "capacity_N": 9259.25925925926,
+      "edge_factor_source": "EN 1995-1-1 9.2.4.2(5), 1.2 sheet-edge enhancement relative to Section 8",
+      "limitations": [
+        "Not a complete wall or façade resistance check",
+        "Method A national choice not verified",
+        "Stud buckling/bearing, sheet shear buckling, central fixings, inter-element transfer, anchorage and serviceability remain to be verified"
+      ]
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "panel",
+    "inputs": {
+      "fastener_design_resistance_N": 1000.0,
+      "sheet_width_mm": 1250.0,
+      "wall_height_mm": 2700.0,
+      "perimeter_spacing_mm": 150.0,
+      "tied_down": null,
+      "no_openings": true,
+      "regular_spacing": true,
+      "sheet_edge_sufficient": true,
+      "sheet_fixings_verified": true
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.9259259259259259,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50",
+      "status": "REQUIRED_INPUT",
+      "required_inputs": [
+        "tied_down"
+      ],
+      "failed_conditions": [],
+      "fastener_edge_factor_applied": 1.2,
+      "edge_fastener_design_resistance_N": 1200.0,
+      "formula_capacity_N": 9259.25925925926,
+      "capacity_N": null,
+      "edge_factor_source": "EN 1995-1-1 9.2.4.2(5), 1.2 sheet-edge enhancement relative to Section 8",
+      "limitations": [
+        "Not a complete wall or façade resistance check",
+        "Method A national choice not verified",
+        "Stud buckling/bearing, sheet shear buckling, central fixings, inter-element transfer, anchorage and serviceability remain to be verified"
+      ]
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "panel",
+    "inputs": {
+      "fastener_design_resistance_N": 1000.0,
+      "sheet_width_mm": 1250.0,
+      "wall_height_mm": 2700.0,
+      "perimeter_spacing_mm": 150.0,
+      "tied_down": true,
+      "no_openings": false,
+      "regular_spacing": true,
+      "sheet_edge_sufficient": true,
+      "sheet_fixings_verified": true
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.9259259259259259,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50",
+      "status": "INAPPLICABLE",
+      "required_inputs": [],
+      "failed_conditions": [
+        "no_openings"
+      ],
+      "fastener_edge_factor_applied": 1.2,
+      "edge_fastener_design_resistance_N": 1200.0,
+      "formula_capacity_N": 9259.25925925926,
+      "capacity_N": null,
+      "edge_factor_source": "EN 1995-1-1 9.2.4.2(5), 1.2 sheet-edge enhancement relative to Section 8",
+      "limitations": [
+        "Not a complete wall or façade resistance check",
+        "Method A national choice not verified",
+        "Stud buckling/bearing, sheet shear buckling, central fixings, inter-element transfer, anchorage and serviceability remain to be verified"
+      ]
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "panel",
+    "inputs": {
+      "fastener_design_resistance_N": null,
+      "sheet_width_mm": 1250.0,
+      "wall_height_mm": 2700.0,
+      "perimeter_spacing_mm": 150.0,
+      "tied_down": true,
+      "no_openings": true,
+      "regular_spacing": true,
+      "sheet_edge_sufficient": true,
+      "sheet_fixings_verified": true
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.9259259259259259,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50",
+      "status": "REQUIRED_INPUT",
+      "required_inputs": [
+        "fastener_design_resistance_N"
+      ],
+      "failed_conditions": [],
+      "fastener_edge_factor_applied": 1.2,
+      "edge_fastener_design_resistance_N": null,
+      "formula_capacity_N": null,
+      "capacity_N": null,
+      "edge_factor_source": "EN 1995-1-1 9.2.4.2(5), 1.2 sheet-edge enhancement relative to Section 8",
+      "limitations": [
+        "Not a complete wall or façade resistance check",
+        "Method A national choice not verified",
+        "Stud buckling/bearing, sheet shear buckling, central fixings, inter-element transfer, anchorage and serviceability remain to be verified"
+      ]
+    }
+  },
+  {
+    "module": "racking",
+    "operation": "panel",
+    "inputs": {
+      "fastener_design_resistance_N": 1200.0,
+      "sheet_width_mm": 1250.0,
+      "wall_height_mm": 2700.0,
+      "perimeter_spacing_mm": 150.0,
+      "tied_down": true,
+      "no_openings": true,
+      "regular_spacing": true,
+      "sheet_edge_sufficient": true,
+      "sheet_fixings_verified": true,
+      "fastener_capacity_already_edge_enhanced": true
+    },
+    "expected": {
+      "b0_mm": 1350.0,
+      "minimum_sheet_width_mm": 675.0,
+      "width_factor_ci": 0.9259259259259259,
+      "width_condition_passed": true,
+      "source": "EN 1995-1-1:2004+A1:2008 9.2.4.2, Equations (9.21)-(9.22), printed pp.94-96; Swedish Wood/TDUK UK Vol.2 1:2022 pp.49-50",
+      "status": "CONDITIONAL_PANEL_SUBCHECK",
+      "required_inputs": [],
+      "failed_conditions": [],
+      "fastener_edge_factor_applied": 1.0,
+      "edge_fastener_design_resistance_N": 1200.0,
+      "formula_capacity_N": 9259.25925925926,
+      "capacity_N": 9259.25925925926,
+      "edge_factor_source": "EN 1995-1-1 9.2.4.2(5), 1.2 sheet-edge enhancement relative to Section 8",
+      "limitations": [
+        "Not a complete wall or façade resistance check",
+        "Method A national choice not verified",
+        "Stud buckling/bearing, sheet shear buckling, central fixings, inter-element transfer, anchorage and serviceability remain to be verified"
+      ]
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "case_summary",
+    "inputs": {
+      "alpha": 0.2,
+      "soil_factor": 1.15,
+      "z_m": 12.0,
+      "H_m": 15.0,
+      "Ta_s": 0.05,
+      "T1_s": 0.5,
+      "height_mm": 2700.0,
+      "width_mm": 1250.0,
+      "self_weight_kN_m2": 0.6,
+      "gamma_a": 1.0,
+      "q_a": 2.0,
+      "dr_mm": 15.0,
+      "storey_height_mm": 3000.0,
+      "nu": 0.5,
+      "category": "brittle_attached",
+      "bolt_diameter_mm": 12.0,
+      "installation_allowance_mm": 0.0,
+      "load_shares": null
+    },
+    "expected": {
+      "Sa": 0.5711878453038673,
+      "weight_kN": 2.025,
+      "Fa_kN": 0.5783276933701657,
+      "bracket_forces_kN": null,
+      "bracket_status": "REQUIRED: justified bracket load shares",
+      "anchor_status": "REQUIRED: project-specific manufacturer ETA capacity; no default",
+      "drift": {
+        "category": "brittle_attached",
+        "demand_mm": 7.5,
+        "limit_mm": 15.0,
+        "dr_limit_mm": 30.0,
+        "ratio": 0.5,
+        "passes": true
+      },
+      "slot": {
+        "slot_length_mm": 42.0,
+        "travel_each_direction_mm": 15.0,
+        "reversed_motion_accommodated": true,
+        "assumption": "centred, friction-free, reversing translation"
+      }
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "case_summary",
+    "inputs": {
+      "alpha": 0.2,
+      "soil_factor": 1.15,
+      "z_m": 12.0,
+      "H_m": 15.0,
+      "Ta_s": 0.05,
+      "T1_s": 0.5,
+      "height_mm": 2700.0,
+      "width_mm": 1250.0,
+      "self_weight_kN_m2": 0.6,
+      "gamma_a": 1.0,
+      "q_a": 2.0,
+      "dr_mm": 15.0,
+      "storey_height_mm": 3000.0,
+      "nu": 0.5,
+      "category": "brittle_attached",
+      "bolt_diameter_mm": 12.0,
+      "installation_allowance_mm": 0.0,
+      "load_shares": [
+        0.5,
+        0.3,
+        0.2
+      ]
+    },
+    "expected": {
+      "Sa": 0.5711878453038673,
+      "weight_kN": 2.025,
+      "Fa_kN": 0.5783276933701657,
+      "bracket_forces_kN": [
+        0.2891638466850828,
+        0.17349830801104968,
+        0.11566553867403313
+      ],
+      "bracket_status": "DEMAND ONLY: supplied load shares",
+      "anchor_status": "REQUIRED: project-specific manufacturer ETA capacity; no default",
+      "drift": {
+        "category": "brittle_attached",
+        "demand_mm": 7.5,
+        "limit_mm": 15.0,
+        "dr_limit_mm": 30.0,
+        "ratio": 0.5,
+        "passes": true
+      },
+      "slot": {
+        "slot_length_mm": 42.0,
+        "travel_each_direction_mm": 15.0,
+        "reversed_motion_accommodated": true,
+        "assumption": "centred, friction-free, reversing translation"
+      }
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "seismic_coefficient",
+    "inputs": {
+      "alpha": 0.2,
+      "soil_factor": 1.15,
+      "z_m": 0.0,
+      "H_m": 15.0,
+      "Ta_s": 10.0,
+      "T1_s": 0.5
+    },
+    "expected": 0.22999999999999998
+  },
+  {
+    "module": "seismic",
+    "operation": "seismic_coefficient",
+    "inputs": {
+      "alpha": 0.2,
+      "soil_factor": 1.15,
+      "z_m": 15.0,
+      "H_m": 15.0,
+      "Ta_s": 0.5,
+      "T1_s": 0.5
+    },
+    "expected": 1.265
+  },
+  {
+    "module": "seismic",
+    "operation": "seismic_force_kN",
+    "inputs": {
+      "Sa": 0.5,
+      "weight_kN": 2.0,
+      "gamma_a": 1.5,
+      "q_a": 1.0
+    },
+    "expected": 1.5
+  },
+  {
+    "module": "seismic",
+    "operation": "panel_weight_kN",
+    "inputs": {
+      "height_mm": 2700.0,
+      "width_mm": 1250.0,
+      "self_weight_kN_m2": 0.6
+    },
+    "expected": 2.025
+  },
+  {
+    "module": "seismic",
+    "operation": "facade_behaviour_factor",
+    "inputs": {
+      "q_a": 2.0
+    },
+    "expected": 2.0
+  },
+  {
+    "module": "seismic",
+    "operation": "recommended_nu",
+    "inputs": {
+      "importance_class": "II"
+    },
+    "expected": 0.5
+  },
+  {
+    "module": "seismic",
+    "operation": "recommended_nu",
+    "inputs": {
+      "importance_class": "IV"
+    },
+    "expected": 0.4
+  },
+  {
+    "module": "seismic",
+    "operation": "drift_check",
+    "inputs": {
+      "dr_mm": 31.0,
+      "storey_height_mm": 3000.0,
+      "nu": 0.5,
+      "category": "brittle_attached"
+    },
+    "expected": {
+      "category": "brittle_attached",
+      "demand_mm": 15.5,
+      "limit_mm": 15.0,
+      "dr_limit_mm": 30.0,
+      "ratio": 1.0333333333333334,
+      "passes": false
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "drift_check",
+    "inputs": {
+      "dr_mm": 15.0,
+      "storey_height_mm": 3000.0,
+      "nu": 0.4,
+      "category": "ductile"
+    },
+    "expected": {
+      "category": "ductile",
+      "demand_mm": 6.0,
+      "limit_mm": 22.5,
+      "dr_limit_mm": 56.25,
+      "ratio": 0.26666666666666666,
+      "passes": true
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "drift_check",
+    "inputs": {
+      "dr_mm": 15.0,
+      "storey_height_mm": 3000.0,
+      "nu": 0.5,
+      "category": "non_interfering"
+    },
+    "expected": {
+      "category": "non_interfering",
+      "demand_mm": 7.5,
+      "limit_mm": 30.0,
+      "dr_limit_mm": 60.0,
+      "ratio": 0.25,
+      "passes": true
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "bracket_forces",
+    "inputs": {
+      "force_kN": 0.578,
+      "load_shares": [
+        0.5,
+        0.3,
+        0.2
+      ]
+    },
+    "expected": [
+      0.289,
+      0.17339999999999997,
+      0.1156
+    ]
+  },
+  {
+    "module": "seismic",
+    "operation": "slot_length_mm",
+    "inputs": {
+      "dr_mm": 15.0,
+      "bolt_diameter_mm": 12.0,
+      "installation_allowance_mm": 2.0
+    },
+    "expected": {
+      "slot_length_mm": 44.0,
+      "travel_each_direction_mm": 15.0,
+      "reversed_motion_accommodated": true,
+      "assumption": "centred, friction-free, reversing translation"
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "slot_length_mm",
+    "inputs": {
+      "dr_mm": 15.0,
+      "bolt_diameter_mm": 12.0,
+      "installation_allowance_mm": 2.0,
+      "centred": false
+    },
+    "expected": {
+      "slot_length_mm": 29.0,
+      "travel_each_direction_mm": 15.0,
+      "reversed_motion_accommodated": false,
+      "assumption": "one-sided translation only"
+    }
+  },
+  {
+    "module": "seismic",
+    "operation": "seismic_force_kN",
+    "inputs": {
+      "Sa": 0.5,
+      "weight_kN": 2.0,
+      "gamma_a": 0.5,
+      "q_a": 2.0
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 0,
+      "fastener": "bolt"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": -1,
+      "d": 12,
+      "fastener": "bolt"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "embedment",
+    "inputs": {
+      "rho_k": 350,
+      "d": 12,
+      "fastener": "bolt",
+      "alpha_deg": 91
+    },
+    "expectedError": true
+  },
+  {
+    "module": "connections",
+    "operation": "yield_moment",
+    "inputs": {
+      "d": 12,
+      "fu_k": -400,
+      "fastener": "bolt"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "materials",
+    "operation": "kmod",
+    "inputs": {
+      "load_duration": "short",
+      "service_class": 3,
+      "material_type": "osb3"
+    },
+    "expectedError": true
+  },
+  {
+    "module": "fire",
+    "operation": "char_depth",
+    "inputs": {
+      "time_min": -1,
+      "beta_0_mm_min": 0.65,
+      "beta_n_mm_min": 0.8
+    },
+    "expectedError": true
+  },
+  {
+    "module": "fire",
+    "operation": "section",
+    "inputs": {
+      "width_mm": 45,
+      "depth_mm": 145,
+      "time_min": 30,
+      "beta_n_mm_min": 0.8,
+      "exposed_faces": [
+        "unknown"
+      ]
+    },
+    "expectedError": true
+  },
+  {
+    "module": "racking",
+    "operation": "geometry",
+    "inputs": {
+      "sheet_width_mm": 0,
+      "wall_height_mm": 2700
+    },
+    "expectedError": true
+  },
+  {
+    "module": "seismic",
+    "operation": "seismic_coefficient",
+    "inputs": {
+      "alpha": 0.2,
+      "soil_factor": 1.15,
+      "z_m": 12,
+      "H_m": 0,
+      "Ta_s": 0.05,
+      "T1_s": 0.5
+    },
+    "expectedError": true
+  },
+  {
+    "module": "seismic",
+    "operation": "facade_behaviour_factor",
+    "inputs": {
+      "q_a": 2.01
+    },
+    "expectedError": true
+  },
+  {
+    "module": "seismic",
+    "operation": "bracket_forces",
+    "inputs": {
+      "force_kN": 0.578,
+      "load_shares": [
+        0.4,
+        0.4
+      ]
+    },
+    "expectedError": true
+  }
+]

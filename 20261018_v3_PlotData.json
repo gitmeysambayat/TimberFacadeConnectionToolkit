@@ -1,0 +1,327 @@
+{
+  "bolt": [
+    {
+      "diameter_mm": 6,
+      "per_fastener_design_N": 2279.264582391938,
+      "group_design_N": 4332.792680171839,
+      "plate_class": "thick",
+      "governing": "e",
+      "status": "UNVERIFIED"
+    },
+    {
+      "diameter_mm": 8,
+      "per_fastener_design_N": 2961.4051611825616,
+      "group_design_N": 5238.854197058496,
+      "plate_class": "intermediate",
+      "governing": "interpolation(a,d)",
+      "status": "UNVERIFIED"
+    },
+    {
+      "diameter_mm": 10,
+      "per_fastener_design_N": 3440.8568452977493,
+      "group_design_N": 5756.752841244589,
+      "plate_class": "intermediate",
+      "governing": "interpolation(a,d)",
+      "status": "UNVERIFIED"
+    },
+    {
+      "diameter_mm": 12,
+      "per_fastener_design_N": 3776.743384615385,
+      "group_design_N": 6037.166384551405,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "UNVERIFIED"
+    },
+    {
+      "diameter_mm": 14,
+      "per_fastener_design_N": 4306.059692307693,
+      "group_design_N": 6623.064987696341,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "UNVERIFIED"
+    },
+    {
+      "diameter_mm": 16,
+      "per_fastener_design_N": 4806.764307692308,
+      "group_design_N": 7150.45720158177,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "UNVERIFIED"
+    },
+    {
+      "diameter_mm": 18,
+      "per_fastener_design_N": 5278.857230769231,
+      "group_design_N": 7624.87572577748,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "FAIL"
+    },
+    {
+      "diameter_mm": 20,
+      "per_fastener_design_N": 5722.338461538462,
+      "group_design_N": 8050.5772606336795,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "FAIL"
+    },
+    {
+      "diameter_mm": 22,
+      "per_fastener_design_N": 6137.208000000001,
+      "group_design_N": 8430.942974454929,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "FAIL"
+    },
+    {
+      "diameter_mm": 24,
+      "per_fastener_design_N": 6523.4658461538465,
+      "group_design_N": 8768.72725910278,
+      "plate_class": "thin",
+      "governing": "a",
+      "status": "FAIL"
+    }
+  ],
+  "seismic": [
+    {
+      "z_over_H": 0.0,
+      "Fa_kN": 0.2695431629834254
+    },
+    {
+      "z_over_H": 0.05,
+      "Fa_kN": 0.28884219613259665
+    },
+    {
+      "z_over_H": 0.1,
+      "Fa_kN": 0.3081412292817679
+    },
+    {
+      "z_over_H": 0.15,
+      "Fa_kN": 0.32744026243093916
+    },
+    {
+      "z_over_H": 0.2,
+      "Fa_kN": 0.3467392955801104
+    },
+    {
+      "z_over_H": 0.25,
+      "Fa_kN": 0.3660383287292817
+    },
+    {
+      "z_over_H": 0.3,
+      "Fa_kN": 0.385337361878453
+    },
+    {
+      "z_over_H": 0.35,
+      "Fa_kN": 0.40463639502762433
+    },
+    {
+      "z_over_H": 0.4,
+      "Fa_kN": 0.42393542817679536
+    },
+    {
+      "z_over_H": 0.45,
+      "Fa_kN": 0.4432344613259668
+    },
+    {
+      "z_over_H": 0.5,
+      "Fa_kN": 0.4625334944751381
+    },
+    {
+      "z_over_H": 0.55,
+      "Fa_kN": 0.4818325276243093
+    },
+    {
+      "z_over_H": 0.6,
+      "Fa_kN": 0.5011315607734806
+    },
+    {
+      "z_over_H": 0.65,
+      "Fa_kN": 0.5204305939226517
+    },
+    {
+      "z_over_H": 0.7,
+      "Fa_kN": 0.5397296270718231
+    },
+    {
+      "z_over_H": 0.75,
+      "Fa_kN": 0.5590286602209944
+    },
+    {
+      "z_over_H": 0.8,
+      "Fa_kN": 0.5783276933701657
+    },
+    {
+      "z_over_H": 0.85,
+      "Fa_kN": 0.597626726519337
+    },
+    {
+      "z_over_H": 0.9,
+      "Fa_kN": 0.616925759668508
+    },
+    {
+      "z_over_H": 0.95,
+      "Fa_kN": 0.6362247928176794
+    },
+    {
+      "z_over_H": 1.0,
+      "Fa_kN": 0.6555238259668508
+    }
+  ],
+  "fire": [
+    {
+      "time_min": 0,
+      "physical_residual_depth_mm": 145.0,
+      "effective_depth_mm": 145.0
+    },
+    {
+      "time_min": 2,
+      "physical_residual_depth_mm": 143.4,
+      "effective_depth_mm": 142.7
+    },
+    {
+      "time_min": 4,
+      "physical_residual_depth_mm": 141.8,
+      "effective_depth_mm": 140.4
+    },
+    {
+      "time_min": 6,
+      "physical_residual_depth_mm": 140.2,
+      "effective_depth_mm": 138.1
+    },
+    {
+      "time_min": 8,
+      "physical_residual_depth_mm": 138.6,
+      "effective_depth_mm": 135.8
+    },
+    {
+      "time_min": 10,
+      "physical_residual_depth_mm": 137.0,
+      "effective_depth_mm": 133.5
+    },
+    {
+      "time_min": 12,
+      "physical_residual_depth_mm": 135.4,
+      "effective_depth_mm": 131.2
+    },
+    {
+      "time_min": 14,
+      "physical_residual_depth_mm": 133.8,
+      "effective_depth_mm": 128.9
+    },
+    {
+      "time_min": 16,
+      "physical_residual_depth_mm": 132.2,
+      "effective_depth_mm": 126.6
+    },
+    {
+      "time_min": 18,
+      "physical_residual_depth_mm": 130.6,
+      "effective_depth_mm": 124.3
+    },
+    {
+      "time_min": 20,
+      "physical_residual_depth_mm": 129.0,
+      "effective_depth_mm": 122.0
+    },
+    {
+      "time_min": 22,
+      "physical_residual_depth_mm": 127.4,
+      "effective_depth_mm": 120.4
+    },
+    {
+      "time_min": 24,
+      "physical_residual_depth_mm": 125.8,
+      "effective_depth_mm": 118.8
+    },
+    {
+      "time_min": 26,
+      "physical_residual_depth_mm": 124.2,
+      "effective_depth_mm": 117.2
+    },
+    {
+      "time_min": 28,
+      "physical_residual_depth_mm": 122.6,
+      "effective_depth_mm": 115.6
+    },
+    {
+      "time_min": 30,
+      "physical_residual_depth_mm": 121.0,
+      "effective_depth_mm": 114.0
+    },
+    {
+      "time_min": 32,
+      "physical_residual_depth_mm": 119.4,
+      "effective_depth_mm": 112.4
+    },
+    {
+      "time_min": 34,
+      "physical_residual_depth_mm": 117.8,
+      "effective_depth_mm": 110.8
+    },
+    {
+      "time_min": 36,
+      "physical_residual_depth_mm": 116.2,
+      "effective_depth_mm": 109.2
+    },
+    {
+      "time_min": 38,
+      "physical_residual_depth_mm": 114.6,
+      "effective_depth_mm": 107.6
+    },
+    {
+      "time_min": 40,
+      "physical_residual_depth_mm": 113.0,
+      "effective_depth_mm": 106.0
+    },
+    {
+      "time_min": 42,
+      "physical_residual_depth_mm": 111.4,
+      "effective_depth_mm": 104.4
+    },
+    {
+      "time_min": 44,
+      "physical_residual_depth_mm": 109.8,
+      "effective_depth_mm": 102.8
+    },
+    {
+      "time_min": 46,
+      "physical_residual_depth_mm": 108.19999999999999,
+      "effective_depth_mm": 101.19999999999999
+    },
+    {
+      "time_min": 48,
+      "physical_residual_depth_mm": 106.6,
+      "effective_depth_mm": 99.6
+    },
+    {
+      "time_min": 50,
+      "physical_residual_depth_mm": 105.0,
+      "effective_depth_mm": 98.0
+    },
+    {
+      "time_min": 52,
+      "physical_residual_depth_mm": 103.4,
+      "effective_depth_mm": 96.4
+    },
+    {
+      "time_min": 54,
+      "physical_residual_depth_mm": 101.8,
+      "effective_depth_mm": 94.8
+    },
+    {
+      "time_min": 56,
+      "physical_residual_depth_mm": 100.19999999999999,
+      "effective_depth_mm": 93.19999999999999
+    },
+    {
+      "time_min": 58,
+      "physical_residual_depth_mm": 98.6,
+      "effective_depth_mm": 91.6
+    },
+    {
+      "time_min": 60,
+      "physical_residual_depth_mm": 97.0,
+      "effective_depth_mm": 90.0
+    }
+  ]
+}
